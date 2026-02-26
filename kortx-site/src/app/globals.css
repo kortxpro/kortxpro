@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --azul-quadrado: #00A3FF;
+  --azul-escuro: #0A1628;
+  --background-dark: #0D1117;
+  --background-light: #FFFFFF;
+  --cinza-claro: #F8FAFC;
+  --cinza-texto: #64748B;
+  --cinza-borda: #E2E8F0;
+
+  --background: var(--background-light);
+  --foreground: var(--azul-escuro);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--azul-quadrado);
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--azul-quadrado), #0066CC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero gradient mesh decorations */
+.hero-gradient-bg {
+  background: linear-gradient(135deg, #0A1628 0%, #0A1628 60%, rgba(0, 163, 255, 0.2) 100%);
+}
+
+.hero-grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-circle-decoration {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 163, 255, 0.15);
+}

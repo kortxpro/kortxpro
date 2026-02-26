@@ -1,0 +1,510 @@
+{
+  "nav": {
+    "home": "Início",
+    "services": "Serviços",
+    "portfolio": "Portfólio",
+    "about": "Sobre",
+    "aiFirst": "AI First",
+    "contact": "Contato",
+    "cta": "Fale Conosco"
+  },
+  "topBar": {
+    "email": "contato@kortx.pro",
+    "phone": "+55 21 97001-3218",
+    "orlando": "Orlando, FL",
+    "rio": "Rio de Janeiro, RJ"
+  },
+  "home": {
+    "hero": {
+      "taglines": [
+        "Tecnologia que transforma negócios.",
+        "Inteligência artificial com resultados reais.",
+        "Decisões mais inteligentes, todos os dias.",
+        "Sua empresa mais rápida e mais competitiva.",
+        "IA no centro de cada operação.",
+        "Escalabilidade sem multiplicar custos.",
+        "Soluções sob medida para quem quer crescer.",
+        "Conectando tecnologia ao crescimento real.",
+        "A inteligência analisa. A decisão é sua."
+      ],
+      "headline": "Desenvolvemos soluções digitais sob medida para empresas que querem crescer.",
+      "subheadline": "A maioria das empresas adiciona IA nos processos. Nós reconstruímos os processos a partir dela.",
+      "ctaPrimary": "Nossos Serviços",
+      "ctaSecondary": "Fale Conosco"
+    },
+    "services": {
+      "title": "Nossos Serviços",
+      "subtitle": "Soluções completas de desenvolvimento para cada necessidade do seu negócio.",
+      "items": [
+        {
+          "icon": "globe",
+          "title": "Sites Institucionais",
+          "description": "Presença digital profissional com design moderno, responsivo e otimizado para SEO."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Aplicativos",
+          "description": "Apps nativos e multiplataforma para iOS e Android com experiência de usuário excepcional."
+        },
+        {
+          "icon": "server",
+          "title": "Sistemas Internos",
+          "description": "Sistemas personalizados para otimizar processos e aumentar a produtividade da sua equipe."
+        },
+        {
+          "icon": "rocket",
+          "title": "Landing Pages",
+          "description": "Páginas de alta conversão focadas em resultados e performance de campanhas."
+        },
+        {
+          "icon": "shoppingCart",
+          "title": "E-commerces",
+          "description": "Lojas virtuais completas com checkout otimizado, integrações de pagamento e gestão de estoque."
+        },
+        {
+          "icon": "barChart",
+          "title": "Dashboards",
+          "description": "Painéis interativos para visualização de dados e tomada de decisão inteligente."
+        },
+        {
+          "icon": "zap",
+          "title": "Automações & Integrações",
+          "description": "Conectamos seus sistemas e automatizamos processos repetitivos para ganho de eficiência."
+        },
+        {
+          "icon": "bot",
+          "title": "Chatbots & IA",
+          "description": "Assistentes virtuais inteligentes com IA para atendimento, vendas e suporte 24/7."
+        },
+        {
+          "icon": "users",
+          "title": "Portais do Cliente",
+          "description": "Áreas restritas para clientes com acesso a documentos, chamados e informações personalizadas."
+        },
+        {
+          "icon": "database",
+          "title": "CRMs",
+          "description": "Sistemas de gestão de relacionamento customizados para seu fluxo de vendas."
+        },
+        {
+          "icon": "download",
+          "title": "PWAs",
+          "description": "Progressive Web Apps que combinam o melhor da web e de apps nativos."
+        }
+      ],
+      "cta": "Ver todos os serviços"
+    },
+    "portfolio": {
+      "title": "Projetos em Destaque",
+      "subtitle": "Resultados reais para empresas reais.",
+      "projects": [
+        {
+          "title": "Portal E-commerce Premium",
+          "category": "E-commerce",
+          "mockupType": "ecommerce",
+          "description": "Plataforma de vendas online completa com checkout otimizado, painel administrativo e integrações de pagamento.",
+          "metrics": [
+            { "value": "150", "suffix": "%", "label": "Aumento em vendas" },
+            { "value": "3", "suffix": "s", "label": "Tempo de carregamento" },
+            { "value": "50", "suffix": "k+", "label": "Usuários ativos" }
+          ]
+        },
+        {
+          "title": "Sistema de Gestão Interna",
+          "category": "Sistema Interno",
+          "mockupType": "system",
+          "description": "ERP customizado com dashboards em tempo real, automação de processos e integração com ferramentas existentes.",
+          "metrics": [
+            { "value": "80", "suffix": "%", "label": "Redução de retrabalho" },
+            { "value": "200", "suffix": "+", "label": "Processos automatizados" },
+            { "value": "35", "suffix": "%", "label": "Economia em custos" }
+          ]
+        },
+        {
+          "title": "App de Delivery Multiplataforma",
+          "category": "Aplicativo",
+          "mockupType": "app",
+          "description": "Aplicativo nativo para iOS e Android com rastreamento em tempo real, chat integrado e sistema de avaliações.",
+          "metrics": [
+            { "value": "4.8", "suffix": "", "label": "Nota nas lojas" },
+            { "value": "25", "suffix": "k+", "label": "Downloads" },
+            { "value": "98", "suffix": "%", "label": "Uptime" }
+          ]
+        }
+      ],
+      "cta": "Ver portfólio completo"
+    },
+    "about": {
+      "title": "Sobre a KORT.X",
+      "description": "Somos uma empresa de tecnologia com presença global, combinando a inovação americana com a criatividade brasileira para entregar soluções digitais de alto impacto.",
+      "offices": [
+        {
+          "city": "Orlando",
+          "state": "Flórida, EUA",
+          "description": "Nosso hub de inovação e tecnologia, atendendo o mercado norte-americano."
+        },
+        {
+          "city": "Rio de Janeiro",
+          "state": "Rio de Janeiro, Brasil",
+          "description": "Nosso centro de desenvolvimento, conectado ao ecossistema tech brasileiro."
+        }
+      ],
+      "cta": "Conheça nossa história"
+    },
+    "cta": {
+      "title": "Pronto para transformar sua ideia em realidade?",
+      "description": "Conte-nos sobre seu projeto. Vamos encontrar a melhor solução juntos.",
+      "button": "Iniciar Projeto",
+      "note": "Respondemos em até 24 horas."
+    }
+  },
+  "services": {
+    "heroTitle": "Nossos Serviços",
+    "heroSubtitle": "Soluções completas de desenvolvimento para transformar seu negócio.",
+    "categories": [
+      {
+        "icon": "globe",
+        "title": "Sites Institucionais",
+        "description": "Presença digital profissional com design moderno, responsivo e otimizado para SEO.",
+        "features": ["Design responsivo", "Otimização SEO", "Alta performance", "CMS integrado"]
+      },
+      {
+        "icon": "smartphone",
+        "title": "Aplicativos",
+        "description": "Apps nativos e multiplataforma para iOS e Android com experiência de usuário excepcional.",
+        "features": ["iOS & Android", "UI/UX premium", "Push notifications", "Offline-first"]
+      },
+      {
+        "icon": "server",
+        "title": "Sistemas Internos",
+        "description": "Sistemas personalizados para otimizar processos e aumentar a produtividade da sua equipe.",
+        "features": ["Fluxos customizados", "Automação de processos", "Relatórios avançados", "Multi-usuário"]
+      },
+      {
+        "icon": "rocket",
+        "title": "Landing Pages",
+        "description": "Páginas de alta conversão focadas em resultados e performance de campanhas.",
+        "features": ["Alta conversão", "A/B testing", "Analytics integrado", "Carregamento rápido"]
+      },
+      {
+        "icon": "shoppingCart",
+        "title": "E-commerces",
+        "description": "Lojas virtuais completas com checkout otimizado, integrações de pagamento e gestão de estoque.",
+        "features": ["Checkout otimizado", "Multi-pagamento", "Gestão de estoque", "Painel admin"]
+      },
+      {
+        "icon": "barChart",
+        "title": "Dashboards",
+        "description": "Painéis interativos para visualização de dados e tomada de decisão inteligente.",
+        "features": ["Gráficos interativos", "Dados em tempo real", "Filtros avançados", "Exportação"]
+      },
+      {
+        "icon": "zap",
+        "title": "Automações & Integrações",
+        "description": "Conectamos seus sistemas e automatizamos processos repetitivos para ganho de eficiência.",
+        "features": ["APIs REST/GraphQL", "Webhooks", "ETL automatizado", "Monitoramento"]
+      },
+      {
+        "icon": "bot",
+        "title": "Chatbots & IA",
+        "description": "Assistentes virtuais inteligentes com IA para atendimento, vendas e suporte 24/7.",
+        "features": ["Processamento de linguagem natural", "Multi-canal", "Aprendizado contínuo", "Integração CRM"]
+      },
+      {
+        "icon": "users",
+        "title": "Portais do Cliente",
+        "description": "Áreas restritas para clientes com acesso a documentos, chamados e informações personalizadas.",
+        "features": ["Login seguro", "Gestão de documentos", "Sistema de chamados", "Notificações"]
+      },
+      {
+        "icon": "database",
+        "title": "CRMs",
+        "description": "Sistemas de gestão de relacionamento customizados para seu fluxo de vendas.",
+        "features": ["Pipeline de vendas", "Automação de follow-up", "Relatórios", "Integração email"]
+      },
+      {
+        "icon": "download",
+        "title": "PWAs",
+        "description": "Progressive Web Apps que combinam o melhor da web e de apps nativos.",
+        "features": ["Instalável", "Funciona offline", "Push notifications", "Atualização automática"]
+      }
+    ],
+    "ctaTitle": "Não encontrou o que precisa?",
+    "ctaDescription": "Entre em contato e vamos desenhar a solução ideal para o seu negócio.",
+    "ctaButton": "Fale com a gente"
+  },
+  "portfolio": {
+    "heroTitle": "Portfólio",
+    "heroSubtitle": "Projetos que transformaram negócios e geraram resultados reais.",
+    "projects": [
+      {
+        "title": "Portal E-commerce Premium",
+        "category": "E-commerce",
+        "mockupType": "ecommerce",
+        "description": "Plataforma de vendas online completa com checkout otimizado, painel administrativo e integrações de pagamento. Desenvolvido com Next.js, integrado com gateways de pagamento e sistema de gestão de estoque em tempo real.",
+        "tech": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+        "metrics": [
+          { "value": "150", "suffix": "%", "label": "Aumento em vendas" },
+          { "value": "3", "suffix": "s", "label": "Tempo de carregamento" },
+          { "value": "50", "suffix": "k+", "label": "Usuários ativos" }
+        ]
+      },
+      {
+        "title": "Sistema de Gestão Interna",
+        "category": "Sistema Interno",
+        "mockupType": "system",
+        "description": "ERP customizado com dashboards em tempo real, automação de processos e integração com ferramentas existentes. Interface intuitiva com controle de permissões e relatórios automatizados.",
+        "tech": ["React", "Python", "FastAPI", "Redis", "Docker"],
+        "metrics": [
+          { "value": "80", "suffix": "%", "label": "Redução de retrabalho" },
+          { "value": "200", "suffix": "+", "label": "Processos automatizados" },
+          { "value": "35", "suffix": "%", "label": "Economia em custos" }
+        ]
+      },
+      {
+        "title": "App de Delivery Multiplataforma",
+        "category": "Aplicativo",
+        "mockupType": "app",
+        "description": "Aplicativo nativo para iOS e Android com rastreamento em tempo real, chat integrado e sistema de avaliações. Arquitetura escalável suportando milhares de pedidos simultâneos.",
+        "tech": ["React Native", "Node.js", "MongoDB", "Socket.io", "Firebase"],
+        "metrics": [
+          { "value": "4.8", "suffix": "", "label": "Nota nas lojas" },
+          { "value": "25", "suffix": "k+", "label": "Downloads" },
+          { "value": "98", "suffix": "%", "label": "Uptime" }
+        ]
+      },
+      {
+        "title": "Dashboard Analytics Corporativo",
+        "category": "Dashboard",
+        "mockupType": "dashboard",
+        "description": "Painel de visualização de dados em tempo real para tomada de decisão executiva. Gráficos interativos, KPIs customizáveis e relatórios automatizados exportáveis em múltiplos formatos.",
+        "tech": ["React", "D3.js", "Python", "PostgreSQL", "Metabase"],
+        "metrics": [
+          { "value": "60", "suffix": "%", "label": "Decisões mais rápidas" },
+          { "value": "15", "suffix": "+", "label": "Fontes de dados" },
+          { "value": "100", "suffix": "+", "label": "Usuários ativos" }
+        ]
+      }
+    ],
+    "techTitle": "Tecnologias",
+    "metricsTitle": "Resultados"
+  },
+  "about": {
+    "heroTitle": "Sobre a KORT.X",
+    "heroSubtitle": "Tecnologia que transforma negócios, com presença global.",
+    "storyTitle": "Nossa História",
+    "storyParagraphs": [
+      "A KORT.X nasceu da necessidade de conectar empresas a soluções tecnológicas de verdade. Não ferramentas genéricas, mas sistemas sob medida que resolvem problemas reais.",
+      "Fundada por desenvolvedores e empreendedores com experiência em mercados internacionais, a KORT.X combina a inovação do ecossistema tech americano com a criatividade e resiliência brasileiras.",
+      "Hoje, com escritórios em Orlando (FL) e Rio de Janeiro (RJ), atendemos empresas de todos os tamanhos que precisam de tecnologia para crescer de verdade."
+    ],
+    "nameTitle": "Por que KORT.X?",
+    "nameParagraphs": [
+      "KORT.X remete ao córtex cerebral, o centro de decisão do cérebro humano.",
+      "O quadrado azul é um nó neural: cada conexão inteligente entre dados, análise, decisão e ação dentro de uma empresa.",
+      "Tudo começa no KORTEX, e de ideias bem conectadas nascem soluções extraordinárias."
+    ],
+    "missionTitle": "Nossa Missão",
+    "missionText": "Democratizar o acesso à tecnologia de ponta, entregando soluções digitais que geram resultado real para empresas de todos os tamanhos.",
+    "valuesTitle": "Nossos Valores",
+    "values": [
+      {
+        "title": "Excelência Técnica",
+        "description": "Código limpo, arquitetura sólida, entregas que funcionam."
+      },
+      {
+        "title": "Transparência Total",
+        "description": "Comunicação clara, prazos realistas, sem surpresas."
+      },
+      {
+        "title": "Foco em Resultado",
+        "description": "Tecnologia como meio, não como fim. O que importa é o impacto no seu negócio."
+      },
+      {
+        "title": "Parceria de Longo Prazo",
+        "description": "Não abandonamos após a entrega. Evoluímos juntos."
+      }
+    ],
+    "officesTitle": "Nossos Escritórios",
+    "offices": [
+      {
+        "city": "Orlando",
+        "state": "Flórida, EUA",
+        "flag": "us",
+        "description": "Hub de inovação e tecnologia, atendendo o mercado norte-americano com foco em soluções de ponta."
+      },
+      {
+        "city": "Rio de Janeiro",
+        "state": "Rio de Janeiro, Brasil",
+        "flag": "br",
+        "description": "Centro de desenvolvimento, conectado ao ecossistema tech brasileiro e ao mercado latino-americano."
+      }
+    ]
+  },
+  "contact": {
+    "heroTitle": "Vamos conversar",
+    "heroSubtitle": "Conte-nos sobre seu projeto e vamos encontrar a melhor solução juntos.",
+    "formTitle": "Solicite um Orçamento",
+    "fields": {
+      "name": "Nome completo",
+      "email": "Email",
+      "company": "Empresa",
+      "phone": "Telefone/WhatsApp",
+      "service": "Serviço de interesse",
+      "serviceOptions": [
+        "Site Institucional",
+        "Aplicativo",
+        "Sistema Interno",
+        "Landing Page",
+        "E-commerce",
+        "Dashboard",
+        "Automação/Integração",
+        "Chatbot & IA",
+        "Portal do Cliente",
+        "CRM",
+        "PWA",
+        "Outro"
+      ],
+      "budget": "Orçamento estimado",
+      "budgetOptions": [
+        "Até R$ 10k",
+        "R$ 10k - R$ 30k",
+        "R$ 30k - R$ 50k",
+        "R$ 50k - R$ 100k",
+        "Acima de R$ 100k",
+        "A definir"
+      ],
+      "message": "Conte sobre seu projeto"
+    },
+    "submit": "Enviar Solicitação",
+    "submitSuccess": "Solicitação enviada com sucesso!",
+    "note": "Respondemos em até 24 horas.",
+    "offices": [
+      {
+        "city": "Orlando, FL",
+        "country": "Estados Unidos",
+        "flag": "us",
+        "email": "hello@kortx.pro",
+        "phone": "+1 (407) 555-0123"
+      },
+      {
+        "city": "Rio de Janeiro, RJ",
+        "country": "Brasil",
+        "flag": "br",
+        "email": "contato@kortx.pro",
+        "phone": "+55 21 97001-3218"
+      }
+    ]
+  },
+  "aiFirst": {
+    "heroTitle": "E se cada processo da sua empresa já nascesse inteligente?",
+    "heroSubtitle": "AI First é a mentalidade que coloca inteligência artificial no núcleo do negócio. Não como complemento, mas como ponto de partida.",
+    "problemTitle": "Entenda a diferença",
+    "problemTraditionalTitle": "Como a maioria usa IA hoje",
+    "problemTraditionalItems": [
+      "IA adicionada pontualmente em processos existentes.",
+      "Ferramentas isoladas, sem integração real.",
+      "Automação superficial, sem redesenho estratégico.",
+      "Dados subutilizados e decisões ainda manuais."
+    ],
+    "problemAIFirstTitle": "Como funciona AI First",
+    "problemAIFirstItems": [
+      "Processos redesenhados com IA desde o início.",
+      "Dados como ativo central para todas as decisões.",
+      "Automação profunda com calibração humana contínua.",
+      "Integração nativa entre sistemas, canais e equipes."
+    ],
+    "videoTitle": "Veja AI First na prática",
+    "videoSubtitle": "Um overview rápido de como aplicamos a mentalidade AI First em projetos reais para PMEs.",
+    "benefitsTitle": "Benefícios concretos para sua empresa",
+    "benefitsSubtitle": "AI First não é teoria. É resultado mensurável no dia a dia do negócio.",
+    "benefits": [
+      {
+        "icon": "trendingUp",
+        "title": "Escalabilidade inteligente",
+        "description": "Cresça sem multiplicar custos. Processos alimentados por IA escalam com eficiência, adaptando-se automaticamente à demanda."
+      },
+      {
+        "icon": "barChart3",
+        "title": "Decisões orientadas por dados",
+        "description": "Elimine achismos. Dashboards e modelos preditivos transformam dados brutos em insights acionáveis em tempo real."
+      },
+      {
+        "icon": "users",
+        "title": "Experiência personalizada",
+        "description": "Cada cliente recebe atendimento sob medida. IA analisa comportamento e preferências para entregar relevância."
+      },
+      {
+        "icon": "zap",
+        "title": "Agilidade e inovação",
+        "description": "Reduza ciclos de desenvolvimento e teste. Protótipos, MVPs e iterações guiadas por inteligência artificial."
+      },
+      {
+        "icon": "messageSquare",
+        "title": "Integração omnichannel",
+        "description": "Conecte todos os pontos de contato, como site, app, WhatsApp e email, com uma camada inteligente unificada."
+      }
+    ],
+    "stepsTitle": "Como implementamos AI First",
+    "stepsSubtitle": "Um processo estruturado em 3 etapas para transformar sua operação.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Diagnóstico",
+        "description": "Mapeamos processos, dados disponíveis e oportunidades de automação. Entendemos onde a IA gera mais impacto no seu negócio."
+      },
+      {
+        "number": "02",
+        "title": "Reestruturação",
+        "description": "Redesenhamos fluxos e sistemas com IA no núcleo. Definimos arquitetura, integrações e modelos de dados otimizados."
+      },
+      {
+        "number": "03",
+        "title": "Implementação + Calibração humana",
+        "description": "Desenvolvemos, testamos e implementamos. O humano sempre calibra, ajustando parâmetros, validando resultados e refinando continuamente."
+      }
+    ],
+    "ctaTitle": "Quer entender como AI First funciona na sua empresa?",
+    "ctaDescription": "Agende uma conversa com nosso time e descubra como redesenhar seus processos com inteligência artificial no núcleo.",
+    "ctaButton": "Fale com a gente"
+  },
+  "footer": {
+    "tagline": "Tecnologia que transforma negócios.",
+    "copyright": "2026 KORT.X. Todos os direitos reservados.",
+    "links": {
+      "services": "Serviços",
+      "company": "Empresa",
+      "legal": "Legal"
+    },
+    "legalLinks": {
+      "privacy": "Política de Privacidade",
+      "terms": "Termos de Uso"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "KORT.X - Desenvolvimento de Software & Soluções Digitais",
+      "description": "Desenvolvemos sites, aplicativos, sistemas e soluções com IA sob medida. Escritórios em Orlando (FL) e Rio de Janeiro (RJ)."
+    },
+    "services": {
+      "title": "Serviços | KORT.X - Desenvolvimento de Software",
+      "description": "Sites institucionais, aplicativos, sistemas internos, e-commerces, dashboards, automações, chatbots com IA e muito mais."
+    },
+    "portfolio": {
+      "title": "Portfólio | KORT.X - Projetos e Resultados",
+      "description": "Conheça os projetos desenvolvidos pela KORT.X e os resultados reais que geramos para nossos clientes."
+    },
+    "about": {
+      "title": "Sobre a KORT.X | Tecnologia que Transforma Negócios",
+      "description": "Conheça a KORT.X: empresa de tecnologia com escritórios em Orlando e Rio de Janeiro, focada em desenvolvimento de soluções digitais."
+    },
+    "contact": {
+      "title": "Contato | KORT.X",
+      "description": "Entre em contato com a KORT.X. Solicite um orçamento para seu projeto de desenvolvimento. Respondemos em até 24 horas."
+    },
+    "aiFirst": {
+      "title": "AI First | KORT.X - Inteligência Artificial no Núcleo do Negócio",
+      "description": "Descubra como a abordagem AI First da KORT.X redesenha processos empresariais com inteligência artificial no núcleo. Benefícios reais para PMEs."
+    }
+  }
+}

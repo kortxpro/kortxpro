@@ -1,0 +1,6 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue Square -->
+  <rect width="40" height="40" fill="#00A3FF"/>
+  <!-- K letter in white -->
+  <path d="M10 10H14V17L21 10H26L17 19L26 30H21L14 23V30H10V10Z" fill="white"/>
+</svg>

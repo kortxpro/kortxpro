@@ -1,0 +1,510 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "aiFirst": "AI First",
+    "contact": "Contact",
+    "cta": "Get in Touch"
+  },
+  "topBar": {
+    "email": "hello@kortx.pro",
+    "phone": "+1 (407) 555-0123",
+    "orlando": "Orlando, FL",
+    "rio": "Rio de Janeiro, RJ"
+  },
+  "home": {
+    "hero": {
+      "taglines": [
+        "Technology that transforms businesses.",
+        "Artificial intelligence with real results.",
+        "Smarter decisions, every single day.",
+        "Your company faster and more competitive.",
+        "AI at the center of every operation.",
+        "Scalability without multiplying costs.",
+        "Custom solutions for those who want to grow.",
+        "Connecting technology to real growth.",
+        "The intelligence analyzes. The decision is yours."
+      ],
+      "headline": "We build custom digital solutions for companies that want to grow.",
+      "subheadline": "Most companies add AI to their processes. We rebuild the processes around it.",
+      "ctaPrimary": "Our Services",
+      "ctaSecondary": "Get in Touch"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Complete development solutions for every business need.",
+      "items": [
+        {
+          "icon": "globe",
+          "title": "Institutional Websites",
+          "description": "Professional digital presence with modern, responsive design optimized for SEO."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Mobile Apps",
+          "description": "Native and cross-platform apps for iOS and Android with exceptional user experience."
+        },
+        {
+          "icon": "server",
+          "title": "Internal Systems",
+          "description": "Custom systems to optimize processes and boost your team's productivity."
+        },
+        {
+          "icon": "rocket",
+          "title": "Landing Pages",
+          "description": "High-conversion pages focused on results and campaign performance."
+        },
+        {
+          "icon": "shoppingCart",
+          "title": "E-commerce",
+          "description": "Complete online stores with optimized checkout, payment integrations and inventory management."
+        },
+        {
+          "icon": "barChart",
+          "title": "Dashboards",
+          "description": "Interactive panels for data visualization and intelligent decision-making."
+        },
+        {
+          "icon": "zap",
+          "title": "Automations & Integrations",
+          "description": "We connect your systems and automate repetitive processes for efficiency gains."
+        },
+        {
+          "icon": "bot",
+          "title": "Chatbots & AI",
+          "description": "Intelligent virtual assistants with AI for customer service, sales and 24/7 support."
+        },
+        {
+          "icon": "users",
+          "title": "Client Portals",
+          "description": "Restricted areas for clients with access to documents, tickets and personalized information."
+        },
+        {
+          "icon": "database",
+          "title": "CRMs",
+          "description": "Custom relationship management systems tailored to your sales flow."
+        },
+        {
+          "icon": "download",
+          "title": "PWAs",
+          "description": "Progressive Web Apps that combine the best of web and native apps."
+        }
+      ],
+      "cta": "See all services"
+    },
+    "portfolio": {
+      "title": "Featured Projects",
+      "subtitle": "Real results for real companies.",
+      "projects": [
+        {
+          "title": "Premium E-commerce Portal",
+          "category": "E-commerce",
+          "mockupType": "ecommerce",
+          "description": "Complete online sales platform with optimized checkout, admin panel and payment integrations.",
+          "metrics": [
+            { "value": "150", "suffix": "%", "label": "Sales increase" },
+            { "value": "3", "suffix": "s", "label": "Load time" },
+            { "value": "50", "suffix": "k+", "label": "Active users" }
+          ]
+        },
+        {
+          "title": "Internal Management System",
+          "category": "Internal System",
+          "mockupType": "system",
+          "description": "Custom ERP with real-time dashboards, process automation and integration with existing tools.",
+          "metrics": [
+            { "value": "80", "suffix": "%", "label": "Rework reduction" },
+            { "value": "200", "suffix": "+", "label": "Automated processes" },
+            { "value": "35", "suffix": "%", "label": "Cost savings" }
+          ]
+        },
+        {
+          "title": "Cross-platform Delivery App",
+          "category": "Mobile App",
+          "mockupType": "app",
+          "description": "Native app for iOS and Android with real-time tracking, integrated chat and rating system.",
+          "metrics": [
+            { "value": "4.8", "suffix": "", "label": "Store rating" },
+            { "value": "25", "suffix": "k+", "label": "Downloads" },
+            { "value": "98", "suffix": "%", "label": "Uptime" }
+          ]
+        }
+      ],
+      "cta": "See full portfolio"
+    },
+    "about": {
+      "title": "About KORT.X",
+      "description": "We're a technology company with global presence, combining American innovation with Brazilian creativity to deliver high-impact digital solutions.",
+      "offices": [
+        {
+          "city": "Orlando",
+          "state": "Florida, USA",
+          "description": "Our innovation and technology hub, serving the North American market."
+        },
+        {
+          "city": "Rio de Janeiro",
+          "state": "Rio de Janeiro, Brazil",
+          "description": "Our development center, connected to the Brazilian tech ecosystem."
+        }
+      ],
+      "cta": "Learn our story"
+    },
+    "cta": {
+      "title": "Ready to turn your idea into reality?",
+      "description": "Tell us about your project. Let's find the best solution together.",
+      "button": "Start a Project",
+      "note": "We respond within 24 hours."
+    }
+  },
+  "services": {
+    "heroTitle": "Our Services",
+    "heroSubtitle": "Complete development solutions to transform your business.",
+    "categories": [
+      {
+        "icon": "globe",
+        "title": "Institutional Websites",
+        "description": "Professional digital presence with modern, responsive design optimized for SEO.",
+        "features": ["Responsive design", "SEO optimization", "High performance", "Integrated CMS"]
+      },
+      {
+        "icon": "smartphone",
+        "title": "Mobile Apps",
+        "description": "Native and cross-platform apps for iOS and Android with exceptional user experience.",
+        "features": ["iOS & Android", "Premium UI/UX", "Push notifications", "Offline-first"]
+      },
+      {
+        "icon": "server",
+        "title": "Internal Systems",
+        "description": "Custom systems to optimize processes and boost your team's productivity.",
+        "features": ["Custom workflows", "Process automation", "Advanced reports", "Multi-user"]
+      },
+      {
+        "icon": "rocket",
+        "title": "Landing Pages",
+        "description": "High-conversion pages focused on results and campaign performance.",
+        "features": ["High conversion", "A/B testing", "Integrated analytics", "Fast loading"]
+      },
+      {
+        "icon": "shoppingCart",
+        "title": "E-commerce",
+        "description": "Complete online stores with optimized checkout, payment integrations and inventory management.",
+        "features": ["Optimized checkout", "Multi-payment", "Inventory management", "Admin panel"]
+      },
+      {
+        "icon": "barChart",
+        "title": "Dashboards",
+        "description": "Interactive panels for data visualization and intelligent decision-making.",
+        "features": ["Interactive charts", "Real-time data", "Advanced filters", "Export"]
+      },
+      {
+        "icon": "zap",
+        "title": "Automations & Integrations",
+        "description": "We connect your systems and automate repetitive processes for efficiency gains.",
+        "features": ["REST/GraphQL APIs", "Webhooks", "Automated ETL", "Monitoring"]
+      },
+      {
+        "icon": "bot",
+        "title": "Chatbots & AI",
+        "description": "Intelligent virtual assistants with AI for customer service, sales and 24/7 support.",
+        "features": ["Natural language processing", "Multi-channel", "Continuous learning", "CRM integration"]
+      },
+      {
+        "icon": "users",
+        "title": "Client Portals",
+        "description": "Restricted areas for clients with access to documents, tickets and personalized information.",
+        "features": ["Secure login", "Document management", "Ticket system", "Notifications"]
+      },
+      {
+        "icon": "database",
+        "title": "CRMs",
+        "description": "Custom relationship management systems tailored to your sales flow.",
+        "features": ["Sales pipeline", "Follow-up automation", "Reports", "Email integration"]
+      },
+      {
+        "icon": "download",
+        "title": "PWAs",
+        "description": "Progressive Web Apps that combine the best of web and native apps.",
+        "features": ["Installable", "Works offline", "Push notifications", "Auto-update"]
+      }
+    ],
+    "ctaTitle": "Didn't find what you need?",
+    "ctaDescription": "Get in touch and let's design the ideal solution for your business.",
+    "ctaButton": "Talk to us"
+  },
+  "portfolio": {
+    "heroTitle": "Portfolio",
+    "heroSubtitle": "Projects that transformed businesses and generated real results.",
+    "projects": [
+      {
+        "title": "Premium E-commerce Portal",
+        "category": "E-commerce",
+        "mockupType": "ecommerce",
+        "description": "Complete online sales platform with optimized checkout, admin panel and payment integrations. Built with Next.js, integrated with payment gateways and real-time inventory management system.",
+        "tech": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+        "metrics": [
+          { "value": "150", "suffix": "%", "label": "Sales increase" },
+          { "value": "3", "suffix": "s", "label": "Load time" },
+          { "value": "50", "suffix": "k+", "label": "Active users" }
+        ]
+      },
+      {
+        "title": "Internal Management System",
+        "category": "Internal System",
+        "mockupType": "system",
+        "description": "Custom ERP with real-time dashboards, process automation and integration with existing tools. Intuitive interface with permission control and automated reports.",
+        "tech": ["React", "Python", "FastAPI", "Redis", "Docker"],
+        "metrics": [
+          { "value": "80", "suffix": "%", "label": "Rework reduction" },
+          { "value": "200", "suffix": "+", "label": "Automated processes" },
+          { "value": "35", "suffix": "%", "label": "Cost savings" }
+        ]
+      },
+      {
+        "title": "Cross-platform Delivery App",
+        "category": "Mobile App",
+        "mockupType": "app",
+        "description": "Native app for iOS and Android with real-time tracking, integrated chat and rating system. Scalable architecture supporting thousands of simultaneous orders.",
+        "tech": ["React Native", "Node.js", "MongoDB", "Socket.io", "Firebase"],
+        "metrics": [
+          { "value": "4.8", "suffix": "", "label": "Store rating" },
+          { "value": "25", "suffix": "k+", "label": "Downloads" },
+          { "value": "98", "suffix": "%", "label": "Uptime" }
+        ]
+      },
+      {
+        "title": "Corporate Analytics Dashboard",
+        "category": "Dashboard",
+        "mockupType": "dashboard",
+        "description": "Real-time data visualization panel for executive decision-making. Interactive charts, customizable KPIs and automated reports exportable in multiple formats.",
+        "tech": ["React", "D3.js", "Python", "PostgreSQL", "Metabase"],
+        "metrics": [
+          { "value": "60", "suffix": "%", "label": "Faster decisions" },
+          { "value": "15", "suffix": "+", "label": "Data sources" },
+          { "value": "100", "suffix": "+", "label": "Active users" }
+        ]
+      }
+    ],
+    "techTitle": "Technologies",
+    "metricsTitle": "Results"
+  },
+  "about": {
+    "heroTitle": "About KORT.X",
+    "heroSubtitle": "Technology that transforms businesses, with global presence.",
+    "storyTitle": "Our Story",
+    "storyParagraphs": [
+      "KORT.X was born from the need to connect businesses with real technology solutions. Not generic tools, but custom systems that solve real problems.",
+      "Founded by developers and entrepreneurs with international market experience, KORT.X combines the innovation of the American tech ecosystem with Brazilian creativity and resilience.",
+      "Today, with offices in Orlando (FL) and Rio de Janeiro (RJ), we serve companies of all sizes that need technology to truly grow."
+    ],
+    "nameTitle": "Why KORT.X?",
+    "nameParagraphs": [
+      "KORT.X refers to the cerebral cortex, the decision center of the human brain.",
+      "The blue square is a neural node: each intelligent connection between data, analysis, decision and action within a company.",
+      "Everything starts at KORTEX, and from well-connected ideas, extraordinary solutions are born."
+    ],
+    "missionTitle": "Our Mission",
+    "missionText": "Democratize access to cutting-edge technology, delivering digital solutions that generate real results for companies of all sizes.",
+    "valuesTitle": "Our Values",
+    "values": [
+      {
+        "title": "Technical Excellence",
+        "description": "Clean code, solid architecture, deliveries that work."
+      },
+      {
+        "title": "Total Transparency",
+        "description": "Clear communication, realistic deadlines, no surprises."
+      },
+      {
+        "title": "Results-Driven",
+        "description": "Technology as a means, not an end. What matters is the impact on your business."
+      },
+      {
+        "title": "Long-term Partnership",
+        "description": "We don't abandon after delivery. We evolve together."
+      }
+    ],
+    "officesTitle": "Our Offices",
+    "offices": [
+      {
+        "city": "Orlando",
+        "state": "Florida, USA",
+        "flag": "us",
+        "description": "Innovation and technology hub, serving the North American market with cutting-edge solutions."
+      },
+      {
+        "city": "Rio de Janeiro",
+        "state": "Rio de Janeiro, Brazil",
+        "flag": "br",
+        "description": "Development center, connected to the Brazilian tech ecosystem and Latin American market."
+      }
+    ]
+  },
+  "contact": {
+    "heroTitle": "Let's talk",
+    "heroSubtitle": "Tell us about your project and let's find the best solution together.",
+    "formTitle": "Request a Quote",
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "service": "Service of interest",
+      "serviceOptions": [
+        "Institutional Website",
+        "Mobile App",
+        "Internal System",
+        "Landing Page",
+        "E-commerce",
+        "Dashboard",
+        "Automation/Integration",
+        "Chatbot & AI",
+        "Client Portal",
+        "CRM",
+        "PWA",
+        "Other"
+      ],
+      "budget": "Estimated budget",
+      "budgetOptions": [
+        "Up to $5k",
+        "$5k - $15k",
+        "$15k - $30k",
+        "$30k - $50k",
+        "Above $50k",
+        "To be defined"
+      ],
+      "message": "Tell us about your project"
+    },
+    "submit": "Send Request",
+    "submitSuccess": "Request sent successfully!",
+    "note": "We respond within 24 hours.",
+    "offices": [
+      {
+        "city": "Orlando, FL",
+        "country": "United States",
+        "flag": "us",
+        "email": "hello@kortx.pro",
+        "phone": "+1 (407) 555-0123"
+      },
+      {
+        "city": "Rio de Janeiro, RJ",
+        "country": "Brazil",
+        "flag": "br",
+        "email": "contato@kortx.pro",
+        "phone": "+55 21 97001-3218"
+      }
+    ]
+  },
+  "aiFirst": {
+    "heroTitle": "What if every process in your company was born intelligent?",
+    "heroSubtitle": "AI First is the mindset that puts artificial intelligence at the core of business. Not as an add-on, but as the starting point.",
+    "problemTitle": "Understand the difference",
+    "problemTraditionalTitle": "How most companies use AI today",
+    "problemTraditionalItems": [
+      "AI added to existing processes as a patch.",
+      "Isolated tools with no real integration.",
+      "Surface-level automation without strategic redesign.",
+      "Underused data and still-manual decisions."
+    ],
+    "problemAIFirstTitle": "How AI First works",
+    "problemAIFirstItems": [
+      "Processes redesigned with AI from the ground up.",
+      "Data as the central asset for every decision.",
+      "Deep automation with continuous human calibration.",
+      "Native integration across systems, channels, and teams."
+    ],
+    "videoTitle": "See AI First in action",
+    "videoSubtitle": "A quick overview of how we apply the AI First mindset in real projects for SMBs.",
+    "benefitsTitle": "Concrete benefits for your business",
+    "benefitsSubtitle": "AI First is not theory. It's measurable results in day-to-day operations.",
+    "benefits": [
+      {
+        "icon": "trendingUp",
+        "title": "Intelligent scalability",
+        "description": "Grow without multiplying costs. AI-powered processes scale efficiently, automatically adapting to demand."
+      },
+      {
+        "icon": "barChart3",
+        "title": "Data-driven decisions",
+        "description": "Eliminate guesswork. Dashboards and predictive models turn raw data into actionable real-time insights."
+      },
+      {
+        "icon": "users",
+        "title": "Personalized experience",
+        "description": "Every customer gets tailored service. AI analyzes behavior and preferences to deliver relevance."
+      },
+      {
+        "icon": "zap",
+        "title": "Agility and innovation",
+        "description": "Reduce development and testing cycles. Prototypes, MVPs, and iterations guided by artificial intelligence."
+      },
+      {
+        "icon": "messageSquare",
+        "title": "Omnichannel integration",
+        "description": "Connect every touchpoint, like website, app, WhatsApp, and email, with a unified intelligent layer."
+      }
+    ],
+    "stepsTitle": "How we implement AI First",
+    "stepsSubtitle": "A structured 3-step process to transform your operations.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Diagnosis",
+        "description": "We map processes, available data, and automation opportunities. We identify where AI generates the most impact for your business."
+      },
+      {
+        "number": "02",
+        "title": "Restructuring",
+        "description": "We redesign workflows and systems with AI at the core. We define architecture, integrations, and optimized data models."
+      },
+      {
+        "number": "03",
+        "title": "Implementation + Human calibration",
+        "description": "We develop, test, and deploy. Humans always calibrate, adjusting parameters, validating results, and continuously refining."
+      }
+    ],
+    "ctaTitle": "Want to understand how AI First works for your company?",
+    "ctaDescription": "Schedule a conversation with our team and discover how to redesign your processes with artificial intelligence at the core.",
+    "ctaButton": "Talk to us"
+  },
+  "footer": {
+    "tagline": "Technology that transforms businesses.",
+    "copyright": "2026 KORT.X. All rights reserved.",
+    "links": {
+      "services": "Services",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "legalLinks": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "KORT.X - Software Development & Digital Solutions",
+      "description": "We build websites, apps, systems and AI solutions tailored to your needs. Offices in Orlando (FL) and Rio de Janeiro (RJ)."
+    },
+    "services": {
+      "title": "Services | KORT.X - Software Development",
+      "description": "Institutional websites, mobile apps, internal systems, e-commerce, dashboards, automations, AI chatbots and more."
+    },
+    "portfolio": {
+      "title": "Portfolio | KORT.X - Projects & Results",
+      "description": "Discover the projects developed by KORT.X and the real results we've generated for our clients."
+    },
+    "about": {
+      "title": "About KORT.X | Technology that Transforms Businesses",
+      "description": "Learn about KORT.X: a technology company with offices in Orlando and Rio de Janeiro, focused on digital solution development."
+    },
+    "contact": {
+      "title": "Contact | KORT.X",
+      "description": "Get in touch with KORT.X. Request a quote for your development project. We respond within 24 hours."
+    },
+    "aiFirst": {
+      "title": "AI First | KORT.X - Artificial Intelligence at the Core of Business",
+      "description": "Discover how KORT.X's AI First approach redesigns business processes with artificial intelligence at the core. Real benefits for SMBs."
+    }
+  }
+}
