@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd kortx-site && npm run build",
-  "outputDirectory": "kortx-site/.next",
-  "installCommand": "cd kortx-site && npm install",
-  "framework": "nextjs"
-}
