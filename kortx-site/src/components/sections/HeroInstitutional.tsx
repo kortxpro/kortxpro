@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { TypeWriter } from "@/components/effects/TypeWriter";
+import { NeuralNetwork } from "@/components/effects/NeuralNetwork";
 
 export function HeroInstitutional() {
   const t = useTranslations("home.hero");
@@ -78,7 +79,7 @@ export function HeroInstitutional() {
             </motion.div>
           </div>
 
-          {/* Right — Abstract visual */}
+          {/* Right — Neural Network visual */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -86,29 +87,18 @@ export function HeroInstitutional() {
             className="hidden lg:flex items-center justify-center relative"
           >
             <div className="relative w-full max-w-md aspect-square">
-              {/* Concentric rings */}
-              <div className="absolute inset-0 rounded-full border border-white/[0.06]" />
-              <div className="absolute inset-[15%] rounded-full border border-white/[0.08]" />
-              <div className="absolute inset-[30%] rounded-full border border-[#00A3FF]/20" />
-              <div className="absolute inset-[45%] rounded-full border border-[#00A3FF]/30 bg-[#00A3FF]/[0.04]" />
-
-              {/* Center element */}
-              <div className="absolute inset-[42%] flex items-center justify-center">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-[#00A3FF]/30 to-[#00A3FF]/10 backdrop-blur-sm flex items-center justify-center">
-                  <div className="w-4 h-4 bg-[#00A3FF] rounded-sm" />
-                </div>
-              </div>
-
-              {/* Floating accent dots */}
-              <div className="absolute top-[10%] right-[20%] w-2 h-2 rounded-full bg-[#00A3FF]/60" />
-              <div className="absolute bottom-[20%] left-[15%] w-1.5 h-1.5 rounded-full bg-[#00A3FF]/40" />
-              <div className="absolute top-[50%] right-[5%] w-1 h-1 rounded-full bg-white/30" />
+              {/* Neural Network canvas */}
+              <NeuralNetwork
+                particleCount={70}
+                connectionDistance={140}
+                mouseRadius={180}
+              />
 
               {/* Stat cards floating */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-[8%] left-[-5%] bg-white/[0.07] backdrop-blur-md border border-white/10 rounded-xl px-4 py-3"
+                className="absolute top-[8%] left-[-5%] z-10 bg-white/[0.07] backdrop-blur-md border border-white/10 rounded-xl px-4 py-3"
               >
                 <p className="text-xs text-gray-400">Projetos entregues</p>
                 <p className="text-lg font-bold text-white">150+</p>
@@ -117,7 +107,7 @@ export function HeroInstitutional() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-[12%] right-[-8%] bg-white/[0.07] backdrop-blur-md border border-white/10 rounded-xl px-4 py-3"
+                className="absolute bottom-[12%] right-[-8%] z-10 bg-white/[0.07] backdrop-blur-md border border-white/10 rounded-xl px-4 py-3"
               >
                 <p className="text-xs text-gray-400">Satisfação</p>
                 <p className="text-lg font-bold text-[#00A3FF]">98%</p>

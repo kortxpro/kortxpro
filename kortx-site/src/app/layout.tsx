@@ -1,12 +1,5 @@
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "KORT.X",
@@ -22,11 +15,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans antialiased bg-white text-[#0A1628]`}>
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }

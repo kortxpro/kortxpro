@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -13,7 +13,7 @@ import { ProjectMockup, type MockupVariant } from "@/components/ui/ProjectMockup
 export function PortfolioPageContent() {
   const t = useTranslations("portfolio");
 
-  const projects = Array.from({ length: 4 }, (_, i) => ({
+  const projects = Array.from({ length: 9 }, (_, i) => ({
     title: t(`projects.${i}.title`),
     category: t(`projects.${i}.category`),
     mockupType: t(`projects.${i}.mockupType`) as MockupVariant,
@@ -50,6 +50,19 @@ export function PortfolioPageContent() {
       {/* Projects */}
       <section className="py-16 pb-24 bg-[#F8FAFC]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Confidentiality notice */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex items-center gap-3 bg-[#0A1628]/5 border border-[#0A1628]/10 rounded-xl px-5 py-4 mb-10"
+          >
+            <ShieldCheck className="h-5 w-5 text-[#00A3FF] flex-shrink-0" />
+            <p className="text-sm text-[#64748B]">
+              {t("confidential")}
+            </p>
+          </motion.div>
+
           <div className="space-y-12">
             {projects.map((project, index) => (
               <motion.div
@@ -57,7 +70,7 @@ export function PortfolioPageContent() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.05 }}
               >
                 <Card variant="corporate" padding="lg">
                   {/* Mockup */}
@@ -129,7 +142,7 @@ export function PortfolioPageContent() {
           >
             <Link href="/contato">
               <Button variant="corporate" size="lg" className="group">
-                Iniciar Projeto
+                {t("ctaButton")}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>

@@ -14,6 +14,7 @@ export function Footer() {
   const serviceLinks = [
     { href: "/servicos", label: navT("services") },
     { href: "/portfolio", label: navT("portfolio") },
+    { href: "/ai-first", label: navT("aiFirst") },
   ];
 
   const companyLinks = [
@@ -69,7 +70,7 @@ export function Footer() {
 
           {/* Offices */}
           <div>
-            <h3 className="font-semibold mb-4 text-white">Escritorios</h3>
+            <h3 className="font-semibold mb-4 text-white">{t("offices")}</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#00A3FF] mt-0.5 flex-shrink-0" />

@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -41,6 +41,20 @@ export function PortfolioPreview() {
           </h2>
           <p className="text-lg text-[#64748B] max-w-2xl mx-auto">
             {t("subtitle")}
+          </p>
+        </motion.div>
+
+        {/* Confidentiality notice */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex items-center justify-center gap-3 bg-[#0A1628]/5 border border-[#0A1628]/10 rounded-xl px-5 py-3 mb-10 max-w-2xl mx-auto"
+        >
+          <ShieldCheck className="h-4 w-4 text-[#00A3FF] flex-shrink-0" />
+          <p className="text-sm text-[#64748B]">
+            {t("confidential")}
           </p>
         </motion.div>
 

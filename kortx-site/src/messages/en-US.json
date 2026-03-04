@@ -94,41 +94,51 @@
       ],
       "cta": "See all services"
     },
+    "socialProof": {
+      "title": "Results that speak for themselves",
+      "metrics": [
+        { "value": "150", "suffix": "+", "label": "Projects Delivered" },
+        { "value": "80", "suffix": "+", "label": "Active Clients" },
+        { "value": "98", "suffix": "%", "label": "Satisfaction" },
+        { "value": "5", "suffix": "+", "label": "Countries Served" }
+      ]
+    },
     "portfolio": {
       "title": "Featured Projects",
       "subtitle": "Real results for real companies.",
+      "confidential": "Due to contractual agreements, company names cannot be disclosed.",
       "projects": [
         {
-          "title": "Premium E-commerce Portal",
-          "category": "E-commerce",
-          "mockupType": "ecommerce",
-          "description": "Complete online sales platform with optimized checkout, admin panel and payment integrations.",
+          "title": "Institutional Website — Law Firm",
+          "category": "Institutional Website",
+          "mockupType": "site-law",
+          "description": "Institutional website for a law firm with practice areas, partner profiles, legal blog and qualified lead generation.",
           "metrics": [
-            { "value": "150", "suffix": "%", "label": "Sales increase" },
-            { "value": "3", "suffix": "s", "label": "Load time" },
-            { "value": "50", "suffix": "k+", "label": "Active users" }
+            { "value": "320", "suffix": "%", "label": "Organic lead increase" },
+            { "value": "2.1", "suffix": "s", "label": "Load time" },
+            { "value": "45", "suffix": "%", "label": "Conversion rate" }
           ]
         },
         {
-          "title": "Internal Management System",
-          "category": "Internal System",
-          "mockupType": "system",
-          "description": "Custom ERP with real-time dashboards, process automation and integration with existing tools.",
+          "title": "Institutional Website — Healthcare Network",
+          "category": "Institutional Website",
+          "mockupType": "site-health",
+          "description": "Web platform for a healthcare network with online scheduling, specialty panels, WhatsApp integration and patient portal.",
           "metrics": [
-            { "value": "80", "suffix": "%", "label": "Rework reduction" },
-            { "value": "200", "suffix": "+", "label": "Automated processes" },
-            { "value": "35", "suffix": "%", "label": "Cost savings" }
+            { "value": "70", "suffix": "%", "label": "Online bookings" },
+            { "value": "15", "suffix": "k+", "label": "Visits/month" },
+            { "value": "4.9", "suffix": "", "label": "Google rating" }
           ]
         },
         {
-          "title": "Cross-platform Delivery App",
-          "category": "Mobile App",
-          "mockupType": "app",
-          "description": "Native app for iOS and Android with real-time tracking, integrated chat and rating system.",
+          "title": "Institutional Website — Real Estate Developer",
+          "category": "Institutional Website",
+          "mockupType": "site-realestate",
+          "description": "Website for a real estate developer with property catalog, virtual tours, financing simulator and per-unit lead capture.",
           "metrics": [
-            { "value": "4.8", "suffix": "", "label": "Store rating" },
-            { "value": "25", "suffix": "k+", "label": "Downloads" },
-            { "value": "98", "suffix": "%", "label": "Uptime" }
+            { "value": "200", "suffix": "+", "label": "Qualified leads/month" },
+            { "value": "85", "suffix": "%", "label": "Visit increase" },
+            { "value": "12", "suffix": "s", "label": "Avg. time on page" }
           ]
         }
       ],
@@ -236,58 +246,120 @@
   "portfolio": {
     "heroTitle": "Portfolio",
     "heroSubtitle": "Projects that transformed businesses and generated real results.",
+    "confidential": "Due to contractual agreements, company names cannot be disclosed.",
     "projects": [
       {
-        "title": "Premium E-commerce Portal",
-        "category": "E-commerce",
-        "mockupType": "ecommerce",
-        "description": "Complete online sales platform with optimized checkout, admin panel and payment integrations. Built with Next.js, integrated with payment gateways and real-time inventory management system.",
-        "tech": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+        "title": "Institutional Website — Law Firm",
+        "category": "Institutional Website",
+        "mockupType": "site-law",
+        "description": "Institutional website for a law firm with practice areas, partner profiles, legal blog and qualified lead generation. Sophisticated design with dark and gold tones conveying credibility and tradition.",
+        "tech": ["Next.js", "Tailwind CSS", "Sanity CMS", "Vercel", "Google Analytics"],
         "metrics": [
-          { "value": "150", "suffix": "%", "label": "Sales increase" },
-          { "value": "3", "suffix": "s", "label": "Load time" },
-          { "value": "50", "suffix": "k+", "label": "Active users" }
+          { "value": "320", "suffix": "%", "label": "Organic lead increase" },
+          { "value": "2.1", "suffix": "s", "label": "Load time" },
+          { "value": "45", "suffix": "%", "label": "Conversion rate" }
         ]
       },
       {
-        "title": "Internal Management System",
-        "category": "Internal System",
-        "mockupType": "system",
-        "description": "Custom ERP with real-time dashboards, process automation and integration with existing tools. Intuitive interface with permission control and automated reports.",
-        "tech": ["React", "Python", "FastAPI", "Redis", "Docker"],
+        "title": "Institutional Website — Healthcare Network",
+        "category": "Institutional Website",
+        "mockupType": "site-health",
+        "description": "Web platform for a healthcare network with online scheduling, specialty panels, WhatsApp integration and patient portal. Clean and welcoming interface focused on accessibility.",
+        "tech": ["Next.js", "Node.js", "PostgreSQL", "Twilio", "AWS"],
         "metrics": [
-          { "value": "80", "suffix": "%", "label": "Rework reduction" },
-          { "value": "200", "suffix": "+", "label": "Automated processes" },
-          { "value": "35", "suffix": "%", "label": "Cost savings" }
+          { "value": "70", "suffix": "%", "label": "Online bookings" },
+          { "value": "15", "suffix": "k+", "label": "Visits/month" },
+          { "value": "4.9", "suffix": "", "label": "Google rating" }
         ]
       },
       {
-        "title": "Cross-platform Delivery App",
+        "title": "Institutional Website — Real Estate Developer",
+        "category": "Institutional Website",
+        "mockupType": "site-realestate",
+        "description": "Website for a real estate developer with property catalog, virtual tours, financing simulator and per-unit lead capture. Premium design with immersive gallery and CRM integration.",
+        "tech": ["Next.js", "Three.js", "Strapi CMS", "HubSpot", "Cloudflare"],
+        "metrics": [
+          { "value": "200", "suffix": "+", "label": "Qualified leads/month" },
+          { "value": "85", "suffix": "%", "label": "Visit increase" },
+          { "value": "12", "suffix": "s", "label": "Avg. time on page" }
+        ]
+      },
+      {
+        "title": "Landing Page — B2B SaaS Platform",
+        "category": "Landing Page",
+        "mockupType": "landing-saas",
+        "description": "High-conversion landing page for a B2B SaaS platform with interactive product demo, social proof, ROI calculator and optimized acquisition funnel with A/B testing.",
+        "tech": ["Next.js", "Framer Motion", "Mixpanel", "Stripe", "Vercel"],
+        "metrics": [
+          { "value": "12", "suffix": "%", "label": "Conversion rate" },
+          { "value": "850", "suffix": "+", "label": "Trials/month" },
+          { "value": "3.2", "suffix": "x", "label": "ROI in 6 months" }
+        ]
+      },
+      {
+        "title": "Landing Page — Corporate Event",
+        "category": "Landing Page",
+        "mockupType": "landing-event",
+        "description": "Landing page for a corporate tech event with countdown, speaker lineup, registration system with ticketing and payment gateway integration. Impactful design with animations and urgency.",
+        "tech": ["React", "Node.js", "Stripe", "SendGrid", "Firebase"],
+        "metrics": [
+          { "value": "2.5", "suffix": "k+", "label": "Sign-ups in 30 days" },
+          { "value": "95", "suffix": "%", "label": "Occupancy rate" },
+          { "value": "8", "suffix": "s", "label": "Avg. time to sign up" }
+        ]
+      },
+      {
+        "title": "Mobile App — Internal System, Catalog and More",
         "category": "Mobile App",
-        "mockupType": "app",
-        "description": "Native app for iOS and Android with real-time tracking, integrated chat and rating system. Scalable architecture supporting thousands of simultaneous orders.",
+        "mockupType": "app-internal",
+        "description": "Mobile app for internal operations with product catalog, field inventory control, ticket management and team communication. Offline-first with automatic sync, integrated with existing ERP.",
         "tech": ["React Native", "Node.js", "MongoDB", "Socket.io", "Firebase"],
         "metrics": [
+          { "value": "60", "suffix": "%", "label": "Productivity increase" },
           { "value": "4.8", "suffix": "", "label": "Store rating" },
-          { "value": "25", "suffix": "k+", "label": "Downloads" },
-          { "value": "98", "suffix": "%", "label": "Uptime" }
+          { "value": "1.5", "suffix": "k+", "label": "Active users" }
         ]
       },
       {
-        "title": "Corporate Analytics Dashboard",
-        "category": "Dashboard",
-        "mockupType": "dashboard",
-        "description": "Real-time data visualization panel for executive decision-making. Interactive charts, customizable KPIs and automated reports exportable in multiple formats.",
-        "tech": ["React", "D3.js", "Python", "PostgreSQL", "Metabase"],
+        "title": "Mobile App — Field Sales Team",
+        "category": "Mobile App",
+        "mockupType": "app-field",
+        "description": "App for external sales teams with visit routing, task checklists, order collection and photo reports. Integrated GPS for presence verification and real-time management dashboard.",
+        "tech": ["React Native", "Node.js", "PostgreSQL", "Redis", "AWS"],
         "metrics": [
-          { "value": "60", "suffix": "%", "label": "Faster decisions" },
-          { "value": "15", "suffix": "+", "label": "Data sources" },
-          { "value": "100", "suffix": "+", "label": "Active users" }
+          { "value": "40", "suffix": "%", "label": "More visits/day" },
+          { "value": "25", "suffix": "%", "label": "Sales growth" },
+          { "value": "300", "suffix": "+", "label": "Active reps" }
+        ]
+      },
+      {
+        "title": "Financial Management Dashboard",
+        "category": "Dashboard",
+        "mockupType": "dashboard-finance",
+        "description": "Executive dashboard for financial management with real-time KPIs, interactive charts, automatic bank reconciliation and smart alerts. Customizable panels with drill-down by period, unit and cost center.",
+        "tech": ["Next.js", "Python", "PostgreSQL", "Redis", "Docker"],
+        "metrics": [
+          { "value": "80", "suffix": "%", "label": "Faster analysis" },
+          { "value": "3", "suffix": "k+", "label": "Transactions/day" },
+          { "value": "99.9", "suffix": "%", "label": "Uptime" }
+        ]
+      },
+      {
+        "title": "Logistics & Tracking System",
+        "category": "Web System",
+        "mockupType": "system-logistics",
+        "description": "Routing and tracking platform with real-time maps, fleet management, route deviation alerts and performance reports. Optimization algorithms for cost reduction and improved on-time delivery rates.",
+        "tech": ["React", "Python", "FastAPI", "MongoDB", "Google Maps"],
+        "metrics": [
+          { "value": "35", "suffix": "%", "label": "Logistics cost reduction" },
+          { "value": "200", "suffix": "+", "label": "Vehicles managed" },
+          { "value": "98", "suffix": "%", "label": "On-time deliveries" }
         ]
       }
     ],
     "techTitle": "Technologies",
-    "metricsTitle": "Results"
+    "metricsTitle": "Results",
+    "ctaButton": "Start a Project"
   },
   "about": {
     "heroTitle": "About KORT.X",
@@ -476,6 +548,7 @@
       "company": "Company",
       "legal": "Legal"
     },
+    "offices": "Offices",
     "legalLinks": {
       "privacy": "Privacy Policy",
       "terms": "Terms of Service"

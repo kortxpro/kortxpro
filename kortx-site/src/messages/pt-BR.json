@@ -94,41 +94,51 @@
       ],
       "cta": "Ver todos os serviços"
     },
+    "socialProof": {
+      "title": "Resultados que falam por si",
+      "metrics": [
+        { "value": "150", "suffix": "+", "label": "Projetos Entregues" },
+        { "value": "80", "suffix": "+", "label": "Clientes Ativos" },
+        { "value": "98", "suffix": "%", "label": "Satisfação" },
+        { "value": "5", "suffix": "+", "label": "Países Atendidos" }
+      ]
+    },
     "portfolio": {
       "title": "Projetos em Destaque",
       "subtitle": "Resultados reais para empresas reais.",
+      "confidential": "Por questões contratuais, os nomes das empresas não podem ser divulgados.",
       "projects": [
         {
-          "title": "Portal E-commerce Premium",
-          "category": "E-commerce",
-          "mockupType": "ecommerce",
-          "description": "Plataforma de vendas online completa com checkout otimizado, painel administrativo e integrações de pagamento.",
+          "title": "Site Institucional — Escritório de Advocacia",
+          "category": "Site Institucional",
+          "mockupType": "site-law",
+          "description": "Site institucional para escritório de advocacia com áreas de atuação, perfil de sócios, blog jurídico e captação de leads qualificados.",
           "metrics": [
-            { "value": "150", "suffix": "%", "label": "Aumento em vendas" },
-            { "value": "3", "suffix": "s", "label": "Tempo de carregamento" },
-            { "value": "50", "suffix": "k+", "label": "Usuários ativos" }
+            { "value": "320", "suffix": "%", "label": "Aumento em leads orgânicos" },
+            { "value": "2.1", "suffix": "s", "label": "Tempo de carregamento" },
+            { "value": "45", "suffix": "%", "label": "Taxa de conversão" }
           ]
         },
         {
-          "title": "Sistema de Gestão Interna",
-          "category": "Sistema Interno",
-          "mockupType": "system",
-          "description": "ERP customizado com dashboards em tempo real, automação de processos e integração com ferramentas existentes.",
+          "title": "Site Institucional — Rede de Clínicas",
+          "category": "Site Institucional",
+          "mockupType": "site-health",
+          "description": "Plataforma web para rede de clínicas com agendamento online, painel de especialidades, integração com WhatsApp e área do paciente.",
           "metrics": [
-            { "value": "80", "suffix": "%", "label": "Redução de retrabalho" },
-            { "value": "200", "suffix": "+", "label": "Processos automatizados" },
-            { "value": "35", "suffix": "%", "label": "Economia em custos" }
+            { "value": "70", "suffix": "%", "label": "Agendamentos online" },
+            { "value": "15", "suffix": "k+", "label": "Visitas/mês" },
+            { "value": "4.9", "suffix": "", "label": "Avaliação Google" }
           ]
         },
         {
-          "title": "App de Delivery Multiplataforma",
-          "category": "Aplicativo",
-          "mockupType": "app",
-          "description": "Aplicativo nativo para iOS e Android com rastreamento em tempo real, chat integrado e sistema de avaliações.",
+          "title": "Site Institucional — Construtora",
+          "category": "Site Institucional",
+          "mockupType": "site-realestate",
+          "description": "Site para construtora com catálogo de empreendimentos, tour virtual, simulador de financiamento e captação de interessados por unidade.",
           "metrics": [
-            { "value": "4.8", "suffix": "", "label": "Nota nas lojas" },
-            { "value": "25", "suffix": "k+", "label": "Downloads" },
-            { "value": "98", "suffix": "%", "label": "Uptime" }
+            { "value": "200", "suffix": "+", "label": "Leads qualificados/mês" },
+            { "value": "85", "suffix": "%", "label": "Aumento em visitas" },
+            { "value": "12", "suffix": "s", "label": "Tempo médio na página" }
           ]
         }
       ],
@@ -236,58 +246,120 @@
   "portfolio": {
     "heroTitle": "Portfólio",
     "heroSubtitle": "Projetos que transformaram negócios e geraram resultados reais.",
+    "confidential": "Por questões contratuais, os nomes das empresas não podem ser divulgados.",
     "projects": [
       {
-        "title": "Portal E-commerce Premium",
-        "category": "E-commerce",
-        "mockupType": "ecommerce",
-        "description": "Plataforma de vendas online completa com checkout otimizado, painel administrativo e integrações de pagamento. Desenvolvido com Next.js, integrado com gateways de pagamento e sistema de gestão de estoque em tempo real.",
-        "tech": ["Next.js", "Node.js", "PostgreSQL", "Stripe", "AWS"],
+        "title": "Site Institucional — Escritório de Advocacia",
+        "category": "Site Institucional",
+        "mockupType": "site-law",
+        "description": "Site institucional para escritório de advocacia com áreas de atuação, perfil de sócios, blog jurídico e captação de leads qualificados. Design sofisticado com tons escuros e dourados, transmitindo credibilidade e tradição.",
+        "tech": ["Next.js", "Tailwind CSS", "Sanity CMS", "Vercel", "Google Analytics"],
         "metrics": [
-          { "value": "150", "suffix": "%", "label": "Aumento em vendas" },
-          { "value": "3", "suffix": "s", "label": "Tempo de carregamento" },
-          { "value": "50", "suffix": "k+", "label": "Usuários ativos" }
+          { "value": "320", "suffix": "%", "label": "Aumento em leads orgânicos" },
+          { "value": "2.1", "suffix": "s", "label": "Tempo de carregamento" },
+          { "value": "45", "suffix": "%", "label": "Taxa de conversão" }
         ]
       },
       {
-        "title": "Sistema de Gestão Interna",
-        "category": "Sistema Interno",
-        "mockupType": "system",
-        "description": "ERP customizado com dashboards em tempo real, automação de processos e integração com ferramentas existentes. Interface intuitiva com controle de permissões e relatórios automatizados.",
-        "tech": ["React", "Python", "FastAPI", "Redis", "Docker"],
+        "title": "Site Institucional — Rede de Clínicas",
+        "category": "Site Institucional",
+        "mockupType": "site-health",
+        "description": "Plataforma web para rede de clínicas com agendamento online, painel de especialidades, integração com WhatsApp e área do paciente. Interface clean e acolhedora com foco em acessibilidade.",
+        "tech": ["Next.js", "Node.js", "PostgreSQL", "Twilio", "AWS"],
         "metrics": [
-          { "value": "80", "suffix": "%", "label": "Redução de retrabalho" },
-          { "value": "200", "suffix": "+", "label": "Processos automatizados" },
-          { "value": "35", "suffix": "%", "label": "Economia em custos" }
+          { "value": "70", "suffix": "%", "label": "Agendamentos online" },
+          { "value": "15", "suffix": "k+", "label": "Visitas/mês" },
+          { "value": "4.9", "suffix": "", "label": "Avaliação Google" }
         ]
       },
       {
-        "title": "App de Delivery Multiplataforma",
-        "category": "Aplicativo",
-        "mockupType": "app",
-        "description": "Aplicativo nativo para iOS e Android com rastreamento em tempo real, chat integrado e sistema de avaliações. Arquitetura escalável suportando milhares de pedidos simultâneos.",
+        "title": "Site Institucional — Construtora & Incorporadora",
+        "category": "Site Institucional",
+        "mockupType": "site-realestate",
+        "description": "Site para construtora com catálogo de empreendimentos, tour virtual, simulador de financiamento e captação de interessados por unidade. Design premium com galeria imersiva e integração com CRM.",
+        "tech": ["Next.js", "Three.js", "Strapi CMS", "HubSpot", "Cloudflare"],
+        "metrics": [
+          { "value": "200", "suffix": "+", "label": "Leads qualificados/mês" },
+          { "value": "85", "suffix": "%", "label": "Aumento em visitas" },
+          { "value": "12", "suffix": "s", "label": "Tempo médio na página" }
+        ]
+      },
+      {
+        "title": "Landing Page — Plataforma SaaS B2B",
+        "category": "Landing Page",
+        "mockupType": "landing-saas",
+        "description": "Landing page de alta conversão para plataforma SaaS B2B com demonstração interativa do produto, social proof, calculadora de ROI e funil de captação otimizado com A/B testing.",
+        "tech": ["Next.js", "Framer Motion", "Mixpanel", "Stripe", "Vercel"],
+        "metrics": [
+          { "value": "12", "suffix": "%", "label": "Taxa de conversão" },
+          { "value": "850", "suffix": "+", "label": "Trials/mês" },
+          { "value": "3.2", "suffix": "x", "label": "ROI em 6 meses" }
+        ]
+      },
+      {
+        "title": "Landing Page — Evento Corporativo",
+        "category": "Landing Page",
+        "mockupType": "landing-event",
+        "description": "Landing page para evento corporativo de tecnologia com countdown, grade de palestrantes, sistema de inscrição com ingressos e integração com gateway de pagamento. Design impactante com animações e urgência.",
+        "tech": ["React", "Node.js", "Stripe", "SendGrid", "Firebase"],
+        "metrics": [
+          { "value": "2.5", "suffix": "k+", "label": "Inscrições em 30 dias" },
+          { "value": "95", "suffix": "%", "label": "Taxa de ocupação" },
+          { "value": "8", "suffix": "s", "label": "Tempo médio até inscrição" }
+        ]
+      },
+      {
+        "title": "App Mobile — Sistema Interno & Catálogo",
+        "category": "Aplicativo Mobile",
+        "mockupType": "app-internal",
+        "description": "App mobile para operações internas com catálogo de produtos, controle de estoque em campo, abertura de chamados e comunicação entre equipes. Offline-first com sincronização automática, integrado ao ERP existente.",
         "tech": ["React Native", "Node.js", "MongoDB", "Socket.io", "Firebase"],
         "metrics": [
+          { "value": "60", "suffix": "%", "label": "Aumento em produtividade" },
           { "value": "4.8", "suffix": "", "label": "Nota nas lojas" },
-          { "value": "25", "suffix": "k+", "label": "Downloads" },
-          { "value": "98", "suffix": "%", "label": "Uptime" }
+          { "value": "1.5", "suffix": "k+", "label": "Usuários ativos" }
         ]
       },
       {
-        "title": "Dashboard Analytics Corporativo",
-        "category": "Dashboard",
-        "mockupType": "dashboard",
-        "description": "Painel de visualização de dados em tempo real para tomada de decisão executiva. Gráficos interativos, KPIs customizáveis e relatórios automatizados exportáveis em múltiplos formatos.",
-        "tech": ["React", "D3.js", "Python", "PostgreSQL", "Metabase"],
+        "title": "App Mobile — Força de Vendas em Campo",
+        "category": "Aplicativo Mobile",
+        "mockupType": "app-field",
+        "description": "App para equipe de vendas externa com roteirização de visitas, checklist de tarefas, coleta de pedidos e relatório fotográfico. GPS integrado para comprovação de presença e dashboard gerencial em tempo real.",
+        "tech": ["React Native", "Node.js", "PostgreSQL", "Redis", "AWS"],
         "metrics": [
-          { "value": "60", "suffix": "%", "label": "Decisões mais rápidas" },
-          { "value": "15", "suffix": "+", "label": "Fontes de dados" },
-          { "value": "100", "suffix": "+", "label": "Usuários ativos" }
+          { "value": "40", "suffix": "%", "label": "Aumento em visitas/dia" },
+          { "value": "25", "suffix": "%", "label": "Crescimento em vendas" },
+          { "value": "300", "suffix": "+", "label": "Vendedores ativos" }
+        ]
+      },
+      {
+        "title": "Dashboard de Gestão Financeira",
+        "category": "Dashboard",
+        "mockupType": "dashboard-finance",
+        "description": "Dashboard executivo para gestão financeira com KPIs em tempo real, gráficos interativos, conciliação bancária automática e alertas inteligentes. Painéis customizáveis com drill-down por período, unidade e centro de custo.",
+        "tech": ["Next.js", "Python", "PostgreSQL", "Redis", "Docker"],
+        "metrics": [
+          { "value": "80", "suffix": "%", "label": "Redução em tempo de análise" },
+          { "value": "3", "suffix": "k+", "label": "Transações/dia" },
+          { "value": "99.9", "suffix": "%", "label": "Uptime" }
+        ]
+      },
+      {
+        "title": "Sistema de Logística & Rastreamento",
+        "category": "Sistema Web",
+        "mockupType": "system-logistics",
+        "description": "Plataforma de roteirização e rastreamento com mapa em tempo real, gestão de frotas, alertas de desvio de rota e relatórios de desempenho. Algoritmos de otimização para redução de custos e aumento de entregas no prazo.",
+        "tech": ["React", "Python", "FastAPI", "MongoDB", "Google Maps"],
+        "metrics": [
+          { "value": "35", "suffix": "%", "label": "Redução de custos logísticos" },
+          { "value": "200", "suffix": "+", "label": "Veículos gerenciados" },
+          { "value": "98", "suffix": "%", "label": "Entregas no prazo" }
         ]
       }
     ],
     "techTitle": "Tecnologias",
-    "metricsTitle": "Resultados"
+    "metricsTitle": "Resultados",
+    "ctaButton": "Iniciar Projeto"
   },
   "about": {
     "heroTitle": "Sobre a KORT.X",
@@ -476,6 +548,7 @@
       "company": "Empresa",
       "legal": "Legal"
     },
+    "offices": "Escritórios",
     "legalLinks": {
       "privacy": "Política de Privacidade",
       "terms": "Termos de Uso"

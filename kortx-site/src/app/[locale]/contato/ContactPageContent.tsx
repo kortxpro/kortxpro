@@ -3,13 +3,26 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Mail, MapPin, Phone, Send, CheckCircle2 } from "lucide-react";
+import { Mail, MapPin, Phone, Send, CheckCircle2, AlertCircle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
+type FormStatus = "idle" | "loading" | "success" | "error";
+
 export function ContactPageContent() {
   const t = useTranslations("contact");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<FormStatus>("idle");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    phone: "",
+    service: "",
+    budget: "",
+    message: "",
+  });
 
   const serviceOptions = Array.from({ length: 12 }, (_, i) =>
     t(`fields.serviceOptions.${i}`)
@@ -26,12 +39,40 @@ export function ContactPageContent() {
     phone: t(`offices.${i}.phone`),
   }));
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const inputStyles = "w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-[#0A1628] placeholder-gray-400 focus:outline-none focus:border-[#00A3FF] focus:ring-1 focus:ring-[#00A3FF] transition-colors";
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || "Erro ao enviar");
+      }
+
+      setStatus("success");
+    } catch (err) {
+      setStatus("error");
+      setErrorMessage(
+        err instanceof Error ? err.message : "Erro ao enviar solicitação"
+      );
+    }
+  };
+
+  const inputStyles =
+    "w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-[#0A1628] placeholder-gray-400 focus:outline-none focus:border-[#00A3FF] focus:ring-1 focus:ring-[#00A3FF] transition-colors";
 
   return (
     <div className="min-h-screen">
@@ -71,7 +112,7 @@ export function ContactPageContent() {
                     {t("formTitle")}
                   </h2>
 
-                  {submitted ? (
+                  {status === "success" ? (
                     <div className="text-center py-12">
                       <CheckCircle2 className="w-16 h-16 text-green-500 mx-auto mb-4" />
                       <h3 className="text-2xl font-bold text-[#0A1628] mb-2">
@@ -89,7 +130,10 @@ export function ContactPageContent() {
                           </label>
                           <input
                             type="text"
+                            name="name"
                             required
+                            value={formData.name}
+                            onChange={handleChange}
                             className={inputStyles}
                           />
                         </div>
@@ -101,7 +145,10 @@ export function ContactPageContent() {
                           </label>
                           <input
                             type="email"
+                            name="email"
                             required
+                            value={formData.email}
+                            onChange={handleChange}
                             className={inputStyles}
                           />
                         </div>
@@ -113,6 +160,9 @@ export function ContactPageContent() {
                           </label>
                           <input
                             type="text"
+                            name="company"
+                            value={formData.company}
+                            onChange={handleChange}
                             className={inputStyles}
                           />
                         </div>
@@ -124,6 +174,9 @@ export function ContactPageContent() {
                           </label>
                           <input
                             type="tel"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
                             className={inputStyles}
                           />
                         </div>
@@ -133,15 +186,15 @@ export function ContactPageContent() {
                           <label className="block text-sm font-medium text-[#0A1628] mb-2">
                             {t("fields.service")}
                           </label>
-                          <select className={inputStyles}>
-                            <option value="">
-                              ---
-                            </option>
+                          <select
+                            name="service"
+                            value={formData.service}
+                            onChange={handleChange}
+                            className={inputStyles}
+                          >
+                            <option value="">---</option>
                             {serviceOptions.map((option, index) => (
-                              <option
-                                key={index}
-                                value={option}
-                              >
+                              <option key={index} value={option}>
                                 {option}
                               </option>
                             ))}
@@ -153,15 +206,15 @@ export function ContactPageContent() {
                           <label className="block text-sm font-medium text-[#0A1628] mb-2">
                             {t("fields.budget")}
                           </label>
-                          <select className={inputStyles}>
-                            <option value="">
-                              ---
-                            </option>
+                          <select
+                            name="budget"
+                            value={formData.budget}
+                            onChange={handleChange}
+                            className={inputStyles}
+                          >
+                            <option value="">---</option>
                             {budgetOptions.map((option, index) => (
-                              <option
-                                key={index}
-                                value={option}
-                              >
+                              <option key={index} value={option}>
                                 {option}
                               </option>
                             ))}
@@ -175,10 +228,21 @@ export function ContactPageContent() {
                           {t("fields.message")}
                         </label>
                         <textarea
+                          name="message"
                           rows={5}
+                          value={formData.message}
+                          onChange={handleChange}
                           className={`${inputStyles} resize-none`}
                         />
                       </div>
+
+                      {/* Error message */}
+                      {status === "error" && (
+                        <div className="flex items-center gap-2 p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+                          <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                          <span>{errorMessage}</span>
+                        </div>
+                      )}
 
                       {/* Submit */}
                       <Button
@@ -186,9 +250,19 @@ export function ContactPageContent() {
                         variant="corporate"
                         size="lg"
                         className="w-full group"
+                        disabled={status === "loading"}
                       >
-                        {t("submit")}
-                        <Send className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                        {status === "loading" ? (
+                          <>
+                            <span className="btn-spinner mr-2" />
+                            Enviando...
+                          </>
+                        ) : (
+                          <>
+                            {t("submit")}
+                            <Send className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                          </>
+                        )}
                       </Button>
 
                       <p className="text-center text-sm text-[#64748B]">

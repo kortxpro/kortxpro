@@ -3,11 +3,10 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroInstitutional } from "@/components/sections/HeroInstitutional";
 import { ServicesPreview } from "@/components/sections/ServicesPreview";
+import { ClientLogos } from "@/components/sections/ClientLogos";
 import { PortfolioPreview } from "@/components/sections/PortfolioPreview";
 import { AboutPreview } from "@/components/sections/AboutPreview";
 import { CTAInstitutional } from "@/components/sections/CTAInstitutional";
-
-export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -24,8 +23,16 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       type: "website",
+      url: `https://kortx.pro/${locale}`,
       locale: locale === "pt-BR" ? "pt_BR" : "en_US",
       siteName: "KORT.X",
+      images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "KORT.X" }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/og-image.png"],
     },
   };
 }
@@ -37,6 +44,7 @@ export default function HomePage() {
       <main>
         <HeroInstitutional />
         <ServicesPreview />
+        <ClientLogos />
         <PortfolioPreview />
         <AboutPreview />
         <CTAInstitutional />
