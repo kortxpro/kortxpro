@@ -3,22 +3,22 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
-import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GradientButton } from "@/components/ui/GradientButton";
+import { letterRevealContainer, letterRevealChild } from "@/lib/animations";
 
 const navItems = [
-  { key: "services", href: "/servicos" as const },
-  { key: "portfolio", href: "/portfolio" as const },
-  { key: "about", href: "/sobre" as const },
-  { key: "aiFirst", href: "/ai-first" as const },
+  { key: "services", href: "/servicos" as const, num: "01" },
+  { key: "portfolio", href: "/portfolio" as const, num: "02" },
+  { key: "about", href: "/sobre" as const, num: "03" },
+  { key: "aiFirst", href: "/ai-first" as const, num: "04" },
+  { key: "contact", href: "/contato" as const, num: "05" },
 ] as const;
 
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -27,84 +27,79 @@ export function Header() {
   }, []);
 
   useEffect(() => {
-    setMobileOpen(false);
+    setOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
 
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
-            ? "bg-[#050a12]/80 backdrop-blur-xl border-b border-white/[0.06]"
-            : "bg-transparent"
+          scrolled && !open ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="text-xl font-bold tracking-tight text-white">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+          <Link href="/" className="font-display text-xl tracking-tight text-white relative z-50">
             KORT<span className="text-accent">.</span>X
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-1">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
-              return (
-                <Link
-                  key={item.key}
-                  href={item.href}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    isActive
-                      ? "text-white bg-white/[0.08]"
-                      : "text-white/60 hover:text-white hover:bg-white/[0.05]"
-                  }`}
-                >
-                  {t(item.key)}
-                </Link>
-              );
-            })}
-          </nav>
-
-          {/* Desktop CTA */}
-          <div className="hidden md:block">
-            <Link href="/contato">
-              <GradientButton size="sm">{t("cta")}</GradientButton>
-            </Link>
-          </div>
-
-          {/* Mobile Toggle */}
           <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden p-2 text-white/70 hover:text-white"
-            aria-label="Menu"
+            onClick={() => setOpen(!open)}
+            className="font-mono text-sm uppercase tracking-widest text-text-secondary hover:text-white transition-colors relative z-50"
           >
-            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+            {open ? "Close" : "Menu"}
           </button>
         </div>
       </header>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
-        {mobileOpen && (
+        {open && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-[#050a12]/95 backdrop-blur-xl flex flex-col items-center justify-center gap-6"
+            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="fixed inset-0 z-40 bg-black noise-overlay flex flex-col justify-center"
           >
-            {navItems.map((item) => (
-              <Link
-                key={item.key}
-                href={item.href}
-                className="text-2xl font-medium text-white/70 hover:text-white transition-colors"
+            <nav className="relative z-10 px-6 md:px-10 max-w-[1440px] mx-auto w-full">
+              <motion.div
+                variants={letterRevealContainer}
+                initial="hidden"
+                animate="visible"
+                className="flex flex-col gap-2"
               >
-                {t(item.key)}
-              </Link>
-            ))}
-            <Link href="/contato" className="mt-4">
-              <GradientButton>{t("cta")}</GradientButton>
-            </Link>
+                {navItems.map((item) => (
+                  <motion.div key={item.key} variants={letterRevealChild}>
+                    <Link
+                      href={item.href}
+                      className="group flex items-baseline gap-4 py-3 md:py-4"
+                    >
+                      <span className="font-mono text-xs text-text-muted">
+                        {item.num}
+                      </span>
+                      <span className="font-display text-display-lg text-white group-hover:text-accent transition-colors duration-300">
+                        {t(item.key)}
+                      </span>
+                    </Link>
+                  </motion.div>
+                ))}
+              </motion.div>
+
+              <div className="mt-16 pt-8 border-t border-border">
+                <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
+                  <a href="mailto:contato@kortx.pro" className="font-mono text-sm text-accent hover:text-accent/80 transition-colors">
+                    contato@kortx.pro
+                  </a>
+                  <span className="font-mono text-xs text-text-muted">
+                    Orlando, FL / Rio de Janeiro, RJ
+                  </span>
+                </div>
+              </div>
+            </nav>
           </motion.div>
         )}
       </AnimatePresence>

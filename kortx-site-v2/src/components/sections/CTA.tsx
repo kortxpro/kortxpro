@@ -2,55 +2,45 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/navigation";
-import { NeuralNetwork } from "@/components/ui/NeuralNetwork";
-import { GradientButton } from "@/components/ui/GradientButton";
-import { fadeInUp, staggerContainer, viewportOnce } from "@/lib/animations";
+import { clipReveal, fadeUp, viewportOnce } from "@/lib/animations";
 
 export function CTA() {
   const t = useTranslations("cta");
 
   return (
-    <section className="relative py-32 md:py-40 overflow-hidden">
-      {/* Neural Network Background (fewer particles) */}
-      <div className="absolute inset-0">
-        <NeuralNetwork particleCount={50} connectionDistance={140} />
-      </div>
+    <section className="relative bg-black noise-overlay py-32 md:py-40 px-6 md:px-10 overflow-hidden">
+      {/* Accent line full-width top */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-accent/30" />
 
-      {/* Light beam effect */}
-      <div className="light-beam" />
-
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-bg-primary via-transparent to-bg-primary" />
-
-      {/* Content */}
-      <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportOnce}
-        className="relative z-10 max-w-3xl mx-auto px-6 text-center"
-      >
+      <div className="max-w-[1440px] mx-auto relative z-10">
         <motion.h2
-          variants={fadeInUp}
-          className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight gradient-text-accent leading-tight"
+          variants={clipReveal}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="font-display text-display-lg text-white max-w-[18ch]"
         >
           {t("headline")}
         </motion.h2>
 
-        <motion.p
-          variants={fadeInUp}
-          className="mt-6 text-lg text-white/60 max-w-xl mx-auto"
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={viewportOnce}
+          className="mt-12"
         >
-          {t("sub")}
-        </motion.p>
-
-        <motion.div variants={fadeInUp} className="mt-10">
-          <Link href="/contato">
-            <GradientButton size="lg">{t("button")}</GradientButton>
-          </Link>
+          <a
+            href="mailto:contato@kortx.pro"
+            className="font-mono text-lg md:text-xl text-accent inline-flex items-center gap-3 group"
+          >
+            <span>contato@kortx.pro</span>
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
+              &rarr;
+            </span>
+          </a>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 }

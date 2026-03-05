@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectMockup, type MockupVariant } from "@/components/ui/ProjectMockup";
-import { fadeInUp, staggerContainer, viewportOnce } from "@/lib/animations";
+import { clipReveal, fadeUp, scaleReveal, viewportOnce } from "@/lib/animations";
 
 const projects: { key: string; variant: MockupVariant; category: string }[] = [
   { key: "1", variant: "site-law", category: "sites" },
@@ -28,73 +28,102 @@ export function PortfolioContent() {
 
   return (
     <div className="pt-32 pb-24">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <motion.div
-          variants={fadeInUp}
+      {/* Hero */}
+      <div className="px-6 md:px-10 max-w-[1440px] mx-auto mb-12">
+        <motion.h1
+          variants={clipReveal}
           initial="hidden"
           animate="visible"
-          className="text-center mb-12"
+          className="font-display text-display-lg text-white"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight gradient-text">
-            {t("headline")}
-          </h1>
-          <p className="mt-4 text-lg text-text-secondary max-w-xl mx-auto">
-            {t("sub")}
-          </p>
-        </motion.div>
-
-        {/* Filters */}
-        <motion.div
-          variants={fadeInUp}
+          {t("headline")}
+        </motion.h1>
+        <motion.p
+          variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="flex flex-wrap justify-center gap-2 mb-12"
+          className="mt-4 text-text-secondary max-w-xl text-lg"
+        >
+          {t("sub")}
+        </motion.p>
+      </div>
+
+      {/* Filter: text links mono */}
+      <div className="px-6 md:px-10 max-w-[1440px] mx-auto mb-16">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-wrap gap-4 font-mono text-sm"
         >
           {filters.map((filter) => (
             <button
               key={filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+              className={`transition-colors ${
                 activeFilter === filter
-                  ? "bg-accent text-white"
-                  : "bg-bg-elevated text-text-secondary hover:text-white border border-white/[0.06]"
+                  ? "text-accent"
+                  : "text-text-muted hover:text-text"
               }`}
             >
               {t(`filter.${filter}`)}
             </button>
           ))}
         </motion.div>
+      </div>
 
-        {/* Projects Grid */}
-        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <AnimatePresence mode="popLayout">
-            {filtered.map((project) => (
-              <motion.div
-                key={project.key}
-                layout
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.95 }}
-                transition={{ duration: 0.3 }}
-                className="group p-5 rounded-2xl bg-bg-elevated border border-white/[0.06] hover:border-accent/30 transition-colors duration-500"
-              >
-                <ProjectMockup variant={project.variant} />
-                <div className="mt-4">
-                  <span className="font-mono text-xs text-accent uppercase tracking-wider">
-                    {t(`filter.${project.category}`)}
+      {/* Vertical list — each project ~60vh */}
+      <div className="px-6 md:px-10 max-w-[1440px] mx-auto">
+        <AnimatePresence mode="popLayout">
+          {filtered.map((project, i) => (
+            <motion.div
+              key={project.key}
+              layout
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            >
+              {/* Numbered divider */}
+              {i > 0 && (
+                <div className="flex items-center gap-4 my-12 md:my-16">
+                  <span className="font-mono text-xs text-text-muted">
+                    {String(i).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-1 text-lg font-semibold text-white">
-                    {t(`projects.${project.key}.title`)}
-                  </h3>
-                  <p className="mt-1 text-sm text-text-secondary">
-                    {t(`projects.${project.key}.description`)}
-                  </p>
+                  <div className="flex-1 h-px bg-border" />
+                  <span className="font-mono text-xs text-text-muted">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+              )}
+
+              <motion.div
+                variants={scaleReveal}
+                initial="hidden"
+                whileInView="visible"
+                viewport={viewportOnce}
+                className="min-h-[50vh] md:min-h-[60vh] flex flex-col justify-center"
+              >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+                  <div>
+                    <ProjectMockup variant={project.variant} />
+                  </div>
+                  <div>
+                    <span className="font-mono text-xs text-accent uppercase tracking-wider">
+                      {t(`filter.${project.category}`)}
+                    </span>
+                    <h2 className="font-display text-display-sm text-white mt-2">
+                      {t(`projects.${project.key}.title`)}
+                    </h2>
+                    <p className="mt-4 text-text-secondary leading-relaxed">
+                      {t(`projects.${project.key}.description`)}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
       </div>
     </div>
   );

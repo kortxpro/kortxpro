@@ -72,14 +72,44 @@
         "description": "Site corporativo para escritório de advocacia com foco em autoridade e geração de leads qualificados."
       },
       "2": {
-        "title": "Plataforma SaaS — Gestão",
-        "category": "Plataforma Web",
-        "description": "Plataforma de gestão com dashboard, integrações e automação de processos internos."
+        "title": "Site Institucional — Clínica de Saúde",
+        "category": "Website",
+        "description": "Plataforma online para clínica médica com agendamento, especialidades e portal do paciente."
       },
       "3": {
-        "title": "App de Gestão em Campo",
+        "title": "Site Institucional — Construtora",
+        "category": "Website",
+        "description": "Site de empreendimentos imobiliários com tour virtual e galeria de projetos."
+      },
+      "4": {
+        "title": "Landing Page — SaaS",
+        "category": "Landing Page",
+        "description": "Landing page de alta conversão para produto SaaS com hero animado e social proof."
+      },
+      "5": {
+        "title": "Landing Page — Evento",
+        "category": "Landing Page",
+        "description": "Página de evento corporativo com countdown, programação e inscrição online."
+      },
+      "6": {
+        "title": "App — Sistema Interno",
         "category": "Mobile App",
-        "description": "Aplicativo mobile para equipes de campo com controle de tarefas, rotas e relatórios em tempo real."
+        "description": "Aplicativo de gestão interna com catálogo de produtos, chamados e controle de estoque."
+      },
+      "7": {
+        "title": "App — Gestão em Campo",
+        "category": "Mobile App",
+        "description": "App mobile para equipes de campo com checklist, rotas e relatórios offline."
+      },
+      "8": {
+        "title": "Dashboard Financeiro",
+        "category": "Dashboard",
+        "description": "Painel de gestão financeira com fluxo de caixa, métricas e relatórios exportáveis."
+      },
+      "9": {
+        "title": "Sistema de Logística",
+        "category": "Sistema",
+        "description": "Sistema de operações logísticas com rastreamento em tempo real e gestão de frotas."
       }
     }
   },

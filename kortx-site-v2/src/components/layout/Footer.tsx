@@ -8,71 +8,36 @@ export function Footer() {
   const tn = useTranslations("nav");
 
   return (
-    <footer className="relative bg-bg-primary border-t border-white/[0.06]">
-      {/* Glow line */}
-      <div className="glow-line" />
+    <footer className="bg-black px-6 md:px-10 py-10">
+      <div className="max-w-[1440px] mx-auto">
+        {/* Row 1: Logo + Nav Links */}
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
+          <Link href="/" className="font-display text-xl tracking-tight text-white">
+            KORT<span className="text-accent">.</span>X
+          </Link>
 
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <div className="text-xl font-bold tracking-tight text-white mb-4">
-              KORT<span className="text-accent">.</span>X
-            </div>
-            <p className="text-sm text-text-secondary leading-relaxed">
-              {t("description")}
-            </p>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <h4 className="font-mono text-xs uppercase tracking-wider text-text-muted mb-4">
-              {t("navigation")}
-            </h4>
-            <ul className="space-y-3">
-              <li><Link href="/" className="text-sm text-text-secondary hover:text-white transition-colors">{t("home")}</Link></li>
-              <li><Link href="/servicos" className="text-sm text-text-secondary hover:text-white transition-colors">{tn("services")}</Link></li>
-              <li><Link href="/portfolio" className="text-sm text-text-secondary hover:text-white transition-colors">{tn("portfolio")}</Link></li>
-              <li><Link href="/sobre" className="text-sm text-text-secondary hover:text-white transition-colors">{tn("about")}</Link></li>
-              <li><Link href="/ai-first" className="text-sm text-text-secondary hover:text-white transition-colors">{tn("aiFirst")}</Link></li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="font-mono text-xs uppercase tracking-wider text-text-muted mb-4">
-              {t("company")}
-            </h4>
-            <ul className="space-y-3">
-              <li><span className="text-sm text-text-secondary">{t("blog")}</span></li>
-              <li><span className="text-sm text-text-secondary">{t("careers")}</span></li>
-              <li><span className="text-sm text-text-secondary">{t("privacy")}</span></li>
-              <li><span className="text-sm text-text-secondary">{t("terms")}</span></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-mono text-xs uppercase tracking-wider text-text-muted mb-4">
-              {t("contactTitle")}
-            </h4>
-            <ul className="space-y-3">
-              <li><a href="mailto:contato@kortx.pro" className="text-sm font-mono text-text-secondary hover:text-white transition-colors">{t("emailGeneral")}</a></li>
-              <li><a href="mailto:hello@kortx.pro" className="text-sm font-mono text-text-secondary hover:text-white transition-colors">{t("emailUS")}</a></li>
-              <li><span className="text-sm font-mono text-text-secondary">{t("phone")}</span></li>
-            </ul>
-          </div>
+          <nav className="flex flex-wrap items-center gap-1 font-mono text-xs uppercase tracking-wider">
+            <Link href="/servicos" className="text-text-secondary hover:text-white transition-colors px-2 py-1">{tn("services")}</Link>
+            <span className="text-text-muted">/</span>
+            <Link href="/portfolio" className="text-text-secondary hover:text-white transition-colors px-2 py-1">{tn("portfolio")}</Link>
+            <span className="text-text-muted">/</span>
+            <Link href="/sobre" className="text-text-secondary hover:text-white transition-colors px-2 py-1">{tn("about")}</Link>
+            <span className="text-text-muted">/</span>
+            <Link href="/ai-first" className="text-text-secondary hover:text-white transition-colors px-2 py-1">{tn("aiFirst")}</Link>
+            <span className="text-text-muted">/</span>
+            <Link href="/contato" className="text-text-secondary hover:text-white transition-colors px-2 py-1">{tn("contact")}</Link>
+          </nav>
         </div>
 
-        {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-white/[0.06] flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-text-muted">
+        {/* Row 2: Copyright + Locations */}
+        <div className="border-t border-border pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="font-mono text-xs text-text-muted">
             &copy; {new Date().getFullYear()} KORT.X. {t("rights")}
           </p>
-          <div className="flex items-center gap-4">
-            <span className="font-mono text-xs text-text-muted">Orlando, FL</span>
-            <span className="text-text-muted/30">|</span>
-            <span className="font-mono text-xs text-text-muted">Rio de Janeiro, RJ</span>
+          <div className="flex items-center gap-3 font-mono text-xs text-text-muted">
+            <span>Orlando, FL</span>
+            <span className="text-text-muted/40">/</span>
+            <span>Rio de Janeiro, RJ</span>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Inter, Roboto_Mono } from "next/font/google";
+import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -6,8 +6,16 @@ export const inter = Inter({
   display: "swap",
 });
 
-export const robotoMono = Roboto_Mono({
+export const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-mono",
+  variable: "--font-space-grotesk",
+  weight: ["700"],
+  display: "swap",
+});
+
+export const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+  weight: ["400", "500"],
   display: "swap",
 });

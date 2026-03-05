@@ -1,71 +1,92 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
-import { fadeInUp, staggerContainer, viewportOnce } from "@/lib/animations";
+import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
+import { useRef } from "react";
+import { fadeUp, viewportOnce } from "@/lib/animations";
 
 const steps = ["1", "2", "3", "4"] as const;
 
 export function Approach() {
   const t = useTranslations("approach");
+  const containerRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  const activeStep = useTransform(scrollYProgress, [0, 0.25, 0.5, 0.75, 1], [1, 1, 2, 3, 4]);
 
   return (
-    <section className="relative py-24 md:py-32 bg-bg-elevated overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="text-center mb-16 md:mb-20"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight gradient-text">
-            {t("headline")}
-          </h2>
-          <p className="mt-4 text-text-secondary max-w-xl mx-auto">
-            {t("sub")}
-          </p>
-        </motion.div>
-
-        {/* Steps */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="relative grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6"
-        >
-          {/* Connecting line (desktop only) */}
-          <div className="hidden md:block absolute top-16 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
-
-          {steps.map((step, i) => (
+    <section ref={containerRef} className="relative bg-black min-h-[300vh]">
+      <div className="sticky top-0 min-h-screen flex items-stretch px-6 md:px-10 overflow-hidden">
+        <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 py-20">
+          {/* LEFT (sticky content) */}
+          <div className="flex flex-col justify-center">
             <motion.div
-              key={step}
-              variants={fadeInUp}
-              className="relative text-center"
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={viewportOnce}
             >
-              {/* Step number */}
-              <div className="font-mono text-6xl md:text-7xl font-bold text-accent/[0.15] leading-none">
-                {String(i + 1).padStart(2, "0")}
-              </div>
-
-              {/* Dot on the line */}
-              <div className="hidden md:block absolute top-[60px] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-bg-elevated border-2 border-accent/40 z-10" />
-
-              {/* Title */}
-              <h3 className="mt-4 text-xl font-semibold text-white">
-                {t(`steps.${step}.title`)}
-              </h3>
-
-              {/* Description */}
-              <p className="mt-2 text-sm text-text-secondary leading-relaxed">
-                {t(`steps.${step}.description`)}
+              <h2 className="font-display text-display-lg text-white">
+                {t("headline")}
+              </h2>
+              <p className="mt-4 text-text-secondary max-w-sm">
+                {t("sub")}
               </p>
             </motion.div>
-          ))}
-        </motion.div>
+            {/* Giant step number */}
+            <StepNumber progress={activeStep} />
+          </div>
+
+          {/* RIGHT (scrolling steps) */}
+          <div className="flex flex-col">
+            {steps.map((step) => (
+              <div key={step} className="min-h-screen flex items-center">
+                <div>
+                  <span className="font-mono text-sm text-accent">
+                    {String(Number(step)).padStart(2, "0")}
+                  </span>
+                  <h3 className="font-display text-display-sm text-white mt-2">
+                    {t(`steps.${step}.title`)}
+                  </h3>
+                  <p className="mt-4 text-text-secondary leading-relaxed max-w-md">
+                    {t(`steps.${step}.description`)}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
+  );
+}
+
+function StepNumber({ progress }: { progress: MotionValue<number> }) {
+  return (
+    <div className="mt-12 relative h-24">
+      {steps.map((step) => (
+        <StepDigit key={step} step={Number(step)} progress={progress} />
+      ))}
+    </div>
+  );
+}
+
+function StepDigit({ step, progress }: { step: number; progress: MotionValue<number> }) {
+  const opacity = useTransform(
+    progress,
+    [step - 0.5, step, step + 0.5],
+    [0, 1, 0]
+  );
+
+  return (
+    <motion.span
+      className="absolute font-display text-display-xl text-accent/10"
+      style={{ opacity }}
+    >
+      {String(step).padStart(2, "0")}
+    </motion.span>
   );
 }

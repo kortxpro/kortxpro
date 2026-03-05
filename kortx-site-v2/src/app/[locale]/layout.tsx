@@ -3,7 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { inter, robotoMono } from "@/lib/fonts";
+import { inter, spaceGrotesk, jetbrainsMono } from "@/lib/fonts";
 import { OrganizationJsonLd, LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -52,13 +52,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${robotoMono.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <meta name="theme-color" content="#050a12" />
+        <meta name="theme-color" content="#000000" />
         <OrganizationJsonLd />
         <LocalBusinessJsonLd />
       </head>
-      <body className="font-sans antialiased bg-bg-primary text-text-primary overflow-x-hidden">
+      <body className="font-sans antialiased bg-black text-text overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>

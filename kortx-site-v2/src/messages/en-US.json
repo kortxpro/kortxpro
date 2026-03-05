@@ -72,14 +72,44 @@
         "description": "Corporate site for a law firm focused on building authority and generating qualified leads."
       },
       "2": {
-        "title": "SaaS Platform — Management",
-        "category": "Web Platform",
-        "description": "Management platform with dashboard, integrations and internal process automation."
+        "title": "Corporate Website — Health Clinic",
+        "category": "Website",
+        "description": "Online platform for a medical clinic with scheduling, specialties and patient portal."
       },
       "3": {
-        "title": "Field Management App",
+        "title": "Corporate Website — Construction",
+        "category": "Website",
+        "description": "Real estate development site with virtual tours and project gallery."
+      },
+      "4": {
+        "title": "Landing Page — SaaS",
+        "category": "Landing Page",
+        "description": "High-conversion landing page for a SaaS product with animated hero and social proof."
+      },
+      "5": {
+        "title": "Landing Page — Event",
+        "category": "Landing Page",
+        "description": "Corporate event page with countdown, schedule and online registration."
+      },
+      "6": {
+        "title": "App — Internal System",
         "category": "Mobile App",
-        "description": "Mobile app for field teams with task management, routes and real-time reporting."
+        "description": "Internal management app with product catalog, support tickets and inventory control."
+      },
+      "7": {
+        "title": "App — Field Management",
+        "category": "Mobile App",
+        "description": "Mobile app for field teams with checklists, routes and offline reporting."
+      },
+      "8": {
+        "title": "Financial Dashboard",
+        "category": "Dashboard",
+        "description": "Financial management panel with cash flow, metrics and exportable reports."
+      },
+      "9": {
+        "title": "Logistics System",
+        "category": "System",
+        "description": "Logistics operations system with real-time tracking and fleet management."
       }
     }
   },

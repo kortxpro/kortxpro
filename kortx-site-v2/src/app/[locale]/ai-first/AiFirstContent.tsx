@@ -2,96 +2,104 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/navigation";
-import { GradientButton } from "@/components/ui/GradientButton";
-import { NeuralNetwork } from "@/components/ui/NeuralNetwork";
-import { fadeInUp, staggerContainer, viewportOnce } from "@/lib/animations";
-import { Bot, Zap, Database, MessageCircle } from "lucide-react";
-
-const itemIcons = [Bot, Zap, Database, MessageCircle];
+import { clipReveal, fadeUp, viewportOnce, staggerContainer } from "@/lib/animations";
 
 export function AiFirstContent() {
   const t = useTranslations("aiFirst");
 
   return (
     <div className="pt-32 pb-24">
-      <div className="max-w-5xl mx-auto px-6">
-        {/* Header */}
-        <motion.div
-          variants={fadeInUp}
+      {/* Hero — tech-forward heavy mono */}
+      <div className="px-6 md:px-10 max-w-[1440px] mx-auto mb-24">
+        <motion.h1
+          variants={clipReveal}
           initial="hidden"
           animate="visible"
-          className="text-center mb-20"
+          className="font-display text-display-lg text-white"
         >
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight gradient-text-accent">
-            {t("headline")}
-          </h1>
-          <p className="mt-4 text-lg text-text-secondary max-w-2xl mx-auto">
-            {t("sub")}
-          </p>
-        </motion.div>
+          {t("headline")}
+        </motion.h1>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="mt-4 font-mono text-text-secondary max-w-2xl"
+        >
+          {t("sub")}
+        </motion.p>
+      </div>
 
-        {/* What it means */}
-        <motion.section
-          variants={staggerContainer}
+      {/* What it means */}
+      <div className="px-6 md:px-10 max-w-[1440px] mx-auto mb-24">
+        <motion.div
+          variants={staggerContainer(0.15)}
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="mb-24"
         >
-          <motion.h2 variants={fadeInUp} className="text-2xl md:text-3xl font-bold text-white mb-4">
+          <motion.h2 variants={fadeUp} className="font-mono text-lg text-accent mb-4">
             {t("what.headline")}
           </motion.h2>
-          <motion.p variants={fadeInUp} className="text-text-secondary leading-relaxed text-lg mb-12">
+          <motion.p variants={fadeUp} className="text-text-secondary leading-relaxed text-lg mb-16 max-w-3xl">
             {t("what.description")}
           </motion.p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {(["1", "2", "3", "4"] as const).map((key, i) => {
-              const Icon = itemIcons[i];
-              return (
-                <motion.div
-                  key={key}
-                  variants={fadeInUp}
-                  className="p-6 rounded-2xl bg-bg-elevated border border-white/[0.06] hover:border-accent/20 transition-colors duration-500"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center mb-4">
-                    <Icon size={20} className="text-accent" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
-                    {t(`what.items.${key}.title`)}
-                  </h3>
-                  <p className="text-sm text-text-secondary leading-relaxed">
-                    {t(`what.items.${key}.description`)}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </div>
-        </motion.section>
-
-        {/* CTA */}
-        <motion.section
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="relative py-20 rounded-2xl overflow-hidden"
-        >
-          <div className="absolute inset-0">
-            <NeuralNetwork particleCount={40} connectionDistance={130} />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-b from-bg-primary/80 via-transparent to-bg-primary/80" />
-          <div className="relative z-10 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold gradient-text-accent mb-6">
-              {t("cta.headline")}
-            </h2>
-            <Link href="/contato">
-              <GradientButton size="lg">{t("cta.button")}</GradientButton>
-            </Link>
-          </div>
-        </motion.section>
+        </motion.div>
       </div>
+
+      {/* Capabilities — full-width blocks with big numbers, mono titles */}
+      {(["1", "2", "3", "4"] as const).map((key, i) => {
+        const num = String(i + 1).padStart(2, "0");
+        return (
+          <motion.div
+            key={key}
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={viewportOnce}
+            className={`py-16 md:py-20 px-6 md:px-10 ${i % 2 === 0 ? "bg-black" : "bg-surface"}`}
+          >
+            <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20">
+              <div>
+                <span className="font-display text-[4rem] md:text-[6rem] leading-none text-accent/10">{num}</span>
+                <h3 className="font-mono text-lg text-white mt-2">
+                  {t(`what.items.${key}.title`)}
+                </h3>
+              </div>
+              <div className="flex items-center">
+                <p className="text-text-secondary leading-relaxed text-lg">
+                  {t(`what.items.${key}.description`)}
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        );
+      })}
+
+      {/* CTA — terminal aesthetic */}
+      <motion.section
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        className="py-32 px-6 md:px-10 bg-black"
+      >
+        <div className="max-w-[1440px] mx-auto">
+          <h2 className="font-display text-display-md text-white mb-8">
+            {t("cta.headline")}
+          </h2>
+          <a
+            href="mailto:contato@kortx.pro"
+            className="font-mono text-lg text-accent inline-flex items-center gap-1 group"
+          >
+            <span className="text-text-muted">&gt; </span>
+            <span>contato@kortx.pro</span>
+            <span
+              className="inline-block w-2 h-5 bg-accent ml-1"
+              style={{ animation: "blink 1s step-end infinite" }}
+            />
+          </a>
+        </div>
+      </motion.section>
     </div>
   );
 }
