@@ -2,7 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { HeroInstitutional } from "@/components/sections/HeroInstitutional";
-import { ServicesPreview } from "@/components/sections/ServicesPreview";
 import { ClientLogos } from "@/components/sections/ClientLogos";
 import { PortfolioPreview } from "@/components/sections/PortfolioPreview";
 import { AboutPreview } from "@/components/sections/AboutPreview";
@@ -43,7 +42,6 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroInstitutional />
-        <ServicesPreview />
         <ClientLogos />
         <PortfolioPreview />
         <AboutPreview />
