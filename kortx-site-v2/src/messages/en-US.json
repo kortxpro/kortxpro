@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "title": "KORT.X — Software that moves business",
+    "description": "We build websites, apps, systems and full digital platforms. Clean code, intentional design, real delivery.",
+    "keywords": "software development, apps, systems, websites, KORT.X"
+  },
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "aiFirst": "AI-First",
+    "cta": "Get in touch"
+  },
+  "hero": {
+    "tag": "Software Studio — Orlando & Rio",
+    "headline": "We build software that moves business.",
+    "sub": "From internal systems to full digital platforms. Clean code, intentional design, real delivery.",
+    "cta": "See our work",
+    "ctaSecondary": "Get in touch",
+    "scroll": "Scroll"
+  },
+  "metrics": {
+    "projects": "Projects Delivered",
+    "projectsValue": "150+",
+    "satisfaction": "Satisfaction",
+    "satisfactionValue": "98%",
+    "years": "Years in Business",
+    "yearsValue": "8+",
+    "offices": "Offices",
+    "officesValue": "2"
+  },
+  "whatWeBuild": {
+    "headline": "What we build",
+    "sub": "Every project is a custom solution. We don't use templates.",
+    "items": {
+      "sites": {
+        "title": "Websites & Platforms",
+        "description": "Corporate sites, landing pages and web platforms with built-in performance and SEO."
+      },
+      "apps": {
+        "title": "Mobile Apps",
+        "description": "Native and cross-platform apps for iOS and Android, with UX designed for the end user."
+      },
+      "systems": {
+        "title": "Internal Systems",
+        "description": "ERPs, CRMs and internal tools that automate processes and eliminate rework."
+      },
+      "landing": {
+        "title": "Landing Pages",
+        "description": "High-conversion pages for campaigns, launches and lead generation."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Full online stores with checkout, inventory and payment integrations."
+      },
+      "dashboards": {
+        "title": "Dashboards & Panels",
+        "description": "Management dashboards with real-time data, interactive charts and reports."
+      }
+    }
+  },
+  "work": {
+    "headline": "Our work",
+    "sub": "Selected projects that showcase our process and quality.",
+    "confidential": "Client names omitted due to contractual restrictions.",
+    "viewAll": "View all projects",
+    "projects": {
+      "1": {
+        "title": "Corporate Website — Law Firm",
+        "category": "Website",
+        "description": "Corporate site for a law firm focused on building authority and generating qualified leads."
+      },
+      "2": {
+        "title": "SaaS Platform — Management",
+        "category": "Web Platform",
+        "description": "Management platform with dashboard, integrations and internal process automation."
+      },
+      "3": {
+        "title": "Field Management App",
+        "category": "Mobile App",
+        "description": "Mobile app for field teams with task management, routes and real-time reporting."
+      }
+    }
+  },
+  "approach": {
+    "headline": "How we work",
+    "sub": "Straightforward process, no surprises. You follow every step.",
+    "steps": {
+      "1": {
+        "title": "Understand",
+        "description": "We map the problem, the audience and the goals before writing a single line of code."
+      },
+      "2": {
+        "title": "Design",
+        "description": "Prototypes and wireframes validated with you before implementation."
+      },
+      "3": {
+        "title": "Build",
+        "description": "Short sprints with incremental deliveries. You test from day one."
+      },
+      "4": {
+        "title": "Deliver",
+        "description": "Deployment, monitoring and post-launch support included in every project."
+      }
+    }
+  },
+  "global": {
+    "headline": "Global presence",
+    "sub": "Two offices, one quality standard.",
+    "orlando": {
+      "city": "Orlando",
+      "country": "United States",
+      "coords": "28.5383° N, 81.3792° W"
+    },
+    "rio": {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "coords": "22.9068° S, 43.1729° W"
+    }
+  },
+  "cta": {
+    "headline": "Ready to build something that works?",
+    "sub": "Tell us about your project. We respond within 24 hours.",
+    "button": "Start a conversation"
+  },
+  "footer": {
+    "description": "Software studio based in Orlando and Rio de Janeiro. We build digital solutions that work.",
+    "navigation": "Navigation",
+    "company": "Company",
+    "contactTitle": "Contact",
+    "home": "Home",
+    "blog": "Blog",
+    "careers": "Careers",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved.",
+    "emailGeneral": "contato@kortx.pro",
+    "emailUS": "hello@kortx.pro",
+    "phone": "+55 21 97001-3218"
+  },
+  "services": {
+    "headline": "Our services",
+    "sub": "From first wireframe to production deploy. We deliver complete projects with clean code and design that works.",
+    "items": {
+      "web": {
+        "title": "Web Development",
+        "description": "Sites, platforms and modern web applications with React, Next.js and Node.js. Performance, SEO and responsiveness are standard, not extras.",
+        "features": ["Corporate websites", "SaaS platforms", "E-commerce", "Portals & intranets"]
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "Apps for iOS and Android with React Native and Swift. User-centered design and integration with existing APIs.",
+        "features": ["Native apps", "Cross-platform apps", "API integration", "Push notifications"]
+      },
+      "systems": {
+        "title": "Systems & Automation",
+        "description": "Internal systems that replace spreadsheets and manual processes. ERPs, CRMs and custom-built tools.",
+        "features": ["Custom ERPs", "CRMs", "Process automation", "Integrations"]
+      },
+      "ai": {
+        "title": "AI Solutions",
+        "description": "We integrate artificial intelligence into existing products or build AI-first solutions from scratch.",
+        "features": ["Smart chatbots", "Data analysis", "LLM automation", "Computer vision"]
+      },
+      "design": {
+        "title": "UI/UX Design",
+        "description": "Interface design that makes sense. Research, prototypes and design systems to scale your product.",
+        "features": ["User research", "Wireframes", "Design systems", "Prototyping"]
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "description": "We help you make technology decisions. Architecture, stack, scaling and migration.",
+        "features": ["Software architecture", "Code review", "System migration", "Technical planning"]
+      }
+    }
+  },
+  "portfolio": {
+    "headline": "Portfolio",
+    "sub": "Real projects for real clients. Names omitted due to contractual restrictions.",
+    "filter": {
+      "all": "All",
+      "sites": "Websites",
+      "apps": "Apps",
+      "systems": "Systems",
+      "landing": "Landing Pages",
+      "dashboards": "Dashboards"
+    },
+    "projects": {
+      "1": { "title": "Corporate Website — Law Firm", "category": "sites", "description": "Corporate site with dark and gold design, focused on building authority and capturing qualified leads." },
+      "2": { "title": "Corporate Website — Health Clinic", "category": "sites", "description": "Online platform for a medical clinic with scheduling, specialties and patient portal." },
+      "3": { "title": "Corporate Website — Construction", "category": "sites", "description": "Real estate development site with virtual tours and project gallery." },
+      "4": { "title": "Landing Page — SaaS", "category": "landing", "description": "High-conversion landing page for a SaaS product with animated hero and social proof." },
+      "5": { "title": "Landing Page — Event", "category": "landing", "description": "Corporate event page with countdown, schedule and online registration." },
+      "6": { "title": "App — Internal System", "category": "apps", "description": "Internal management app with product catalog, support tickets and inventory control." },
+      "7": { "title": "App — Field Management", "category": "apps", "description": "Mobile app for field teams with checklists, routes and offline reporting." },
+      "8": { "title": "Financial Dashboard", "category": "dashboards", "description": "Financial management panel with cash flow, metrics and exportable reports." },
+      "9": { "title": "Logistics System", "category": "systems", "description": "Logistics operations system with real-time tracking and fleet management." }
+    }
+  },
+  "about": {
+    "headline": "About KORT.X",
+    "sub": "We're a software studio that exists to solve real problems with technology.",
+    "story": {
+      "headline": "Our story",
+      "p1": "KORT.X was born from frustration with software that doesn't work. Late projects, bad code, generic design. We decided to do it differently.",
+      "p2": "We started in Rio de Janeiro and expanded to Orlando. Today we serve clients on two continents with the same quality standard."
+    },
+    "values": {
+      "headline": "What guides us",
+      "items": {
+        "1": { "title": "Code is craft", "description": "We write code like craftsmen. Every line has a purpose." },
+        "2": { "title": "Design with intent", "description": "Every pixel exists for a reason. If it doesn't solve a problem, it doesn't ship." },
+        "3": { "title": "Real delivery", "description": "We promise what we can deliver. We deliver what we promise." },
+        "4": { "title": "Full transparency", "description": "You see everything: code, progress, decisions. No black boxes." }
+      }
+    },
+    "team": {
+      "headline": "Team",
+      "description": "Lean, multidisciplinary, senior team. No juniors learning on your project."
+    }
+  },
+  "contact": {
+    "headline": "Get in touch",
+    "sub": "Tell us about your project. We respond within 24 hours.",
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "company": "Company (optional)",
+      "phone": "Phone (optional)",
+      "service": "Project type",
+      "serviceOptions": {
+        "web": "Web Development",
+        "mobile": "Mobile App",
+        "system": "System / ERP",
+        "ai": "AI Solution",
+        "design": "UI/UX Design",
+        "consulting": "Consulting",
+        "other": "Other"
+      },
+      "budget": "Estimated budget",
+      "budgetOptions": {
+        "small": "Up to $5k",
+        "medium": "$5k - $20k",
+        "large": "$20k - $60k",
+        "enterprise": "Over $60k"
+      },
+      "message": "Tell us about your project",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "Failed to send. Please try again or reach out via email."
+    },
+    "info": {
+      "headline": "Other ways to reach us",
+      "email": "hello@kortx.pro",
+      "phone": "+55 21 97001-3218",
+      "address": "Orlando, FL & Rio de Janeiro, RJ"
+    }
+  },
+  "aiFirst": {
+    "headline": "AI-First Development",
+    "sub": "We don't bolt on AI as a feature. We build with AI from day one.",
+    "what": {
+      "headline": "What does AI-First mean?",
+      "description": "It means artificial intelligence isn't a module we add later. It's part of the architecture, the data flow and the user experience from the first commit.",
+      "items": {
+        "1": { "title": "Integrated LLMs", "description": "GPT-4, Claude and open-source models integrated directly into products." },
+        "2": { "title": "Smart automation", "description": "Processes that adapt and improve with usage, no fixed rules." },
+        "3": { "title": "Data as advantage", "description": "We turn raw data into actionable insights with ML pipelines." },
+        "4": { "title": "Conversational UX", "description": "Interfaces that understand natural language, not just clicks." }
+      }
+    },
+    "cta": {
+      "headline": "Want to build with AI?",
+      "button": "Get in touch"
+    }
+  }
+}

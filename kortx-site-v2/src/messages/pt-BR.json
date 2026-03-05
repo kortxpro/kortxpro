@@ -1,0 +1,279 @@
+{
+  "metadata": {
+    "title": "KORT.X — Software que move negócios",
+    "description": "Desenvolvemos sites, aplicativos, sistemas e plataformas digitais completas. Código limpo, design intencional, entrega real.",
+    "keywords": "desenvolvimento software, aplicativos, sistemas, sites, KORT.X"
+  },
+  "nav": {
+    "services": "Serviços",
+    "portfolio": "Portfolio",
+    "about": "Sobre",
+    "contact": "Contato",
+    "aiFirst": "AI-First",
+    "cta": "Fale conosco"
+  },
+  "hero": {
+    "tag": "Software Studio — Orlando & Rio",
+    "headline": "Construímos software que move negócios.",
+    "sub": "De sistemas internos a plataformas digitais completas. Código limpo, design intencional, entrega real.",
+    "cta": "Ver nosso trabalho",
+    "ctaSecondary": "Fale com a gente",
+    "scroll": "Scroll"
+  },
+  "metrics": {
+    "projects": "Projetos Entregues",
+    "projectsValue": "150+",
+    "satisfaction": "Satisfação",
+    "satisfactionValue": "98%",
+    "years": "Anos de Mercado",
+    "yearsValue": "8+",
+    "offices": "Escritórios",
+    "officesValue": "2"
+  },
+  "whatWeBuild": {
+    "headline": "O que construímos",
+    "sub": "Cada projeto é uma solução sob medida. Não usamos templates.",
+    "items": {
+      "sites": {
+        "title": "Sites & Plataformas",
+        "description": "Sites institucionais, landing pages e plataformas web com performance e SEO integrado."
+      },
+      "apps": {
+        "title": "Aplicativos Mobile",
+        "description": "Apps nativos e multiplataforma para iOS e Android, com UX pensada para o usuário final."
+      },
+      "systems": {
+        "title": "Sistemas Internos",
+        "description": "ERPs, CRMs e ferramentas internas que automatizam processos e eliminam retrabalho."
+      },
+      "landing": {
+        "title": "Landing Pages",
+        "description": "Páginas de alta conversão para campanhas, lançamentos e captação de leads."
+      },
+      "ecommerce": {
+        "title": "E-commerces",
+        "description": "Lojas virtuais completas com checkout, estoque e integrações de pagamento."
+      },
+      "dashboards": {
+        "title": "Dashboards & Painéis",
+        "description": "Painéis de gestão com dados em tempo real, gráficos interativos e relatórios."
+      }
+    }
+  },
+  "work": {
+    "headline": "Nosso trabalho",
+    "sub": "Projetos selecionados que demonstram nosso processo e qualidade.",
+    "confidential": "Nomes de clientes omitidos por restrição contratual.",
+    "viewAll": "Ver todos os projetos",
+    "projects": {
+      "1": {
+        "title": "Site Institucional — Advocacia",
+        "category": "Website",
+        "description": "Site corporativo para escritório de advocacia com foco em autoridade e geração de leads qualificados."
+      },
+      "2": {
+        "title": "Plataforma SaaS — Gestão",
+        "category": "Plataforma Web",
+        "description": "Plataforma de gestão com dashboard, integrações e automação de processos internos."
+      },
+      "3": {
+        "title": "App de Gestão em Campo",
+        "category": "Mobile App",
+        "description": "Aplicativo mobile para equipes de campo com controle de tarefas, rotas e relatórios em tempo real."
+      }
+    }
+  },
+  "approach": {
+    "headline": "Como trabalhamos",
+    "sub": "Processo direto, sem surpresas. Você acompanha cada etapa.",
+    "steps": {
+      "1": {
+        "title": "Entender",
+        "description": "Mapeamos o problema, o público e os objetivos antes de escrever uma linha de código."
+      },
+      "2": {
+        "title": "Desenhar",
+        "description": "Protótipos e wireframes validados com você antes da implementação."
+      },
+      "3": {
+        "title": "Construir",
+        "description": "Sprints curtos com entregas incrementais. Você testa desde o dia um."
+      },
+      "4": {
+        "title": "Entregar",
+        "description": "Deploy, monitoramento e suporte pós-lançamento inclusos no projeto."
+      }
+    }
+  },
+  "global": {
+    "headline": "Presença global",
+    "sub": "Dois escritórios, um padrão de qualidade.",
+    "orlando": {
+      "city": "Orlando",
+      "country": "Estados Unidos",
+      "coords": "28.5383° N, 81.3792° W"
+    },
+    "rio": {
+      "city": "Rio de Janeiro",
+      "country": "Brasil",
+      "coords": "22.9068° S, 43.1729° W"
+    }
+  },
+  "cta": {
+    "headline": "Pronto para construir algo que funciona?",
+    "sub": "Conte sobre seu projeto. Respondemos em até 24 horas.",
+    "button": "Iniciar conversa"
+  },
+  "footer": {
+    "description": "Software studio com presença em Orlando e Rio de Janeiro. Construímos soluções digitais que funcionam.",
+    "navigation": "Navegação",
+    "company": "Empresa",
+    "contactTitle": "Contato",
+    "home": "Início",
+    "blog": "Blog",
+    "careers": "Carreiras",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "rights": "Todos os direitos reservados.",
+    "emailGeneral": "contato@kortx.pro",
+    "emailUS": "hello@kortx.pro",
+    "phone": "+55 21 97001-3218"
+  },
+  "services": {
+    "headline": "Nossos serviços",
+    "sub": "Do primeiro wireframe ao deploy em produção. Entregamos projetos completos com código limpo e design que funciona.",
+    "items": {
+      "web": {
+        "title": "Desenvolvimento Web",
+        "description": "Sites, plataformas e aplicações web modernas com React, Next.js e Node.js. Performance, SEO e responsividade são padrão, não extra.",
+        "features": ["Sites institucionais", "Plataformas SaaS", "E-commerces", "Portais e intranets"]
+      },
+      "mobile": {
+        "title": "Desenvolvimento Mobile",
+        "description": "Apps para iOS e Android com React Native e Swift. Design centrado no usuário e integração com APIs existentes.",
+        "features": ["Apps nativos", "Apps multiplataforma", "Integração com APIs", "Push notifications"]
+      },
+      "systems": {
+        "title": "Sistemas & Automação",
+        "description": "Sistemas internos que eliminam planilhas e processos manuais. ERPs, CRMs e ferramentas sob medida.",
+        "features": ["ERPs customizados", "CRMs", "Automação de processos", "Integrações"]
+      },
+      "ai": {
+        "title": "Soluções com IA",
+        "description": "Integramos inteligência artificial em produtos existentes ou criamos soluções AI-first do zero.",
+        "features": ["Chatbots inteligentes", "Análise de dados", "Automação com LLMs", "Computer vision"]
+      },
+      "design": {
+        "title": "UI/UX Design",
+        "description": "Design de interfaces que fazem sentido. Pesquisa, protótipos e design systems para escalar seu produto.",
+        "features": ["Pesquisa de usuário", "Wireframes", "Design systems", "Prototipagem"]
+      },
+      "consulting": {
+        "title": "Consultoria Técnica",
+        "description": "Ajudamos a tomar decisões de tecnologia. Arquitetura, stack, escala e migração.",
+        "features": ["Arquitetura de software", "Code review", "Migração de sistemas", "Planejamento técnico"]
+      }
+    }
+  },
+  "portfolio": {
+    "headline": "Portfolio",
+    "sub": "Projetos reais para clientes reais. Nomes omitidos por restrição contratual.",
+    "filter": {
+      "all": "Todos",
+      "sites": "Sites",
+      "apps": "Apps",
+      "systems": "Sistemas",
+      "landing": "Landing Pages",
+      "dashboards": "Dashboards"
+    },
+    "projects": {
+      "1": { "title": "Site Institucional — Advocacia", "category": "sites", "description": "Site corporativo com design dark e dourado, focado em gerar autoridade e captar leads qualificados." },
+      "2": { "title": "Site Institucional — Clínica de Saúde", "category": "sites", "description": "Plataforma online para clínica médica com agendamento, especialidades e portal do paciente." },
+      "3": { "title": "Site Institucional — Construtora", "category": "sites", "description": "Site de empreendimentos imobiliários com tour virtual e galeria de projetos." },
+      "4": { "title": "Landing Page — SaaS", "category": "landing", "description": "Landing page de alta conversão para produto SaaS com hero animado e social proof." },
+      "5": { "title": "Landing Page — Evento", "category": "landing", "description": "Página de evento corporativo com countdown, programação e inscrição online." },
+      "6": { "title": "App — Sistema Interno", "category": "apps", "description": "Aplicativo de gestão interna com catálogo de produtos, chamados e controle de estoque." },
+      "7": { "title": "App — Gestão em Campo", "category": "apps", "description": "App mobile para equipes de campo com checklist, rotas e relatórios offline." },
+      "8": { "title": "Dashboard Financeiro", "category": "dashboards", "description": "Painel de gestão financeira com fluxo de caixa, métricas e relatórios exportáveis." },
+      "9": { "title": "Sistema de Logística", "category": "systems", "description": "Sistema de operações logísticas com rastreamento em tempo real e gestão de frotas." }
+    }
+  },
+  "about": {
+    "headline": "Sobre a KORT.X",
+    "sub": "Somos um software studio que existe para resolver problemas reais com tecnologia.",
+    "story": {
+      "headline": "Nossa história",
+      "p1": "A KORT.X nasceu da frustração com software que não funciona. Projetos atrasados, código ruim, design genérico. Decidimos fazer diferente.",
+      "p2": "Começamos no Rio de Janeiro e expandimos para Orlando. Hoje atendemos clientes em dois continentes com o mesmo padrão de qualidade."
+    },
+    "values": {
+      "headline": "O que nos guia",
+      "items": {
+        "1": { "title": "Código é craft", "description": "Escrevemos código como quem faz artesanato. Cada linha tem propósito." },
+        "2": { "title": "Design com intenção", "description": "Cada pixel existe por uma razão. Se não resolve um problema, não entra." },
+        "3": { "title": "Entrega real", "description": "Prometemos o que podemos entregar. Cumprimos o que prometemos." },
+        "4": { "title": "Transparência total", "description": "Você vê tudo: código, progresso, decisões. Sem caixas pretas." }
+      }
+    },
+    "team": {
+      "headline": "Equipe",
+      "description": "Time enxuto, multidisciplinar e sênior. Sem juniors aprendendo no seu projeto."
+    }
+  },
+  "contact": {
+    "headline": "Fale com a gente",
+    "sub": "Conte sobre seu projeto. Respondemos em até 24 horas.",
+    "form": {
+      "name": "Seu nome",
+      "email": "Seu email",
+      "company": "Empresa (opcional)",
+      "phone": "Telefone (opcional)",
+      "service": "Tipo de projeto",
+      "serviceOptions": {
+        "web": "Desenvolvimento Web",
+        "mobile": "App Mobile",
+        "system": "Sistema / ERP",
+        "ai": "Solução com IA",
+        "design": "UI/UX Design",
+        "consulting": "Consultoria",
+        "other": "Outro"
+      },
+      "budget": "Orçamento estimado",
+      "budgetOptions": {
+        "small": "Até R$ 15k",
+        "medium": "R$ 15k - 50k",
+        "large": "R$ 50k - 150k",
+        "enterprise": "Acima de R$ 150k"
+      },
+      "message": "Conte sobre seu projeto",
+      "submit": "Enviar mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada! Entraremos em contato em breve.",
+      "error": "Erro ao enviar. Tente novamente ou entre em contato por email."
+    },
+    "info": {
+      "headline": "Outras formas de contato",
+      "email": "contato@kortx.pro",
+      "phone": "+55 21 97001-3218",
+      "address": "Orlando, FL & Rio de Janeiro, RJ"
+    }
+  },
+  "aiFirst": {
+    "headline": "AI-First Development",
+    "sub": "Não adicionamos IA como feature. Construímos com IA desde o dia um.",
+    "what": {
+      "headline": "O que significa AI-First?",
+      "description": "Significa que inteligência artificial não é um módulo que adicionamos depois. É parte da arquitetura, do fluxo de dados e da experiência do usuário desde o primeiro commit.",
+      "items": {
+        "1": { "title": "LLMs integrados", "description": "GPT-4, Claude e modelos open-source integrados diretamente nos produtos." },
+        "2": { "title": "Automação inteligente", "description": "Processos que se adaptam e melhoram com uso, sem regras fixas." },
+        "3": { "title": "Dados como vantagem", "description": "Transformamos dados brutos em insights acionáveis com pipelines de ML." },
+        "4": { "title": "UX conversacional", "description": "Interfaces que entendem linguagem natural, não só cliques." }
+      }
+    },
+    "cta": {
+      "headline": "Quer construir com IA?",
+      "button": "Fale com a gente"
+    }
+  }
+}
