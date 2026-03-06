@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
-/* ===== KORT.X V2 Design System ===== */
+/* ===== KORT.X V2 Design System — Clean & Compact ===== */
 @theme {
   /* Pure Black Foundation */
   --color-black: #000000;
   --color-surface: #0a0a0a;
   --color-surface-elevated: #111111;
 
-  /* Accent — Chartreuse Elétrico */
+  /* Accent — Chartreuse */
   --color-accent: #c8ff00;
   --color-accent-dim: rgba(200, 255, 0, 0.125);
 
   /* Text Hierarchy */
-  --color-text: #e5e5e5;
-  --color-text-secondary: #737373;
-  --color-text-muted: #404040;
+  --color-text: #ededed;
+  --color-text-secondary: #888888;
+  --color-text-muted: #555555;
 
   /* Borders */
   --color-border: #1a1a1a;
@@ -22,15 +22,7 @@
 
   /* Font Families */
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
-  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
   --font-mono: var(--font-jetbrains-mono), ui-monospace, "Courier New", monospace;
-
-  /* Font Sizes — Display Scale */
-  --text-display-hero: clamp(8rem, 18vw, 20rem);
-  --text-display-xl: clamp(3rem, 10vw, 10rem);
-  --text-display-lg: clamp(2rem, 5vw, 4.5rem);
-  --text-display-md: clamp(1.5rem, 3vw, 3rem);
-  --text-display-sm: clamp(1.2rem, 2.5vw, 2rem);
 }
 
 /* ===== Base ===== */
@@ -59,37 +51,6 @@
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
     pointer-events: none;
     z-index: 1;
-  }
-
-  /* Typography classes */
-  .font-display {
-    font-family: var(--font-display);
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    line-height: 0.9;
-  }
-
-  .text-display-hero {
-    font-size: var(--text-display-hero);
-  }
-  .text-display-xl {
-    font-size: var(--text-display-xl);
-  }
-  .text-display-lg {
-    font-size: var(--text-display-lg);
-  }
-  .text-display-md {
-    font-size: var(--text-display-md);
-  }
-  .text-display-sm {
-    font-size: var(--text-display-sm);
-  }
-
-  /* Accent line */
-  .accent-line {
-    height: 1px;
-    width: 6rem;
-    background-color: var(--color-accent);
   }
 
   /* Hide scrollbar for horizontal scroll */
@@ -126,10 +87,4 @@ html {
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(1.5); }
-}
-
-/* Blink cursor for terminal */
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
 }

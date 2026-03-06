@@ -2,77 +2,72 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { slideFromLeft, slideFromRight, fadeUp, viewportOnce } from "@/lib/animations";
+import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 
 export function GlobalPresence() {
   const t = useTranslations("global");
 
   return (
-    <section className="relative bg-surface py-32 md:py-40 px-6 md:px-10 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto">
-        {/* Orlando — LEFT-aligned */}
-        <motion.div
-          variants={slideFromLeft}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="flex items-start gap-6"
-        >
-          <h3 className="font-display text-display-xl text-white leading-none">
-            {t("orlando.city")}
-          </h3>
-          <div className="flex flex-col items-center gap-2 pt-4">
-            <div className="relative">
-              <div className="w-3 h-3 rounded-full bg-accent" />
-              <div
-                className="absolute inset-0 w-3 h-3 rounded-full bg-accent"
-                style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
-              />
-            </div>
-          </div>
-          <div className="pt-4">
-            <span className="font-mono text-xs text-text-muted block">{t("orlando.country")}</span>
-            <span className="font-mono text-xs text-text-muted/60">{t("orlando.coords")}</span>
-          </div>
-        </motion.div>
-
-        {/* Divider */}
+    <section className="py-20 px-6">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="flex items-center gap-6 my-16 md:my-24"
+          className="mb-12"
         >
-          <div className="flex-1 h-px bg-border" />
-          <div className="w-3 h-3 rounded-full border border-border" />
-          <div className="flex-1 h-px bg-border" />
+          <h2 className="text-3xl md:text-4xl font-bold text-white">
+            {t("orlando.city")} & {t("rio.city")}
+          </h2>
         </motion.div>
 
-        {/* Rio de Janeiro — RIGHT-aligned */}
+        {/* 2 cards side by side */}
         <motion.div
-          variants={slideFromRight}
+          variants={staggerContainer(0.1)}
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="flex items-start gap-6 justify-end"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          <div className="pt-4 text-right">
-            <span className="font-mono text-xs text-text-muted block">{t("rio.country")}</span>
-            <span className="font-mono text-xs text-text-muted/60">{t("rio.coords")}</span>
-          </div>
-          <div className="flex flex-col items-center gap-2 pt-4">
-            <div className="relative">
+          {/* Orlando */}
+          <motion.div
+            variants={fadeUp}
+            className="bg-surface border border-border rounded-xl p-6 flex items-start gap-4"
+          >
+            <div className="relative mt-1 shrink-0">
               <div className="w-3 h-3 rounded-full bg-accent" />
               <div
                 className="absolute inset-0 w-3 h-3 rounded-full bg-accent"
                 style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
               />
             </div>
-          </div>
-          <h3 className="font-display text-display-xl text-white leading-none text-right">
-            {t("rio.city")}
-          </h3>
+            <div>
+              <h3 className="text-xl font-semibold text-white">{t("orlando.city")}</h3>
+              <p className="text-sm text-text-secondary mt-1">{t("orlando.country")}</p>
+              <p className="font-mono text-xs text-text-muted mt-2">{t("orlando.coords")}</p>
+            </div>
+          </motion.div>
+
+          {/* Rio */}
+          <motion.div
+            variants={fadeUp}
+            className="bg-surface border border-border rounded-xl p-6 flex items-start gap-4"
+          >
+            <div className="relative mt-1 shrink-0">
+              <div className="w-3 h-3 rounded-full bg-accent" />
+              <div
+                className="absolute inset-0 w-3 h-3 rounded-full bg-accent"
+                style={{ animation: "pulse-dot 2s ease-in-out infinite" }}
+              />
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-white">{t("rio.city")}</h3>
+              <p className="text-sm text-text-secondary mt-1">{t("rio.country")}</p>
+              <p className="font-mono text-xs text-text-muted mt-2">{t("rio.coords")}</p>
+            </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

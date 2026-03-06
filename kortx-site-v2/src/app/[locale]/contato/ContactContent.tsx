@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { clipReveal, fadeUp, viewportOnce } from "@/lib/animations";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
 export function ContactContent() {
   const t = useTranslations("contact");
@@ -35,57 +35,53 @@ export function ContactContent() {
   };
 
   const inputClass =
-    "w-full bg-transparent border-b border-border py-3 text-text placeholder:text-text-muted focus:outline-none focus:border-accent transition-colors text-sm";
+    "w-full bg-surface border border-border rounded-lg px-4 py-3 text-text text-sm placeholder:text-text-muted focus:outline-none focus:border-accent transition-colors";
 
   return (
-    <div className="pt-32 pb-24 min-h-screen">
-      <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] min-h-[80vh]">
-        {/* LEFT — Form */}
-        <div className="bg-black px-6 md:px-10 lg:px-16 py-16">
-          <div className="max-w-xl">
-            <motion.h1
-              variants={clipReveal}
-              initial="hidden"
-              animate="visible"
-              className="font-display text-display-lg text-white mb-4"
-            >
-              {t("headline")}
-            </motion.h1>
-            <motion.p
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              className="text-text-secondary mb-12"
-            >
-              {t("sub")}
-            </motion.p>
+    <div className="pt-32 pb-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        {/* Hero centered */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="text-center mb-16"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold text-white">{t("headline")}</h1>
+          <p className="mt-4 text-text-secondary max-w-lg mx-auto">{t("sub")}</p>
+        </motion.div>
 
+        {/* Form + Info grid */}
+        <motion.div
+          variants={staggerContainer(0.1)}
+          initial="hidden"
+          animate="visible"
+          className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12"
+        >
+          {/* Form */}
+          <motion.div variants={fadeUp}>
             {status === "success" ? (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="py-12"
-              >
-                <p className="font-display text-xl text-accent">{t("form.success")}</p>
-              </motion.div>
+              <div className="bg-surface border border-border rounded-xl p-12 text-center">
+                <p className="text-xl font-semibold text-accent">{t("form.success")}</p>
+              </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-8">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input type="text" name="name" required placeholder={t("form.name")} className={inputClass} />
                   <input type="email" name="email" required placeholder={t("form.email")} className={inputClass} />
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input type="text" name="company" placeholder={t("form.company")} className={inputClass} />
                   <input type="tel" name="phone" placeholder={t("form.phone")} className={inputClass} />
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-                  <select name="service" className={`${inputClass} bg-black`}>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <select name="service" className={inputClass}>
                     <option value="">{t("form.service")}</option>
                     {(["web", "mobile", "system", "ai", "design", "consulting", "other"] as const).map((opt) => (
                       <option key={opt} value={opt}>{t(`form.serviceOptions.${opt}`)}</option>
                     ))}
                   </select>
-                  <select name="budget" className={`${inputClass} bg-black`}>
+                  <select name="budget" className={inputClass}>
                     <option value="">{t("form.budget")}</option>
                     {(["small", "medium", "large", "enterprise"] as const).map((opt) => (
                       <option key={opt} value={opt}>{t(`form.budgetOptions.${opt}`)}</option>
@@ -101,34 +97,36 @@ export function ContactContent() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="font-mono text-sm text-accent inline-flex items-center gap-2 group disabled:opacity-50"
+                  className="bg-accent text-black font-medium text-sm px-8 py-3 rounded-md hover:bg-accent/90 transition-colors disabled:opacity-50"
                 >
-                  <span>{status === "sending" ? t("form.sending") : t("form.submit")}</span>
-                  <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">&rarr;</span>
+                  {status === "sending" ? t("form.sending") : t("form.submit")}
                 </button>
                 {status === "error" && (
                   <p className="text-sm text-red-400">{t("form.error")}</p>
                 )}
               </form>
             )}
-          </div>
-        </div>
+          </motion.div>
 
-        {/* RIGHT — Info */}
-        <div className="bg-surface px-6 md:px-10 lg:px-16 py-16 flex flex-col justify-center">
-          <div>
+          {/* Info */}
+          <motion.div variants={fadeUp} className="bg-surface border border-border rounded-xl p-8">
+            <h3 className="text-lg font-semibold text-white mb-6">Info</h3>
             <a
               href="mailto:contato@kortx.pro"
-              className="font-display text-display-sm text-white hover:text-accent transition-colors block mb-8"
+              className="font-mono text-sm text-accent hover:text-accent/80 transition-colors block mb-6"
             >
               contato@kortx.pro
             </a>
-            <div className="space-y-4 font-mono text-sm text-text-secondary">
+            <div className="space-y-3 font-mono text-sm text-text-secondary">
               <p>{t("info.phone")}</p>
               <p>{t("info.address")}</p>
             </div>
-          </div>
-        </div>
+            <div className="mt-8 pt-6 border-t border-border">
+              <p className="font-mono text-xs text-text-muted">Orlando, FL</p>
+              <p className="font-mono text-xs text-text-muted mt-1">Rio de Janeiro, RJ</p>
+            </div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

@@ -37,11 +37,11 @@ function MetricItem({ numericValue, suffix, label, inView }: {
   const count = useCounter(numericValue, 1.5, inView);
 
   return (
-    <motion.div variants={fadeUp} className="flex flex-col gap-2">
-      <span className="font-display text-display-md text-white">
+    <motion.div variants={fadeUp} className="flex-1 min-w-[120px] text-center">
+      <span className="text-3xl font-bold text-white">
         {count}{suffix}
       </span>
-      <span className="font-mono text-xs uppercase tracking-wider text-text-muted">
+      <span className="block font-mono text-xs uppercase tracking-wider text-text-muted mt-1">
         {label}
       </span>
     </motion.div>
@@ -51,7 +51,7 @@ function MetricItem({ numericValue, suffix, label, inView }: {
 export function Metrics() {
   const t = useTranslations("metrics");
   const ref = useRef<HTMLElement>(null);
-  const inView = useInView(ref, { once: true, margin: "-100px" });
+  const inView = useInView(ref, { once: true, margin: "-80px" });
 
   const metrics = [
     { numericValue: 150, suffix: "+", label: t("projects") },
@@ -61,23 +61,18 @@ export function Metrics() {
   ];
 
   return (
-    <section ref={ref} className="bg-black px-6 md:px-10 py-24">
-      <div className="max-w-[1440px] mx-auto">
-        {/* Accent line */}
-        <div className="accent-line mb-12" />
-
-        <motion.div
-          variants={staggerContainer(0.15)}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="flex flex-wrap gap-12 md:gap-16"
-        >
-          {metrics.map((metric, i) => (
-            <MetricItem key={i} {...metric} inView={inView} />
-          ))}
-        </motion.div>
-      </div>
+    <section ref={ref} className="bg-surface px-6 py-12">
+      <motion.div
+        variants={staggerContainer(0.1)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        className="max-w-6xl mx-auto flex flex-wrap justify-between gap-8"
+      >
+        {metrics.map((metric, i) => (
+          <MetricItem key={i} {...metric} inView={inView} />
+        ))}
+      </motion.div>
     </section>
   );
 }

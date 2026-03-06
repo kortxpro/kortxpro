@@ -12,7 +12,7 @@ export function Footer() {
       <div className="max-w-[1440px] mx-auto">
         {/* Row 1: Logo + Nav Links */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8">
-          <Link href="/" className="font-display text-xl tracking-tight text-white">
+          <Link href="/" className="text-xl font-bold tracking-tight text-white">
             KORT<span className="text-accent">.</span>X
           </Link>
 

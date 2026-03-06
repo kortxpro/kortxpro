@@ -4,14 +4,13 @@ import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { letterRevealContainer, letterRevealChild } from "@/lib/animations";
 
 const navItems = [
-  { key: "services", href: "/servicos" as const, num: "01" },
-  { key: "portfolio", href: "/portfolio" as const, num: "02" },
-  { key: "about", href: "/sobre" as const, num: "03" },
-  { key: "aiFirst", href: "/ai-first" as const, num: "04" },
-  { key: "contact", href: "/contato" as const, num: "05" },
+  { key: "services", href: "/servicos" as const },
+  { key: "portfolio", href: "/portfolio" as const },
+  { key: "about", href: "/sobre" as const },
+  { key: "aiFirst", href: "/ai-first" as const },
+  { key: "contact", href: "/contato" as const },
 ] as const;
 
 export function Header() {
@@ -38,69 +37,106 @@ export function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled && !open ? "bg-black/80 backdrop-blur-md" : "bg-transparent"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled ? "bg-black/80 backdrop-blur-md border-b border-border" : "bg-transparent"
         }`}
       >
-        <div className="max-w-[1440px] mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-          <Link href="/" className="font-display text-xl tracking-tight text-white relative z-50">
+        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="text-lg font-bold tracking-tight text-white">
             KORT<span className="text-accent">.</span>X
           </Link>
 
+          {/* Desktop nav — center */}
+          <nav className="hidden md:flex items-center gap-1">
+            {navItems.map((item) => {
+              const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
+              return (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className={`text-sm px-3 py-1.5 rounded-md transition-colors ${
+                    isActive
+                      ? "text-white bg-white/5"
+                      : "text-text-secondary hover:text-white hover:bg-white/5"
+                  }`}
+                >
+                  {t(item.key)}
+                </Link>
+              );
+            })}
+          </nav>
+
+          {/* Desktop CTA */}
+          <div className="hidden md:block">
+            <Link
+              href="/contato"
+              className="text-sm font-medium bg-accent text-black px-4 py-1.5 rounded-md hover:bg-accent/90 transition-colors"
+            >
+              {t("contact")}
+            </Link>
+          </div>
+
+          {/* Mobile hamburger */}
           <button
             onClick={() => setOpen(!open)}
-            className="font-mono text-sm uppercase tracking-widest text-text-secondary hover:text-white transition-colors relative z-50"
+            className="md:hidden flex flex-col gap-1.5 p-2 relative z-50"
+            aria-label="Menu"
           >
-            {open ? "Close" : "Menu"}
+            <span className={`block w-5 h-px bg-white transition-all duration-300 ${open ? "rotate-45 translate-y-[3.5px]" : ""}`} />
+            <span className={`block w-5 h-px bg-white transition-all duration-300 ${open ? "-rotate-45 -translate-y-[3.5px]" : ""}`} />
           </button>
         </div>
       </header>
 
+      {/* Mobile drawer */}
       <AnimatePresence>
         {open && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-40 bg-black noise-overlay flex flex-col justify-center"
-          >
-            <nav className="relative z-10 px-6 md:px-10 max-w-[1440px] mx-auto w-full">
-              <motion.div
-                variants={letterRevealContainer}
-                initial="hidden"
-                animate="visible"
-                className="flex flex-col gap-2"
-              >
-                {navItems.map((item) => (
-                  <motion.div key={item.key} variants={letterRevealChild}>
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
+              onClick={() => setOpen(false)}
+            />
+            <motion.nav
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+              className="fixed top-0 right-0 bottom-0 z-40 w-72 bg-surface border-l border-border px-6 pt-20 pb-8 flex flex-col md:hidden"
+            >
+              <div className="flex flex-col gap-1">
+                {navItems.map((item) => {
+                  const isActive = pathname === item.href || pathname.startsWith(item.href + "/");
+                  return (
                     <Link
+                      key={item.key}
                       href={item.href}
-                      className="group flex items-baseline gap-4 py-3 md:py-4"
+                      className={`text-base py-3 px-3 rounded-md transition-colors ${
+                        isActive
+                          ? "text-white bg-white/5"
+                          : "text-text-secondary hover:text-white"
+                      }`}
                     >
-                      <span className="font-mono text-xs text-text-muted">
-                        {item.num}
-                      </span>
-                      <span className="font-display text-display-lg text-white group-hover:text-accent transition-colors duration-300">
-                        {t(item.key)}
-                      </span>
+                      {t(item.key)}
                     </Link>
-                  </motion.div>
-                ))}
-              </motion.div>
-
-              <div className="mt-16 pt-8 border-t border-border">
-                <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-12">
-                  <a href="mailto:contato@kortx.pro" className="font-mono text-sm text-accent hover:text-accent/80 transition-colors">
-                    contato@kortx.pro
-                  </a>
-                  <span className="font-mono text-xs text-text-muted">
-                    Orlando, FL / Rio de Janeiro, RJ
-                  </span>
-                </div>
+                  );
+                })}
               </div>
-            </nav>
-          </motion.div>
+
+              <div className="mt-auto pt-6 border-t border-border">
+                <a href="mailto:contato@kortx.pro" className="font-mono text-sm text-accent">
+                  contato@kortx.pro
+                </a>
+                <p className="font-mono text-xs text-text-muted mt-2">
+                  Orlando, FL / Rio de Janeiro, RJ
+                </p>
+              </div>
+            </motion.nav>
+          </>
         )}
       </AnimatePresence>
     </>

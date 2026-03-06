@@ -2,45 +2,44 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { clipReveal, fadeUp, viewportOnce } from "@/lib/animations";
+import { Link } from "@/i18n/navigation";
+import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 
 export function CTA() {
   const t = useTranslations("cta");
 
   return (
-    <section className="relative bg-black noise-overlay py-32 md:py-40 px-6 md:px-10 overflow-hidden">
-      {/* Accent line full-width top */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-accent/30" />
-
-      <div className="max-w-[1440px] mx-auto relative z-10">
+    <section className="py-20 px-6 bg-surface">
+      <motion.div
+        variants={staggerContainer(0.1)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={viewportOnce}
+        className="max-w-6xl mx-auto text-center"
+      >
         <motion.h2
-          variants={clipReveal}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="font-display text-display-lg text-white max-w-[18ch]"
+          variants={fadeUp}
+          className="text-3xl md:text-4xl font-bold text-white"
         >
           {t("headline")}
         </motion.h2>
 
-        <motion.div
+        <motion.p
           variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="mt-12"
+          className="mt-4 text-text-secondary max-w-lg mx-auto"
         >
-          <a
-            href="mailto:contato@kortx.pro"
-            className="font-mono text-lg md:text-xl text-accent inline-flex items-center gap-3 group"
+          contato@kortx.pro
+        </motion.p>
+
+        <motion.div variants={fadeUp} className="mt-8">
+          <Link
+            href="/contato"
+            className="inline-block bg-accent text-black font-medium text-sm px-8 py-3 rounded-md hover:bg-accent/90 transition-colors"
           >
-            <span>contato@kortx.pro</span>
-            <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">
-              &rarr;
-            </span>
-          </a>
+            {t("headline")}
+          </Link>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }
