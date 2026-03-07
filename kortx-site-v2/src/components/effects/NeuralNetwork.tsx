@@ -354,11 +354,8 @@ export function NeuralNetwork({
     initNodes();
     animate();
 
-    const parent = canvas.parentElement;
-    if (parent) {
-      parent.addEventListener("mousemove", handleMouseMove);
-      parent.addEventListener("mouseleave", handleMouseLeave);
-    }
+    canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("mouseleave", handleMouseLeave);
 
     const handleResize = () => {
       resizeCanvas();
@@ -370,10 +367,8 @@ export function NeuralNetwork({
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
       }
-      if (parent) {
-        parent.removeEventListener("mousemove", handleMouseMove);
-        parent.removeEventListener("mouseleave", handleMouseLeave);
-      }
+      canvas.removeEventListener("mousemove", handleMouseMove);
+      canvas.removeEventListener("mouseleave", handleMouseLeave);
       window.removeEventListener("resize", handleResize);
     };
   }, [particleCount, connectionDistance, particleColor, accentColor, mouseRadius, hexToRgb]);
@@ -381,7 +376,7 @@ export function NeuralNetwork({
   return (
     <canvas
       ref={canvasRef}
-      className={`absolute inset-0 w-full h-full pointer-events-none ${className}`}
+      className={`absolute inset-0 w-full h-full ${className}`}
     />
   );
 }

@@ -25,41 +25,10 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden bg-bg"
     >
-      {/* Background base */}
+      {/* Neural Network — full background, interactive */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-bg" />
-        {/* Subtle gradient orbs behind everything */}
-        <motion.div
-          animate={{
-            x: [0, 100, -50, 0],
-            y: [0, -80, 60, 0],
-            scale: [1, 1.2, 0.9, 1],
-          }}
-          transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full opacity-10 blur-[120px]"
-          style={{ background: "radial-gradient(circle, #6366f1, transparent 70%)" }}
-        />
-        <motion.div
-          animate={{
-            x: [0, -80, 60, 0],
-            y: [0, 100, -40, 0],
-          }}
-          transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full opacity-10 blur-[120px]"
-          style={{ background: "radial-gradient(circle, #a855f7, transparent 70%)" }}
-        />
-        {/* Noise overlay */}
-        <div className="absolute inset-0 noise-overlay opacity-40" />
-      </div>
-
-      {/* Neural Network — right side, immersive */}
-      <div className="absolute top-0 right-0 w-full lg:w-[55%] h-full">
-        {/* Fade-out gradient on left edge so it blends into the text area */}
-        <div className="absolute inset-y-0 left-0 w-40 z-10 bg-gradient-to-r from-bg to-transparent" />
-        {/* Fade bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 z-10 bg-gradient-to-t from-bg to-transparent" />
         <NeuralNetwork
           particleCount={120}
           connectionDistance={180}
@@ -69,10 +38,26 @@ export function Hero() {
         />
       </div>
 
-      {/* Content */}
+      {/* Left readability overlay — fades text area only */}
+      <div
+        className="absolute inset-y-0 left-0 w-[65%] pointer-events-none z-[1]"
+        style={{
+          background: "linear-gradient(to right, rgba(5,5,5,0.92) 0%, rgba(5,5,5,0.85) 40%, rgba(5,5,5,0.5) 75%, transparent 100%)",
+        }}
+      />
+
+      {/* Subtle bottom fade */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none z-[1]"
+        style={{
+          background: "linear-gradient(to top, rgba(5,5,5,1) 0%, transparent 100%)",
+        }}
+      />
+
+      {/* Content — pointer-events-none on wrapper, auto on interactive children */}
       <motion.div
         style={{ y, opacity, scale }}
-        className="relative z-20 mx-auto max-w-[1560px] px-6 lg:px-10 w-full pt-32 pb-20"
+        className="relative z-[2] mx-auto max-w-[1560px] px-6 lg:px-10 w-full pt-32 pb-20 pointer-events-none"
       >
         <div className="max-w-2xl">
           {/* Badge */}
@@ -111,9 +96,11 @@ export function Hero() {
               </span>
               <span className="block">
                 {title2.split("").map((char, i) => {
-                  const isKortx = title2.indexOf("KORT.X") !== -1 &&
-                    i >= title2.indexOf("KORT.X") &&
-                    i < title2.indexOf("KORT.X") + 6;
+                  const kortxStart = title2.indexOf("KORT.X");
+                  const isKortx =
+                    kortxStart !== -1 &&
+                    i >= kortxStart &&
+                    i < kortxStart + 6;
                   return (
                     <motion.span
                       key={i}
@@ -141,13 +128,13 @@ export function Hero() {
             {t("subtitle")}
           </motion.p>
 
-          {/* CTAs */}
+          {/* CTAs — re-enable pointer events */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
             animate="visible"
             transition={{ delay: 0.8 }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-wrap gap-4 pointer-events-auto"
           >
             <GradientButton href="/portfolio" size="lg">
               {t("cta1")}
@@ -164,7 +151,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-6 lg:left-10 z-20 flex items-center gap-3"
+        className="absolute bottom-8 left-6 lg:left-10 z-[2] flex items-center gap-3 pointer-events-none"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}
