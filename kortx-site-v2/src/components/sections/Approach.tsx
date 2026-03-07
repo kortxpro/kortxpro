@@ -10,45 +10,37 @@ export function Approach() {
   const t = useTranslations("approach");
 
   return (
-    <section className="py-20 px-6 bg-surface">
-      <div className="max-w-6xl mx-auto">
-        {/* Header */}
+    <section className="py-20 md:py-28 px-6 md:px-10 bg-surface">
+      <div className="max-w-7xl mx-auto">
         <motion.div
-          variants={fadeUp}
+          variants={staggerContainer(0.1)}
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white">{t("headline")}</h2>
-          <p className="mt-3 text-text-secondary max-w-xl">{t("sub")}</p>
-        </motion.div>
+          {/* Header */}
+          <motion.div variants={fadeUp} className="mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-black">{t("headline")}</h2>
+            <p className="mt-3 text-text-secondary max-w-xl">{t("sub")}</p>
+          </motion.div>
 
-        {/* 4 cards in row */}
-        <motion.div
-          variants={staggerContainer(0.08)}
-          initial="hidden"
-          whileInView="visible"
-          viewport={viewportOnce}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"
-        >
-          {steps.map((step) => (
-            <motion.div
-              key={step}
-              variants={fadeUp}
-              className="bg-black border border-border rounded-xl p-6"
-            >
-              <span className="text-2xl font-bold text-accent">
-                {String(Number(step)).padStart(2, "0")}
-              </span>
-              <h3 className="text-lg font-semibold text-white mt-3">
-                {t(`steps.${step}.title`)}
-              </h3>
-              <p className="mt-2 text-sm text-text-secondary leading-relaxed">
-                {t(`steps.${step}.description`)}
-              </p>
-            </motion.div>
-          ))}
+          {/* 4 steps */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
+            {steps.map((step, i) => (
+              <motion.div key={step} variants={fadeUp} className="relative">
+                {/* Number */}
+                <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-sm font-bold mb-5">
+                  {i + 1}
+                </div>
+                <h3 className="text-lg font-semibold text-black">
+                  {t(`steps.${step}.title`)}
+                </h3>
+                <p className="mt-2 text-sm text-text-secondary leading-relaxed">
+                  {t(`steps.${step}.description`)}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

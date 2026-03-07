@@ -2,42 +2,36 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Link } from "@/i18n/navigation";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 
 export function CTA() {
   const t = useTranslations("cta");
+  const tf = useTranslations("footer");
 
   return (
-    <section className="py-20 px-6 bg-surface">
+    <section className="py-24 md:py-32 px-6 md:px-10 bg-surface">
       <motion.div
-        variants={staggerContainer(0.1)}
+        variants={staggerContainer(0.12)}
         initial="hidden"
         whileInView="visible"
         viewport={viewportOnce}
-        className="max-w-6xl mx-auto text-center"
+        className="max-w-4xl mx-auto text-center"
       >
         <motion.h2
           variants={fadeUp}
-          className="text-3xl md:text-4xl font-bold text-white"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-black tracking-tight"
         >
           {t("headline")}
         </motion.h2>
 
-        <motion.p
-          variants={fadeUp}
-          className="mt-4 text-text-secondary max-w-lg mx-auto"
-        >
-          contato@kortx.pro
-        </motion.p>
-
-        <motion.div variants={fadeUp} className="mt-8">
-          <Link
-            href="/contato"
-            className="inline-block bg-accent text-black font-medium text-sm px-8 py-3 rounded-md hover:bg-accent/90 transition-colors"
+        <motion.div variants={fadeUp} className="mt-8 flex flex-col items-center gap-4">
+          <a
+            href="mailto:contato@kortx.pro"
+            className="text-lg md:text-xl text-text-secondary hover:text-black transition-colors"
           >
-            {t("headline")}
-          </Link>
+            contato@kortx.pro
+          </a>
+          <span className="text-text-muted">{tf("phone")}</span>
         </motion.div>
       </motion.div>
     </section>

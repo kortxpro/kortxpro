@@ -1,173 +1,27 @@
 {
   "metadata": {
-    "title": "KORT.X — Software que move negócios",
-    "description": "Desenvolvemos sites, aplicativos, sistemas e plataformas digitais completas. Código limpo, design intencional, entrega real.",
-    "keywords": "desenvolvimento software, aplicativos, sistemas, sites, KORT.X"
+    "title": "KORT.X — Software Studio Global",
+    "description": "Somos um estúdio global de design e desenvolvimento de software. Construímos experiências digitais transformadoras combinando design, IA e tecnologia.",
+    "keywords": "software studio, design, desenvolvimento, UX, branding, KORT.X"
   },
   "nav": {
+    "work": "Trabalho",
     "services": "Serviços",
-    "portfolio": "Portfolio",
     "about": "Sobre",
-    "contact": "Contato",
     "aiFirst": "AI-First",
-    "cta": "Fale conosco"
+    "contact": "Contato",
+    "portfolio": "Portfolio"
   },
   "hero": {
-    "tag": "Software Studio — Orlando & Rio",
-    "headline": "Construímos software que move negócios.",
-    "sub": "De sistemas internos a plataformas digitais completas. Código limpo, design intencional, entrega real.",
-    "cta": "Ver nosso trabalho",
-    "ctaSecondary": "Fale com a gente",
-    "scroll": "Scroll"
+    "headline": "KORT.X é um estúdio global de design e software",
+    "sub": "Construímos experiências digitais transformadoras para marcas líderes, combinando IA, design e tecnologia.",
+    "tag": "Software Studio — Orlando & Rio"
   },
   "metrics": {
     "projects": "Projetos Entregues",
-    "projectsValue": "150+",
     "satisfaction": "Satisfação",
-    "satisfactionValue": "98%",
     "years": "Anos de Mercado",
-    "yearsValue": "8+",
-    "offices": "Escritórios",
-    "officesValue": "2"
-  },
-  "whatWeBuild": {
-    "headline": "O que construímos",
-    "sub": "Cada projeto é uma solução sob medida. Não usamos templates.",
-    "items": {
-      "sites": {
-        "title": "Sites & Plataformas",
-        "description": "Sites institucionais, landing pages e plataformas web com performance e SEO integrado."
-      },
-      "apps": {
-        "title": "Aplicativos Mobile",
-        "description": "Apps nativos e multiplataforma para iOS e Android, com UX pensada para o usuário final."
-      },
-      "systems": {
-        "title": "Sistemas Internos",
-        "description": "ERPs, CRMs e ferramentas internas que automatizam processos e eliminam retrabalho."
-      },
-      "landing": {
-        "title": "Landing Pages",
-        "description": "Páginas de alta conversão para campanhas, lançamentos e captação de leads."
-      },
-      "ecommerce": {
-        "title": "E-commerces",
-        "description": "Lojas virtuais completas com checkout, estoque e integrações de pagamento."
-      },
-      "dashboards": {
-        "title": "Dashboards & Painéis",
-        "description": "Painéis de gestão com dados em tempo real, gráficos interativos e relatórios."
-      }
-    }
-  },
-  "work": {
-    "headline": "Nosso trabalho",
-    "sub": "Projetos selecionados que demonstram nosso processo e qualidade.",
-    "confidential": "Nomes de clientes omitidos por restrição contratual.",
-    "viewAll": "Ver todos os projetos",
-    "projects": {
-      "1": {
-        "title": "Site Institucional — Advocacia",
-        "category": "Website",
-        "description": "Site corporativo para escritório de advocacia com foco em autoridade e geração de leads qualificados."
-      },
-      "2": {
-        "title": "Site Institucional — Clínica de Saúde",
-        "category": "Website",
-        "description": "Plataforma online para clínica médica com agendamento, especialidades e portal do paciente."
-      },
-      "3": {
-        "title": "Site Institucional — Construtora",
-        "category": "Website",
-        "description": "Site de empreendimentos imobiliários com tour virtual e galeria de projetos."
-      },
-      "4": {
-        "title": "Landing Page — SaaS",
-        "category": "Landing Page",
-        "description": "Landing page de alta conversão para produto SaaS com hero animado e social proof."
-      },
-      "5": {
-        "title": "Landing Page — Evento",
-        "category": "Landing Page",
-        "description": "Página de evento corporativo com countdown, programação e inscrição online."
-      },
-      "6": {
-        "title": "App — Sistema Interno",
-        "category": "Mobile App",
-        "description": "Aplicativo de gestão interna com catálogo de produtos, chamados e controle de estoque."
-      },
-      "7": {
-        "title": "App — Gestão em Campo",
-        "category": "Mobile App",
-        "description": "App mobile para equipes de campo com checklist, rotas e relatórios offline."
-      },
-      "8": {
-        "title": "Dashboard Financeiro",
-        "category": "Dashboard",
-        "description": "Painel de gestão financeira com fluxo de caixa, métricas e relatórios exportáveis."
-      },
-      "9": {
-        "title": "Sistema de Logística",
-        "category": "Sistema",
-        "description": "Sistema de operações logísticas com rastreamento em tempo real e gestão de frotas."
-      }
-    }
-  },
-  "approach": {
-    "headline": "Como trabalhamos",
-    "sub": "Processo direto, sem surpresas. Você acompanha cada etapa.",
-    "steps": {
-      "1": {
-        "title": "Entender",
-        "description": "Mapeamos o problema, o público e os objetivos antes de escrever uma linha de código."
-      },
-      "2": {
-        "title": "Desenhar",
-        "description": "Protótipos e wireframes validados com você antes da implementação."
-      },
-      "3": {
-        "title": "Construir",
-        "description": "Sprints curtos com entregas incrementais. Você testa desde o dia um."
-      },
-      "4": {
-        "title": "Entregar",
-        "description": "Deploy, monitoramento e suporte pós-lançamento inclusos no projeto."
-      }
-    }
-  },
-  "global": {
-    "headline": "Presença global",
-    "sub": "Dois escritórios, um padrão de qualidade.",
-    "orlando": {
-      "city": "Orlando",
-      "country": "Estados Unidos",
-      "coords": "28.5383° N, 81.3792° W"
-    },
-    "rio": {
-      "city": "Rio de Janeiro",
-      "country": "Brasil",
-      "coords": "22.9068° S, 43.1729° W"
-    }
-  },
-  "cta": {
-    "headline": "Pronto para construir algo que funciona?",
-    "sub": "Conte sobre seu projeto. Respondemos em até 24 horas.",
-    "button": "Iniciar conversa"
-  },
-  "footer": {
-    "description": "Software studio com presença em Orlando e Rio de Janeiro. Construímos soluções digitais que funcionam.",
-    "navigation": "Navegação",
-    "company": "Empresa",
-    "contactTitle": "Contato",
-    "home": "Início",
-    "blog": "Blog",
-    "careers": "Carreiras",
-    "privacy": "Privacidade",
-    "terms": "Termos",
-    "rights": "Todos os direitos reservados.",
-    "emailGeneral": "contato@kortx.pro",
-    "emailUS": "hello@kortx.pro",
-    "phone": "+55 21 97001-3218"
+    "offices": "Escritórios"
   },
   "services": {
     "headline": "Nossos serviços",
@@ -205,36 +59,215 @@
       }
     }
   },
+  "whatWeBuild": {
+    "headline": "Serviços",
+    "sub": "Estratégia, design, tecnologia e IA — combinados para criar experiências digitais que transformam negócios.",
+    "items": {
+      "sites": {
+        "title": "Sites & Plataformas",
+        "description": "Sites institucionais, landing pages e plataformas web com performance e SEO integrado."
+      },
+      "apps": {
+        "title": "Aplicativos Mobile",
+        "description": "Apps nativos e multiplataforma para iOS e Android, com UX pensada para o usuário final."
+      },
+      "systems": {
+        "title": "Sistemas & Automação",
+        "description": "ERPs, CRMs e ferramentas internas que automatizam processos e eliminam retrabalho."
+      },
+      "landing": {
+        "title": "UI/UX Design",
+        "description": "Interfaces que fazem sentido. Pesquisa, protótipos e design systems para escalar."
+      },
+      "ecommerce": {
+        "title": "Inteligência Artificial",
+        "description": "IA integrada desde o dia um. Chatbots, automação, análise de dados e LLMs em produção."
+      },
+      "dashboards": {
+        "title": "Consultoria Técnica",
+        "description": "Decisões de arquitetura, stack, escala e migração com quem já passou por isso."
+      }
+    }
+  },
+  "work": {
+    "headline": "Trabalho selecionado",
+    "sub": "Projetos que demonstram nosso processo, qualidade e alcance.",
+    "viewAll": "Ver todos os projetos",
+    "confidential": "",
+    "projects": {
+      "1": {
+        "title": "Luxe Realty Group",
+        "category": "Website",
+        "description": "Plataforma imobiliária de alto padrão com busca avançada, tours virtuais 3D e geração de leads qualificados.",
+        "tags": ["Web Design", "UI/UX", "Development"]
+      },
+      "2": {
+        "title": "Oasis Health",
+        "category": "Plataforma Digital",
+        "description": "Ecossistema digital de saúde e telemedicina conectando pacientes, médicos e clínicas em uma experiência unificada.",
+        "tags": ["Web Design", "Mobile App", "Development"]
+      },
+      "3": {
+        "title": "Prism Studio",
+        "category": "Website & Branding",
+        "description": "Identidade visual e presença digital para estúdio criativo premiado, com portfolio interativo e motion design.",
+        "tags": ["Branding", "Web Design", "Motion"]
+      },
+      "4": {
+        "title": "Vertex",
+        "category": "SaaS Platform",
+        "description": "Plataforma de analytics empresarial com dashboards em tempo real, visualização de dados e relatórios automatizados.",
+        "tags": ["UI/UX", "SaaS", "Development"]
+      },
+      "5": {
+        "title": "Summit",
+        "category": "Plataforma de Eventos",
+        "description": "Plataforma completa para eventos corporativos com inscrição, networking e transmissão ao vivo integrados.",
+        "tags": ["Web Design", "E-commerce", "Branding"]
+      },
+      "6": {
+        "title": "Arcadia",
+        "category": "EdTech",
+        "description": "Plataforma de aprendizado corporativo com trilhas personalizadas, gamificação e analytics de engajamento.",
+        "tags": ["Web Design", "LMS", "Development"]
+      },
+      "7": {
+        "title": "FlowState",
+        "category": "Mobile App",
+        "description": "App de produtividade para equipes distribuídas com gestão de tarefas, time tracking e automações inteligentes.",
+        "tags": ["Mobile App", "UI/UX", "Automação"]
+      },
+      "8": {
+        "title": "Atlas Operations",
+        "category": "Dashboard",
+        "description": "Painel de gestão de operações com KPIs em tempo real, alertas automatizados e relatórios executivos.",
+        "tags": ["Dashboard", "Sistemas", "Automação"]
+      },
+      "9": {
+        "title": "Nova Logistics",
+        "category": "Sistema",
+        "description": "Sistema de gestão logística com rastreamento em tempo real, otimização de rotas e gestão de frota.",
+        "tags": ["Sistemas", "Dashboard", "Development"]
+      }
+    }
+  },
+  "approach": {
+    "headline": "Como trabalhamos",
+    "sub": "Processo direto, sem surpresas. Você acompanha cada etapa.",
+    "steps": {
+      "1": {
+        "title": "Entender",
+        "description": "Mapeamos o problema, o público e os objetivos antes de escrever uma linha de código."
+      },
+      "2": {
+        "title": "Desenhar",
+        "description": "Protótipos e wireframes validados com você antes da implementação."
+      },
+      "3": {
+        "title": "Construir",
+        "description": "Sprints curtos com entregas incrementais. Você testa desde o dia um."
+      },
+      "4": {
+        "title": "Entregar",
+        "description": "Deploy, monitoramento e suporte pós-lançamento inclusos no projeto."
+      }
+    }
+  },
+  "faq": {
+    "headline": "Perguntas Frequentes",
+    "items": {
+      "1": {
+        "question": "Quais são os serviços principais da KORT.X?",
+        "answer": "Oferecemos desenvolvimento web e mobile, UI/UX design, sistemas customizados, soluções com IA e consultoria técnica. Cada projeto é uma solução sob medida — não usamos templates."
+      },
+      "2": {
+        "question": "O que diferencia a KORT.X de outros estúdios?",
+        "answer": "Combinamos design de alto nível com engenharia sólida. Nosso time é 100% sênior, trabalhamos com metodologias ágeis e entregamos código limpo com documentação completa. Sem juniors aprendendo no seu projeto."
+      },
+      "3": {
+        "question": "Vocês trabalham com clientes em fusos horários diferentes?",
+        "answer": "Sim. Com escritórios em Orlando e Rio de Janeiro, atendemos clientes nas Américas e Europa com overlap de horário confortável. Usamos comunicação assíncrona e ferramentas colaborativas."
+      },
+      "4": {
+        "question": "Quanto custa um projeto?",
+        "answer": "Cada projeto é único. Sites institucionais começam em R$ 15k, plataformas SaaS a partir de R$ 50k, e projetos enterprise sob consulta. Fazemos um diagnóstico gratuito antes de qualquer proposta."
+      },
+      "5": {
+        "question": "Vocês trabalham com startups?",
+        "answer": "Sim, trabalhamos com startups em diferentes estágios — do MVP ao scale-up. Entendemos a dinâmica de produto, validação rápida e iteração. Ajudamos a construir o produto certo desde o início."
+      },
+      "6": {
+        "question": "Qual o stack de tecnologia de vocês?",
+        "answer": "Nosso stack principal inclui React, Next.js, React Native, Node.js, TypeScript, PostgreSQL e serviços AWS. Para IA, trabalhamos com OpenAI, Anthropic, LangChain e modelos open-source."
+      }
+    }
+  },
+  "cta": {
+    "headline": "Vamos conversar",
+    "sub": "Conte sobre seu projeto. Respondemos em até 24 horas.",
+    "button": "Iniciar conversa"
+  },
+  "global": {
+    "headline": "Presença global",
+    "sub": "Dois escritórios, um padrão de qualidade.",
+    "orlando": {
+      "city": "Orlando",
+      "country": "Estados Unidos",
+      "coords": "28.5383° N, 81.3792° W"
+    },
+    "rio": {
+      "city": "Rio de Janeiro",
+      "country": "Brasil",
+      "coords": "22.9068° S, 43.1729° W"
+    }
+  },
+  "footer": {
+    "description": "Estúdio global de design e software. Construímos experiências digitais transformadoras para marcas líderes.",
+    "navigation": "Navegação",
+    "company": "Empresa",
+    "contactTitle": "Contato",
+    "home": "Início",
+    "blog": "Blog",
+    "careers": "Carreiras",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "rights": "Todos os direitos reservados.",
+    "emailGeneral": "contato@kortx.pro",
+    "emailUS": "hello@kortx.pro",
+    "phone": "+55 21 97001-3218"
+  },
   "portfolio": {
     "headline": "Portfolio",
-    "sub": "Projetos reais para clientes reais. Nomes omitidos por restrição contratual.",
+    "sub": "Projetos selecionados que demonstram nosso processo, qualidade e alcance.",
     "filter": {
       "all": "Todos",
       "sites": "Sites",
       "apps": "Apps",
       "systems": "Sistemas",
       "landing": "Landing Pages",
-      "dashboards": "Dashboards"
+      "dashboards": "Dashboards",
+      "saas": "SaaS",
+      "branding": "Branding"
     },
     "projects": {
-      "1": { "title": "Site Institucional — Advocacia", "category": "sites", "description": "Site corporativo com design dark e dourado, focado em gerar autoridade e captar leads qualificados." },
-      "2": { "title": "Site Institucional — Clínica de Saúde", "category": "sites", "description": "Plataforma online para clínica médica com agendamento, especialidades e portal do paciente." },
-      "3": { "title": "Site Institucional — Construtora", "category": "sites", "description": "Site de empreendimentos imobiliários com tour virtual e galeria de projetos." },
-      "4": { "title": "Landing Page — SaaS", "category": "landing", "description": "Landing page de alta conversão para produto SaaS com hero animado e social proof." },
-      "5": { "title": "Landing Page — Evento", "category": "landing", "description": "Página de evento corporativo com countdown, programação e inscrição online." },
-      "6": { "title": "App — Sistema Interno", "category": "apps", "description": "Aplicativo de gestão interna com catálogo de produtos, chamados e controle de estoque." },
-      "7": { "title": "App — Gestão em Campo", "category": "apps", "description": "App mobile para equipes de campo com checklist, rotas e relatórios offline." },
-      "8": { "title": "Dashboard Financeiro", "category": "dashboards", "description": "Painel de gestão financeira com fluxo de caixa, métricas e relatórios exportáveis." },
-      "9": { "title": "Sistema de Logística", "category": "systems", "description": "Sistema de operações logísticas com rastreamento em tempo real e gestão de frotas." }
+      "1": { "title": "Luxe Realty Group", "category": "sites", "description": "Plataforma imobiliária de alto padrão com busca avançada, tours virtuais 3D e geração de leads." },
+      "2": { "title": "Oasis Health", "category": "sites", "description": "Ecossistema digital de saúde e telemedicina com experiência unificada." },
+      "3": { "title": "Prism Studio", "category": "branding", "description": "Identidade visual e presença digital para estúdio criativo premiado." },
+      "4": { "title": "Vertex", "category": "saas", "description": "Plataforma de analytics empresarial com dashboards em tempo real." },
+      "5": { "title": "Summit", "category": "sites", "description": "Plataforma de eventos corporativos com inscrição e transmissão ao vivo." },
+      "6": { "title": "Arcadia", "category": "saas", "description": "Plataforma de aprendizado corporativo com gamificação e analytics." },
+      "7": { "title": "FlowState", "category": "apps", "description": "App de produtividade para equipes distribuídas." },
+      "8": { "title": "Atlas Operations", "category": "dashboards", "description": "Painel de gestão de operações com KPIs em tempo real." },
+      "9": { "title": "Nova Logistics", "category": "systems", "description": "Sistema de gestão logística com rastreamento em tempo real." }
     }
   },
   "about": {
-    "headline": "Sobre a KORT.X",
-    "sub": "Somos um software studio que existe para resolver problemas reais com tecnologia.",
+    "headline": "Transformamos empresas através de inovação em design e tecnologia",
+    "sub": "Um estúdio full-service que projeta e constrói experiências digitais inventivas em todas as plataformas.",
     "story": {
       "headline": "Nossa história",
       "p1": "A KORT.X nasceu da frustração com software que não funciona. Projetos atrasados, código ruim, design genérico. Decidimos fazer diferente.",
-      "p2": "Começamos no Rio de Janeiro e expandimos para Orlando. Hoje atendemos clientes em dois continentes com o mesmo padrão de qualidade."
+      "p2": "Nosso time multidisciplinar combina estratégia, branding, UX design e tecnologia para resultados rápidos e impactantes. Trabalhando como uma equipe integrada com nossos clientes, mesclamos criatividade humana com eficiência impulsionada por IA."
     },
     "values": {
       "headline": "O que nos guia",
@@ -247,7 +280,7 @@
     },
     "team": {
       "headline": "Equipe",
-      "description": "Time enxuto, multidisciplinar e sênior. Sem juniors aprendendo no seu projeto."
+      "description": "Time enxuto, multidisciplinar e sênior. Sem juniors aprendendo no seu projeto. Presença em Orlando e Rio de Janeiro."
     }
   },
   "contact": {

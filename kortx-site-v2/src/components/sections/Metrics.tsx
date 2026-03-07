@@ -37,11 +37,11 @@ function MetricItem({ numericValue, suffix, label, inView }: {
   const count = useCounter(numericValue, 1.5, inView);
 
   return (
-    <motion.div variants={fadeUp} className="flex-1 min-w-[120px] text-center">
-      <span className="text-3xl font-bold text-white">
+    <motion.div variants={fadeUp} className="text-center">
+      <span className="text-4xl md:text-5xl font-bold text-black">
         {count}{suffix}
       </span>
-      <span className="block font-mono text-xs uppercase tracking-wider text-text-muted mt-1">
+      <span className="block font-mono text-xs uppercase tracking-wider text-text-muted mt-2">
         {label}
       </span>
     </motion.div>
@@ -61,13 +61,13 @@ export function Metrics() {
   ];
 
   return (
-    <section ref={ref} className="bg-surface px-6 py-12">
+    <section ref={ref} className="py-20 md:py-24 px-6 md:px-10 border-t border-border">
       <motion.div
         variants={staggerContainer(0.1)}
         initial="hidden"
         whileInView="visible"
         viewport={viewportOnce}
-        className="max-w-6xl mx-auto flex flex-wrap justify-between gap-8"
+        className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12"
       >
         {metrics.map((metric, i) => (
           <MetricItem key={i} {...metric} inView={inView} />

@@ -9,17 +9,17 @@ export function AiFirstContent() {
   const t = useTranslations("aiFirst");
 
   return (
-    <div className="pt-32 pb-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="pt-32 pb-24 px-6 md:px-10">
+      <div className="max-w-7xl mx-auto">
         {/* Hero */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="mb-16"
+          className="text-center mb-20 max-w-3xl mx-auto"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-white">{t("headline")}</h1>
-          <p className="mt-4 text-lg text-text-secondary max-w-2xl">{t("sub")}</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-black">{t("headline")}</h1>
+          <p className="mt-6 text-lg text-text-secondary">{t("sub")}</p>
         </motion.div>
 
         {/* What it means */}
@@ -28,14 +28,16 @@ export function AiFirstContent() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="mb-16"
+          className="mb-20 border-t border-border pt-16"
         >
-          <motion.h2 variants={fadeUp} className="text-2xl font-bold text-white mb-4">
-            {t("what.headline")}
-          </motion.h2>
-          <motion.p variants={fadeUp} className="text-text-secondary leading-relaxed max-w-3xl">
-            {t("what.description")}
-          </motion.p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+            <motion.h2 variants={fadeUp} className="text-2xl md:text-3xl font-bold text-black">
+              {t("what.headline")}
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-text-secondary leading-relaxed">
+              {t("what.description")}
+            </motion.p>
+          </div>
         </motion.section>
 
         {/* Capabilities — 2x2 grid */}
@@ -44,26 +46,25 @@ export function AiFirstContent() {
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20"
+          className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24"
         >
-          {(["1", "2", "3", "4"] as const).map((key, i) => {
-            const num = String(i + 1).padStart(2, "0");
-            return (
-              <motion.div
-                key={key}
-                variants={fadeUp}
-                className="bg-surface border border-border rounded-xl p-6 hover:border-accent/30 transition-colors"
-              >
-                <span className="font-mono text-xs text-accent">{num}</span>
-                <h3 className="text-lg font-semibold text-white mt-2">
-                  {t(`what.items.${key}.title`)}
-                </h3>
-                <p className="mt-3 text-sm text-text-secondary leading-relaxed">
-                  {t(`what.items.${key}.description`)}
-                </p>
-              </motion.div>
-            );
-          })}
+          {(["1", "2", "3", "4"] as const).map((key, i) => (
+            <motion.div
+              key={key}
+              variants={fadeUp}
+              className="bg-surface rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center text-sm font-bold mb-5">
+                {i + 1}
+              </div>
+              <h3 className="text-lg font-semibold text-black">
+                {t(`what.items.${key}.title`)}
+              </h3>
+              <p className="mt-3 text-sm text-text-secondary leading-relaxed">
+                {t(`what.items.${key}.description`)}
+              </p>
+            </motion.div>
+          ))}
         </motion.div>
 
         {/* CTA */}
@@ -74,13 +75,13 @@ export function AiFirstContent() {
           viewport={viewportOnce}
           className="text-center border-t border-border pt-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white">{t("cta.headline")}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black">{t("cta.headline")}</h2>
           <div className="mt-8">
             <Link
               href="/contato"
-              className="inline-block bg-accent text-black font-medium text-sm px-8 py-3 rounded-md hover:bg-accent/90 transition-colors"
+              className="inline-block bg-black text-white font-medium text-sm px-8 py-3 rounded-full hover:bg-black/80 transition-colors"
             >
-              contato@kortx.pro
+              {t("cta.button")}
             </Link>
           </div>
         </motion.section>

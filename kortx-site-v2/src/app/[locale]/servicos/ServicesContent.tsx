@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { TextButton } from "@/components/ui/TextButton";
+import { Link } from "@/i18n/navigation";
 import { fadeUp, staggerContainer, viewportOnce } from "@/lib/animations";
 
 const services = ["web", "mobile", "systems", "ai", "design", "consulting"] as const;
@@ -11,22 +11,22 @@ export function ServicesContent() {
   const t = useTranslations("services");
 
   return (
-    <div className="pt-32 pb-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <div className="pt-32 pb-24 px-6 md:px-10">
+      <div className="max-w-7xl mx-auto">
         {/* Hero */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="mb-16"
+          className="text-center mb-20"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-white">{t("headline")}</h1>
-          <p className="mt-4 text-lg text-text-secondary max-w-2xl">{t("sub")}</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-black">{t("headline")}</h1>
+          <p className="mt-4 text-lg text-text-secondary max-w-2xl mx-auto">{t("sub")}</p>
         </motion.div>
 
-        {/* Grid 2x3 */}
+        {/* Grid */}
         <motion.div
-          variants={staggerContainer(0.08)}
+          variants={staggerContainer(0.06)}
           initial="hidden"
           whileInView="visible"
           viewport={viewportOnce}
@@ -38,21 +38,20 @@ export function ServicesContent() {
               <motion.div
                 key={key}
                 variants={fadeUp}
-                className="bg-surface border border-border rounded-xl p-6 hover:border-accent/30 transition-colors"
+                className="bg-surface rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 group"
               >
                 <span className="font-mono text-xs text-text-muted">{num}</span>
-                <h2 className="text-xl font-semibold text-white mt-2">
+                <h2 className="text-xl font-semibold text-black mt-3">
                   {t(`items.${key}.title`)}
                 </h2>
                 <p className="mt-3 text-sm text-text-secondary leading-relaxed">
                   {t(`items.${key}.description`)}
                 </p>
-                {/* Feature tags */}
-                <div className="flex flex-wrap gap-2 mt-4">
+                <div className="flex flex-wrap gap-2 mt-5">
                   {(t.raw(`items.${key}.features`) as string[]).map((feature: string, j: number) => (
                     <span
                       key={j}
-                      className="font-mono text-xs px-2 py-1 bg-surface-elevated border border-border rounded text-text-secondary"
+                      className="font-mono text-xs px-2.5 py-1 bg-white border border-border rounded-full text-text-muted"
                     >
                       {feature}
                     </span>
@@ -64,9 +63,14 @@ export function ServicesContent() {
         </motion.div>
 
         {/* CTA */}
-        <TextButton href="/contato">
-          {t("headline") === "Nossos serviços" ? "Fale sobre seu projeto" : "Talk about your project"}
-        </TextButton>
+        <div className="text-center">
+          <Link
+            href="/contato"
+            className="inline-block bg-black text-white font-medium text-sm px-8 py-3 rounded-full hover:bg-black/80 transition-colors"
+          >
+            {t("headline") === "Nossos serviços" ? "Fale sobre seu projeto" : "Talk about your project"}
+          </Link>
+        </div>
       </div>
     </div>
   );

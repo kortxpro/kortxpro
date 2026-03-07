@@ -1,24 +1,25 @@
 @import "tailwindcss";
 
-/* ===== KORT.X V2 Design System — Clean & Compact ===== */
+/* ===== KORT.X V2 — Clay-Inspired Light Design System ===== */
 @theme {
-  /* Pure Black Foundation */
-  --color-black: #000000;
-  --color-surface: #0a0a0a;
-  --color-surface-elevated: #111111;
+  /* Light Foundation */
+  --color-white: #ffffff;
+  --color-surface: #f7f7f7;
+  --color-surface-elevated: #eeeeee;
+  --color-black: #111111;
 
-  /* Accent — Chartreuse */
+  /* Accent — Chartreuse (used sparingly) */
   --color-accent: #c8ff00;
-  --color-accent-dim: rgba(200, 255, 0, 0.125);
+  --color-accent-dim: rgba(200, 255, 0, 0.1);
 
   /* Text Hierarchy */
-  --color-text: #ededed;
-  --color-text-secondary: #888888;
-  --color-text-muted: #555555;
+  --color-text: #111111;
+  --color-text-secondary: #555555;
+  --color-text-muted: #999999;
 
   /* Borders */
-  --color-border: #1a1a1a;
-  --color-border-hover: #333333;
+  --color-border: #e5e5e5;
+  --color-border-hover: #cccccc;
 
   /* Font Families */
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
@@ -28,32 +29,18 @@
 /* ===== Base ===== */
 @layer base {
   body {
-    background-color: var(--color-black);
+    background-color: var(--color-white);
     color: var(--color-text);
   }
 
   ::selection {
-    background-color: rgba(200, 255, 0, 0.25);
-    color: #ffffff;
+    background-color: rgba(17, 17, 17, 0.12);
+    color: #000000;
   }
 }
 
 /* ===== Utilities ===== */
 @layer utilities {
-  /* Noise texture overlay */
-  .noise-overlay {
-    position: relative;
-  }
-  .noise-overlay::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
-    pointer-events: none;
-    z-index: 1;
-  }
-
-  /* Hide scrollbar for horizontal scroll */
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -73,14 +60,14 @@ html {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #ffffff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1a1a1a;
+  background: #cccccc;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #333333;
+  background: #999999;
 }
 
 /* Pulse animation for dots */

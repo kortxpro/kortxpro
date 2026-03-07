@@ -1,173 +1,27 @@
 {
   "metadata": {
-    "title": "KORT.X — Software that moves business",
-    "description": "We build websites, apps, systems and full digital platforms. Clean code, intentional design, real delivery.",
-    "keywords": "software development, apps, systems, websites, KORT.X"
+    "title": "KORT.X — Global Software Studio",
+    "description": "We are a global design and software studio. We build transformative digital experiences blending AI, design, and technology.",
+    "keywords": "software studio, design, development, UX, branding, KORT.X"
   },
   "nav": {
+    "work": "Work",
     "services": "Services",
-    "portfolio": "Portfolio",
     "about": "About",
-    "contact": "Contact",
     "aiFirst": "AI-First",
-    "cta": "Get in touch"
+    "contact": "Contact",
+    "portfolio": "Portfolio"
   },
   "hero": {
-    "tag": "Software Studio — Orlando & Rio",
-    "headline": "We build software that moves business.",
-    "sub": "From internal systems to full digital platforms. Clean code, intentional design, real delivery.",
-    "cta": "See our work",
-    "ctaSecondary": "Get in touch",
-    "scroll": "Scroll"
+    "headline": "KORT.X is a global design and software studio",
+    "sub": "We build transformative digital experiences for leading brands by blending AI, design, and technology.",
+    "tag": "Software Studio — Orlando & Rio"
   },
   "metrics": {
     "projects": "Projects Delivered",
-    "projectsValue": "150+",
     "satisfaction": "Satisfaction",
-    "satisfactionValue": "98%",
     "years": "Years in Business",
-    "yearsValue": "8+",
-    "offices": "Offices",
-    "officesValue": "2"
-  },
-  "whatWeBuild": {
-    "headline": "What we build",
-    "sub": "Every project is a custom solution. We don't use templates.",
-    "items": {
-      "sites": {
-        "title": "Websites & Platforms",
-        "description": "Corporate sites, landing pages and web platforms with built-in performance and SEO."
-      },
-      "apps": {
-        "title": "Mobile Apps",
-        "description": "Native and cross-platform apps for iOS and Android, with UX designed for the end user."
-      },
-      "systems": {
-        "title": "Internal Systems",
-        "description": "ERPs, CRMs and internal tools that automate processes and eliminate rework."
-      },
-      "landing": {
-        "title": "Landing Pages",
-        "description": "High-conversion pages for campaigns, launches and lead generation."
-      },
-      "ecommerce": {
-        "title": "E-commerce",
-        "description": "Full online stores with checkout, inventory and payment integrations."
-      },
-      "dashboards": {
-        "title": "Dashboards & Panels",
-        "description": "Management dashboards with real-time data, interactive charts and reports."
-      }
-    }
-  },
-  "work": {
-    "headline": "Our work",
-    "sub": "Selected projects that showcase our process and quality.",
-    "confidential": "Client names omitted due to contractual restrictions.",
-    "viewAll": "View all projects",
-    "projects": {
-      "1": {
-        "title": "Corporate Website — Law Firm",
-        "category": "Website",
-        "description": "Corporate site for a law firm focused on building authority and generating qualified leads."
-      },
-      "2": {
-        "title": "Corporate Website — Health Clinic",
-        "category": "Website",
-        "description": "Online platform for a medical clinic with scheduling, specialties and patient portal."
-      },
-      "3": {
-        "title": "Corporate Website — Construction",
-        "category": "Website",
-        "description": "Real estate development site with virtual tours and project gallery."
-      },
-      "4": {
-        "title": "Landing Page — SaaS",
-        "category": "Landing Page",
-        "description": "High-conversion landing page for a SaaS product with animated hero and social proof."
-      },
-      "5": {
-        "title": "Landing Page — Event",
-        "category": "Landing Page",
-        "description": "Corporate event page with countdown, schedule and online registration."
-      },
-      "6": {
-        "title": "App — Internal System",
-        "category": "Mobile App",
-        "description": "Internal management app with product catalog, support tickets and inventory control."
-      },
-      "7": {
-        "title": "App — Field Management",
-        "category": "Mobile App",
-        "description": "Mobile app for field teams with checklists, routes and offline reporting."
-      },
-      "8": {
-        "title": "Financial Dashboard",
-        "category": "Dashboard",
-        "description": "Financial management panel with cash flow, metrics and exportable reports."
-      },
-      "9": {
-        "title": "Logistics System",
-        "category": "System",
-        "description": "Logistics operations system with real-time tracking and fleet management."
-      }
-    }
-  },
-  "approach": {
-    "headline": "How we work",
-    "sub": "Straightforward process, no surprises. You follow every step.",
-    "steps": {
-      "1": {
-        "title": "Understand",
-        "description": "We map the problem, the audience and the goals before writing a single line of code."
-      },
-      "2": {
-        "title": "Design",
-        "description": "Prototypes and wireframes validated with you before implementation."
-      },
-      "3": {
-        "title": "Build",
-        "description": "Short sprints with incremental deliveries. You test from day one."
-      },
-      "4": {
-        "title": "Deliver",
-        "description": "Deployment, monitoring and post-launch support included in every project."
-      }
-    }
-  },
-  "global": {
-    "headline": "Global presence",
-    "sub": "Two offices, one quality standard.",
-    "orlando": {
-      "city": "Orlando",
-      "country": "United States",
-      "coords": "28.5383° N, 81.3792° W"
-    },
-    "rio": {
-      "city": "Rio de Janeiro",
-      "country": "Brazil",
-      "coords": "22.9068° S, 43.1729° W"
-    }
-  },
-  "cta": {
-    "headline": "Ready to build something that works?",
-    "sub": "Tell us about your project. We respond within 24 hours.",
-    "button": "Start a conversation"
-  },
-  "footer": {
-    "description": "Software studio based in Orlando and Rio de Janeiro. We build digital solutions that work.",
-    "navigation": "Navigation",
-    "company": "Company",
-    "contactTitle": "Contact",
-    "home": "Home",
-    "blog": "Blog",
-    "careers": "Careers",
-    "privacy": "Privacy",
-    "terms": "Terms",
-    "rights": "All rights reserved.",
-    "emailGeneral": "contato@kortx.pro",
-    "emailUS": "hello@kortx.pro",
-    "phone": "+55 21 97001-3218"
+    "offices": "Offices"
   },
   "services": {
     "headline": "Our services",
@@ -205,36 +59,215 @@
       }
     }
   },
+  "whatWeBuild": {
+    "headline": "Services",
+    "sub": "Strategy, design, technology and AI — combined to create digital experiences that transform businesses.",
+    "items": {
+      "sites": {
+        "title": "Websites & Platforms",
+        "description": "Corporate sites, landing pages and web platforms with built-in performance and SEO."
+      },
+      "apps": {
+        "title": "Mobile Apps",
+        "description": "Native and cross-platform apps for iOS and Android, with UX designed for the end user."
+      },
+      "systems": {
+        "title": "Systems & Automation",
+        "description": "ERPs, CRMs and internal tools that automate processes and eliminate rework."
+      },
+      "landing": {
+        "title": "UI/UX Design",
+        "description": "Interfaces that make sense. Research, prototypes and design systems to scale."
+      },
+      "ecommerce": {
+        "title": "Artificial Intelligence",
+        "description": "AI integrated from day one. Chatbots, automation, data analysis and LLMs in production."
+      },
+      "dashboards": {
+        "title": "Technical Consulting",
+        "description": "Architecture, stack, scaling and migration decisions with people who've been there."
+      }
+    }
+  },
+  "work": {
+    "headline": "Selected work",
+    "sub": "Projects that showcase our process, quality and reach.",
+    "viewAll": "Explore all work",
+    "confidential": "",
+    "projects": {
+      "1": {
+        "title": "Luxe Realty Group",
+        "category": "Website",
+        "description": "Premium real estate platform with advanced search, 3D virtual tours and qualified lead generation.",
+        "tags": ["Web Design", "UI/UX", "Development"]
+      },
+      "2": {
+        "title": "Oasis Health",
+        "category": "Digital Platform",
+        "description": "Digital health and telemedicine ecosystem connecting patients, doctors and clinics in a unified experience.",
+        "tags": ["Web Design", "Mobile App", "Development"]
+      },
+      "3": {
+        "title": "Prism Studio",
+        "category": "Website & Branding",
+        "description": "Visual identity and digital presence for an award-winning creative studio with interactive portfolio and motion design.",
+        "tags": ["Branding", "Web Design", "Motion"]
+      },
+      "4": {
+        "title": "Vertex",
+        "category": "SaaS Platform",
+        "description": "Enterprise analytics platform with real-time dashboards, data visualization and automated reporting.",
+        "tags": ["UI/UX", "SaaS", "Development"]
+      },
+      "5": {
+        "title": "Summit",
+        "category": "Event Platform",
+        "description": "End-to-end corporate event platform with registration, networking and integrated live streaming.",
+        "tags": ["Web Design", "E-commerce", "Branding"]
+      },
+      "6": {
+        "title": "Arcadia",
+        "category": "EdTech",
+        "description": "Corporate learning platform with personalized learning paths, gamification and engagement analytics.",
+        "tags": ["Web Design", "LMS", "Development"]
+      },
+      "7": {
+        "title": "FlowState",
+        "category": "Mobile App",
+        "description": "Productivity app for distributed teams with task management, time tracking and smart automations.",
+        "tags": ["Mobile App", "UI/UX", "Automation"]
+      },
+      "8": {
+        "title": "Atlas Operations",
+        "category": "Dashboard",
+        "description": "Operations management dashboard with real-time KPIs, automated alerts and executive reporting.",
+        "tags": ["Dashboard", "Systems", "Automation"]
+      },
+      "9": {
+        "title": "Nova Logistics",
+        "category": "System",
+        "description": "Logistics management system with real-time tracking, route optimization and fleet management.",
+        "tags": ["Systems", "Dashboard", "Development"]
+      }
+    }
+  },
+  "approach": {
+    "headline": "How we work",
+    "sub": "Straightforward process, no surprises. You follow every step.",
+    "steps": {
+      "1": {
+        "title": "Understand",
+        "description": "We map the problem, the audience and the goals before writing a single line of code."
+      },
+      "2": {
+        "title": "Design",
+        "description": "Prototypes and wireframes validated with you before implementation."
+      },
+      "3": {
+        "title": "Build",
+        "description": "Short sprints with incremental deliveries. You test from day one."
+      },
+      "4": {
+        "title": "Deliver",
+        "description": "Deployment, monitoring and post-launch support included in every project."
+      }
+    }
+  },
+  "faq": {
+    "headline": "FAQ",
+    "items": {
+      "1": {
+        "question": "What are KORT.X's core services?",
+        "answer": "We offer web and mobile development, UI/UX design, custom systems, AI solutions and technical consulting. Every project is a custom solution — we don't use templates."
+      },
+      "2": {
+        "question": "What sets KORT.X apart from other studios?",
+        "answer": "We combine high-end design with solid engineering. Our team is 100% senior, we work with agile methodologies and deliver clean code with complete documentation. No juniors learning on your project."
+      },
+      "3": {
+        "question": "Do you work with clients in different timezones?",
+        "answer": "Yes. With offices in Orlando and Rio de Janeiro, we serve clients across the Americas and Europe with comfortable time overlap. We use async communication and collaborative tools."
+      },
+      "4": {
+        "question": "How much does a project cost?",
+        "answer": "Every project is unique. Corporate websites start at $5k, SaaS platforms from $20k, and enterprise projects on consultation. We do a free assessment before any proposal."
+      },
+      "5": {
+        "question": "Do you work with startups?",
+        "answer": "Yes, we work with startups at different stages — from MVP to scale-up. We understand product dynamics, rapid validation and iteration. We help build the right product from the start."
+      },
+      "6": {
+        "question": "What's your tech stack?",
+        "answer": "Our core stack includes React, Next.js, React Native, Node.js, TypeScript, PostgreSQL and AWS services. For AI, we work with OpenAI, Anthropic, LangChain and open-source models."
+      }
+    }
+  },
+  "cta": {
+    "headline": "Let's Talk",
+    "sub": "Tell us about your project. We respond within 24 hours.",
+    "button": "Start a conversation"
+  },
+  "global": {
+    "headline": "Global presence",
+    "sub": "Two offices, one quality standard.",
+    "orlando": {
+      "city": "Orlando",
+      "country": "United States",
+      "coords": "28.5383° N, 81.3792° W"
+    },
+    "rio": {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "coords": "22.9068° S, 43.1729° W"
+    }
+  },
+  "footer": {
+    "description": "Global design and software studio. We build transformative digital experiences for leading brands.",
+    "navigation": "Navigation",
+    "company": "Company",
+    "contactTitle": "Contact",
+    "home": "Home",
+    "blog": "Blog",
+    "careers": "Careers",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "rights": "All rights reserved.",
+    "emailGeneral": "contato@kortx.pro",
+    "emailUS": "hello@kortx.pro",
+    "phone": "+55 21 97001-3218"
+  },
   "portfolio": {
     "headline": "Portfolio",
-    "sub": "Real projects for real clients. Names omitted due to contractual restrictions.",
+    "sub": "Selected projects that showcase our process, quality and reach.",
     "filter": {
       "all": "All",
       "sites": "Websites",
       "apps": "Apps",
       "systems": "Systems",
       "landing": "Landing Pages",
-      "dashboards": "Dashboards"
+      "dashboards": "Dashboards",
+      "saas": "SaaS",
+      "branding": "Branding"
     },
     "projects": {
-      "1": { "title": "Corporate Website — Law Firm", "category": "sites", "description": "Corporate site with dark and gold design, focused on building authority and capturing qualified leads." },
-      "2": { "title": "Corporate Website — Health Clinic", "category": "sites", "description": "Online platform for a medical clinic with scheduling, specialties and patient portal." },
-      "3": { "title": "Corporate Website — Construction", "category": "sites", "description": "Real estate development site with virtual tours and project gallery." },
-      "4": { "title": "Landing Page — SaaS", "category": "landing", "description": "High-conversion landing page for a SaaS product with animated hero and social proof." },
-      "5": { "title": "Landing Page — Event", "category": "landing", "description": "Corporate event page with countdown, schedule and online registration." },
-      "6": { "title": "App — Internal System", "category": "apps", "description": "Internal management app with product catalog, support tickets and inventory control." },
-      "7": { "title": "App — Field Management", "category": "apps", "description": "Mobile app for field teams with checklists, routes and offline reporting." },
-      "8": { "title": "Financial Dashboard", "category": "dashboards", "description": "Financial management panel with cash flow, metrics and exportable reports." },
-      "9": { "title": "Logistics System", "category": "systems", "description": "Logistics operations system with real-time tracking and fleet management." }
+      "1": { "title": "Luxe Realty Group", "category": "sites", "description": "Premium real estate platform with advanced search, 3D virtual tours and lead generation." },
+      "2": { "title": "Oasis Health", "category": "sites", "description": "Digital health and telemedicine ecosystem with unified experience." },
+      "3": { "title": "Prism Studio", "category": "branding", "description": "Visual identity and digital presence for an award-winning creative studio." },
+      "4": { "title": "Vertex", "category": "saas", "description": "Enterprise analytics platform with real-time dashboards." },
+      "5": { "title": "Summit", "category": "sites", "description": "Corporate event platform with registration and live streaming." },
+      "6": { "title": "Arcadia", "category": "saas", "description": "Corporate learning platform with gamification and analytics." },
+      "7": { "title": "FlowState", "category": "apps", "description": "Productivity app for distributed teams." },
+      "8": { "title": "Atlas Operations", "category": "dashboards", "description": "Operations management dashboard with real-time KPIs." },
+      "9": { "title": "Nova Logistics", "category": "systems", "description": "Logistics management system with real-time tracking." }
     }
   },
   "about": {
-    "headline": "About KORT.X",
-    "sub": "We're a software studio that exists to solve real problems with technology.",
+    "headline": "We transform companies through design and technology innovation",
+    "sub": "A full-service studio designing and building inventive digital experiences across all platforms.",
     "story": {
       "headline": "Our story",
       "p1": "KORT.X was born from frustration with software that doesn't work. Late projects, bad code, generic design. We decided to do it differently.",
-      "p2": "We started in Rio de Janeiro and expanded to Orlando. Today we serve clients on two continents with the same quality standard."
+      "p2": "Our cross-disciplinary team combines strategy, branding, UX design and technology for swift, impactful results. Working as one team with our clients, we merge human creativity with AI-driven efficiency."
     },
     "values": {
       "headline": "What guides us",
@@ -247,7 +280,7 @@
     },
     "team": {
       "headline": "Team",
-      "description": "Lean, multidisciplinary, senior team. No juniors learning on your project."
+      "description": "Lean, multidisciplinary, senior team. No juniors learning on your project. Based in Orlando and Rio de Janeiro."
     }
   },
   "contact": {
