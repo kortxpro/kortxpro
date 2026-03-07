@@ -13,7 +13,17 @@
     "cta": "Start a project"
   },
   "hero": {
-    "badge": "Digital Studio",
+    "badge": [
+      "Systems online. Operations active.",
+      "Analyzing project requirements...",
+      "Deploy complete. Performance optimized.",
+      "Intelligence applied. Results delivered.",
+      "New module integrated successfully.",
+      "Monitoring metrics in real time.",
+      "Custom solution. Ready to scale.",
+      "Connection established. Orlando — Rio.",
+      "Processing data. Faster decisions."
+    ],
     "title1": "It all starts",
     "title2": "at KORT.X.",
     "subtitle": "We build custom digital solutions for companies that want to grow.",
