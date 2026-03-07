@@ -2,85 +2,113 @@
 
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 
 export function Footer() {
   const t = useTranslations("footer");
-  const tn = useTranslations("nav");
 
   return (
-    <footer className="bg-black text-white">
-      {/* Main footer */}
-      <div className="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8">
+    <footer className="relative border-t border-border bg-bg">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient opacity-30" />
+
+      <div className="mx-auto max-w-[1560px] px-6 lg:px-10">
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="py-16 lg:py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8"
+        >
           {/* Brand */}
-          <div className="lg:col-span-1">
-            <Link href="/" className="text-2xl font-bold tracking-tight text-white inline-block mb-4">
-              KORT<span className="text-white/40">.</span>X
+          <motion.div variants={fadeUp} className="lg:col-span-1">
+            <Link href="/" className="inline-block mb-4">
+              <span className="text-2xl font-bold tracking-tighter">
+                KORT<span className="text-gradient">.X</span>
+              </span>
             </Link>
-            <p className="text-sm text-white/50 leading-relaxed max-w-xs">
+            <p className="text-text-secondary text-sm leading-relaxed max-w-xs">
               {t("description")}
             </p>
-          </div>
+            <a
+              href={`mailto:${t("email")}`}
+              className="inline-block mt-4 text-sm text-text-secondary hover:text-white transition-colors gradient-underline"
+            >
+              {t("email")}
+            </a>
+          </motion.div>
 
           {/* Navigation */}
-          <div>
-            <h4 className="font-mono text-xs uppercase tracking-wider text-white/30 mb-5">
-              {t("navigation")}
+          <motion.div variants={fadeUp}>
+            <h4 className="text-xs font-mono uppercase tracking-widest text-text-muted mb-6">
+              Navigation
             </h4>
-            <nav className="flex flex-col gap-3">
-              <Link href="/portfolio" className="text-sm text-white/60 hover:text-white transition-colors">{tn("work")}</Link>
-              <Link href="/servicos" className="text-sm text-white/60 hover:text-white transition-colors">{tn("services")}</Link>
-              <Link href="/sobre" className="text-sm text-white/60 hover:text-white transition-colors">{tn("about")}</Link>
-              <Link href="/ai-first" className="text-sm text-white/60 hover:text-white transition-colors">{tn("aiFirst")}</Link>
-              <Link href="/contato" className="text-sm text-white/60 hover:text-white transition-colors">{tn("contact")}</Link>
-            </nav>
-          </div>
+            <ul className="space-y-3">
+              {(["services", "work", "about", "contact"] as const).map((key) => (
+                <li key={key}>
+                  <Link
+                    href={
+                      key === "services" ? "/servicos" :
+                      key === "work" ? "/portfolio" :
+                      key === "about" ? "/sobre" :
+                      "/contato"
+                    }
+                    className="text-sm text-text-secondary hover:text-white transition-colors duration-300"
+                  >
+                    {t(`nav.${key}`)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="font-mono text-xs uppercase tracking-wider text-white/30 mb-5">
-              {t("contactTitle")}
+          {/* Social */}
+          <motion.div variants={fadeUp}>
+            <h4 className="text-xs font-mono uppercase tracking-widest text-text-muted mb-6">
+              Social
             </h4>
-            <div className="flex flex-col gap-3">
-              <a href="mailto:contato@kortx.pro" className="text-sm text-white/60 hover:text-white transition-colors">
-                contato@kortx.pro
-              </a>
-              <a href="mailto:hello@kortx.pro" className="text-sm text-white/60 hover:text-white transition-colors">
-                hello@kortx.pro
-              </a>
-              <span className="text-sm text-white/60">{t("phone")}</span>
-            </div>
-          </div>
+            <ul className="space-y-3">
+              {(["instagram", "linkedin", "github"] as const).map((key) => (
+                <li key={key}>
+                  <a
+                    href="#"
+                    className="text-sm text-text-secondary hover:text-white transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t(`social.${key}`)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
 
           {/* Locations */}
-          <div>
-            <h4 className="font-mono text-xs uppercase tracking-wider text-white/30 mb-5">
-              Locations
+          <motion.div variants={fadeUp}>
+            <h4 className="text-xs font-mono uppercase tracking-widest text-text-muted mb-6">
+              Offices
             </h4>
-            <div className="flex flex-col gap-4">
-              <div>
-                <p className="text-sm text-white/80 font-medium">Orlando</p>
-                <p className="text-sm text-white/40">Florida, United States</p>
-              </div>
-              <div>
-                <p className="text-sm text-white/80 font-medium">Rio de Janeiro</p>
-                <p className="text-sm text-white/40">RJ, Brasil</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <ul className="space-y-3">
+              {(["orlando", "rio"] as const).map((key) => (
+                <li key={key} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-gradient shrink-0" />
+                  <span className="text-sm text-text-secondary">
+                    {t(`locations.${key}`)}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        </motion.div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 py-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <p className="font-mono text-xs text-white/30">
-            &copy; 2018–{new Date().getFullYear()} KORT.X. {t("rights")}
+        {/* Bottom bar */}
+        <div className="border-t border-border py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-text-muted">
+            &copy; {new Date().getFullYear()} KORT.X. {t("copyright")}
           </p>
-          <div className="flex items-center gap-6 font-mono text-xs text-white/30">
-            <span>{t("privacy")}</span>
-            <span>{t("terms")}</span>
-          </div>
+          <p className="text-xs text-text-muted font-mono">
+            Orlando, FL &middot; Rio de Janeiro, BR
+          </p>
         </div>
       </div>
     </footer>

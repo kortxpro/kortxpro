@@ -21,10 +21,10 @@ export async function generateMetadata({
   const isEN = locale === "en-US";
 
   return {
-    title: isEN ? "KORT.X — Global Software Studio" : "KORT.X — Software Studio Global",
+    title: isEN ? "KORT.X — Digital Studio" : "KORT.X — Digital Studio",
     description: isEN
-      ? "We build transformative digital experiences for leading brands by blending AI, design, and technology."
-      : "Construímos experiências digitais transformadoras para marcas líderes, combinando IA, design e tecnologia.",
+      ? "Design and technology studio. We craft digital products, websites and systems that drive real results."
+      : "Estúdio de design e tecnologia. Criamos produtos digitais, sites e sistemas que geram resultado real.",
     alternates: {
       canonical: `https://kortx.pro/${locale}`,
       languages: {
@@ -54,11 +54,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <head>
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#050505" />
         <OrganizationJsonLd />
         <LocalBusinessJsonLd />
       </head>
-      <body className="font-sans antialiased bg-white text-text overflow-x-hidden">
+      <body className="font-sans antialiased bg-bg text-text overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main>{children}</main>
