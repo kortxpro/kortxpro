@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { GradientButton } from "@/components/ui/GradientButton";
 import { NeuralNetwork } from "@/components/effects/NeuralNetwork";
-import { TypeWriter } from "@/components/effects/TypeWriter";
 import { letterReveal, staggerFast, fadeUp } from "@/lib/animations";
 
 export function Hero() {
@@ -22,8 +21,6 @@ export function Hero() {
 
   const title1 = t("title1");
   const title2 = t("title2");
-  const badges = t.raw("badge") as string[];
-
   return (
     <section
       ref={ref}
@@ -133,25 +130,6 @@ export function Hero() {
                 accentColor="#06b6d4"
                 mouseRadius={220}
               />
-
-              {/* AI voice — typewriter coming from the neural network */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.2, duration: 0.8 }}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none"
-              >
-                <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/[0.03] backdrop-blur-sm border border-white/[0.06]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-indigo animate-pulse-glow shrink-0" />
-                  <TypeWriter
-                    texts={badges}
-                    speed={45}
-                    deleteSpeed={25}
-                    pauseTime={2500}
-                    className="text-xs font-mono text-indigo/80 whitespace-nowrap"
-                  />
-                </div>
-              </motion.div>
 
               {/* Floating stat cards */}
               <motion.div

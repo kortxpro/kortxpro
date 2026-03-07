@@ -21,6 +21,10 @@ export const routing = defineRouting({
       "pt-BR": "/contato",
       "en-US": "/contact",
     },
+    "/ai-first": {
+      "pt-BR": "/ai-first",
+      "en-US": "/ai-first",
+    },
   },
 });
 

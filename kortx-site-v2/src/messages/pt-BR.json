@@ -13,17 +13,7 @@
     "cta": "Iniciar projeto"
   },
   "hero": {
-    "badge": [
-      "Sistemas online. Operação ativa.",
-      "Analisando requisitos do projeto...",
-      "Deploy concluído. Performance otimizada.",
-      "Inteligência aplicada. Resultado entregue.",
-      "Novo módulo integrado com sucesso.",
-      "Monitorando métricas em tempo real.",
-      "Solução personalizada. Pronta pra escalar.",
-      "Conexão estabelecida. Orlando — Rio.",
-      "Processando dados. Decisão mais rápida."
-    ],
+    "badge": "KORT.X",
     "title1": "Tudo começa",
     "title2": "no KORT.X.",
     "subtitle": "Desenvolvemos soluções digitais sob medida para empresas que querem crescer.",
@@ -219,6 +209,68 @@
     "team": {
       "title": "A equipe",
       "description": "Designers, engenheiros e estrategistas que já passaram por startups, agências e big techs. Agora, juntos num estúdio que faz do jeito certo."
+    }
+  },
+  "aiFirst": {
+    "terminal": [
+      "Sistemas online. Operação ativa.",
+      "Analisando requisitos do projeto...",
+      "Deploy concluído. Performance otimizada.",
+      "Inteligência aplicada. Resultado entregue.",
+      "Novo módulo integrado com sucesso.",
+      "Monitorando métricas em tempo real.",
+      "Solução personalizada. Pronta pra escalar.",
+      "Conexão estabelecida. Orlando — Rio.",
+      "Processando dados. Decisão mais rápida."
+    ],
+    "hero": {
+      "label": "AI-First Development",
+      "title1": "Inteligência artificial",
+      "title2": "que trabalha por você.",
+      "subtitle": "Não vendemos IA como buzzword. Integramos inteligência real nos seus processos — automações que eliminam trabalho manual, agentes que tomam decisões e sistemas que aprendem com seus dados."
+    },
+    "capabilities": {
+      "title": "O que a IA faz pelo seu negócio",
+      "items": [
+        {
+          "title": "Agentes Autônomos",
+          "description": "Bots que operam sozinhos. Atendem clientes, qualificam leads, processam documentos e tomam decisões baseadas em regras que você define.",
+          "metric": "40h/sem",
+          "metricLabel": "de trabalho manual eliminado"
+        },
+        {
+          "title": "Automação Inteligente",
+          "description": "Workflows que conectam seus sistemas, processam dados e executam tarefas sem intervenção humana. De CRM a ERP, tudo sincronizado.",
+          "metric": "3x",
+          "metricLabel": "mais rápido que processos manuais"
+        },
+        {
+          "title": "Análise Preditiva",
+          "description": "Modelos que analisam seus dados históricos e preveem tendências. Churn, demanda, precificação — decisões baseadas em dados, não em feeling.",
+          "metric": "92%",
+          "metricLabel": "de precisão em previsões"
+        },
+        {
+          "title": "Integração com LLMs",
+          "description": "ChatGPT, Claude, Gemini — integramos o modelo certo no lugar certo. Chatbots inteligentes, geração de conteúdo, análise de documentos.",
+          "metric": "24/7",
+          "metricLabel": "operação contínua"
+        }
+      ]
+    },
+    "process": {
+      "title": "Como funciona",
+      "steps": [
+        { "title": "Diagnóstico", "description": "Mapeamos seus processos e identificamos onde a IA gera mais impacto." },
+        { "title": "Prototipagem", "description": "Construímos um MVP funcional em 2-3 semanas. Você testa com dados reais." },
+        { "title": "Integração", "description": "Plugamos nos seus sistemas existentes. Sem migração, sem downtime." },
+        { "title": "Evolução", "description": "O sistema aprende e melhora. Monitoramos e otimizamos continuamente." }
+      ]
+    },
+    "cta": {
+      "title": "Pronto pra colocar IA pra trabalhar?",
+      "subtitle": "Agende uma call de 30 min. Mostramos exatamente onde IA pode impactar seu negócio.",
+      "button": "Agendar diagnóstico gratuito"
     }
   },
   "contactPage": {

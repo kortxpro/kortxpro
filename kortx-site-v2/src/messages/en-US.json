@@ -13,17 +13,7 @@
     "cta": "Start a project"
   },
   "hero": {
-    "badge": [
-      "Systems online. Operations active.",
-      "Analyzing project requirements...",
-      "Deploy complete. Performance optimized.",
-      "Intelligence applied. Results delivered.",
-      "New module integrated successfully.",
-      "Monitoring metrics in real time.",
-      "Custom solution. Ready to scale.",
-      "Connection established. Orlando — Rio.",
-      "Processing data. Faster decisions."
-    ],
+    "badge": "KORT.X",
     "title1": "It all starts",
     "title2": "at KORT.X.",
     "subtitle": "We build custom digital solutions for companies that want to grow.",
@@ -219,6 +209,68 @@
     "team": {
       "title": "The team",
       "description": "Designers, engineers and strategists who've been through startups, agencies and big tech. Now together in a studio that does things right."
+    }
+  },
+  "aiFirst": {
+    "terminal": [
+      "Systems online. Operations active.",
+      "Analyzing project requirements...",
+      "Deploy complete. Performance optimized.",
+      "Intelligence applied. Results delivered.",
+      "New module integrated successfully.",
+      "Monitoring metrics in real time.",
+      "Custom solution. Ready to scale.",
+      "Connection established. Orlando — Rio.",
+      "Processing data. Faster decisions."
+    ],
+    "hero": {
+      "label": "AI-First Development",
+      "title1": "Artificial intelligence",
+      "title2": "that works for you.",
+      "subtitle": "We don't sell AI as a buzzword. We integrate real intelligence into your processes — automations that eliminate manual work, agents that make decisions and systems that learn from your data."
+    },
+    "capabilities": {
+      "title": "What AI does for your business",
+      "items": [
+        {
+          "title": "Autonomous Agents",
+          "description": "Bots that operate on their own. Serve customers, qualify leads, process documents and make decisions based on rules you define.",
+          "metric": "40h/wk",
+          "metricLabel": "of manual work eliminated"
+        },
+        {
+          "title": "Intelligent Automation",
+          "description": "Workflows that connect your systems, process data and execute tasks without human intervention. From CRM to ERP, everything synced.",
+          "metric": "3x",
+          "metricLabel": "faster than manual processes"
+        },
+        {
+          "title": "Predictive Analytics",
+          "description": "Models that analyze your historical data and predict trends. Churn, demand, pricing — decisions based on data, not gut feeling.",
+          "metric": "92%",
+          "metricLabel": "prediction accuracy"
+        },
+        {
+          "title": "LLM Integration",
+          "description": "ChatGPT, Claude, Gemini — we integrate the right model in the right place. Smart chatbots, content generation, document analysis.",
+          "metric": "24/7",
+          "metricLabel": "continuous operation"
+        }
+      ]
+    },
+    "process": {
+      "title": "How it works",
+      "steps": [
+        { "title": "Diagnosis", "description": "We map your processes and identify where AI generates the most impact." },
+        { "title": "Prototyping", "description": "We build a functional MVP in 2-3 weeks. You test with real data." },
+        { "title": "Integration", "description": "We plug into your existing systems. No migration, no downtime." },
+        { "title": "Evolution", "description": "The system learns and improves. We monitor and optimize continuously." }
+      ]
+    },
+    "cta": {
+      "title": "Ready to put AI to work?",
+      "subtitle": "Schedule a 30-min call. We'll show exactly where AI can impact your business.",
+      "button": "Schedule free diagnosis"
     }
   },
   "contactPage": {
