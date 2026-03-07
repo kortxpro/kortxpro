@@ -27,12 +27,7 @@ export function Hero() {
       ref={ref}
       className="relative min-h-screen flex items-center overflow-hidden bg-bg"
     >
-      {/* Subtle ambient glow */}
-      <div className="absolute top-1/3 left-1/2 w-[500px] h-[500px] rounded-full opacity-[0.06] blur-[120px] pointer-events-none"
-        style={{ background: "radial-gradient(circle, #6366f1, transparent 70%)" }}
-      />
-
-      {/* Grid pattern */}
+      {/* Subtle grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.02] pointer-events-none"
         style={{
@@ -134,38 +129,27 @@ export function Hero() {
             </motion.div>
           </div>
 
-          {/* Right — Neural Network contained */}
+          {/* Right — Neural Network, open, no container */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="hidden lg:flex items-center justify-center"
+            className="hidden lg:flex items-center justify-center relative"
           >
-            <div className="relative w-full aspect-[4/3] max-w-[600px] rounded-3xl overflow-hidden border border-border/30">
-              {/* Dark base inside the container */}
-              <div className="absolute inset-0 bg-bg" />
-
-              {/* Neural Network canvas */}
+            <div className="relative w-full max-w-[550px] aspect-square">
               <NeuralNetwork
                 particleCount={100}
-                connectionDistance={160}
+                connectionDistance={170}
                 particleColor="#6366f1"
                 accentColor="#06b6d4"
-                mouseRadius={200}
-              />
-
-              {/* Subtle inner glow at edges */}
-              <div className="absolute inset-0 pointer-events-none"
-                style={{
-                  boxShadow: "inset 0 0 80px rgba(99,102,241,0.06)",
-                }}
+                mouseRadius={220}
               />
 
               {/* Floating stat cards */}
               <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-6 left-6 z-10 bg-white/[0.04] backdrop-blur-md border border-white/[0.08] rounded-xl px-4 py-3 pointer-events-none"
+                className="absolute top-[8%] left-[-5%] z-10 bg-white/[0.04] backdrop-blur-md border border-white/[0.08] rounded-xl px-4 py-3"
               >
                 <p className="text-[10px] font-mono text-text-muted uppercase tracking-wider">Projetos</p>
                 <p className="text-lg font-bold text-text">150+</p>
@@ -174,19 +158,10 @@ export function Hero() {
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-6 right-6 z-10 bg-white/[0.04] backdrop-blur-md border border-white/[0.08] rounded-xl px-4 py-3 pointer-events-none"
+                className="absolute bottom-[12%] right-[-8%] z-10 bg-white/[0.04] backdrop-blur-md border border-white/[0.08] rounded-xl px-4 py-3"
               >
                 <p className="text-[10px] font-mono text-text-muted uppercase tracking-wider">Satisfação</p>
                 <p className="text-lg font-bold text-gradient">98%</p>
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute bottom-8 left-8 z-10 bg-white/[0.04] backdrop-blur-md border border-white/[0.08] rounded-xl px-4 py-3 pointer-events-none"
-              >
-                <p className="text-[10px] font-mono text-text-muted uppercase tracking-wider">Países</p>
-                <p className="text-lg font-bold text-text">12</p>
               </motion.div>
             </div>
           </motion.div>
